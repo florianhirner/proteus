@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb  6 22:56:18 2023
+# Process ID: 2169056
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_7_8/proteus_mdc.runs/synth_1
+# Command line: vivado -log ntt_memory_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ntt_memory_wrapper.tcl
+# Log file: /home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_7_8/proteus_mdc.runs/synth_1/ntt_memory_wrapper.vds
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_7_8/proteus_mdc.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ntt_memory_wrapper.tcl -notrace
+Command: synth_design -top ntt_memory_wrapper -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7vx485t'. Explanation: Cannot connect to a license server running the xilinxd licensing daemon at the specified port.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7vx485t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Please note that Vivado 2017.3 and later requires upgrading your license server tools to the Flex 11.14.1 tools. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  6 22:57:44 2023...

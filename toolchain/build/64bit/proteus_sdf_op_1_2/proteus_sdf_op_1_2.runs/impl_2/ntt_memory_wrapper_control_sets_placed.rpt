@@ -1,0 +1,101 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Mon Feb  6 20:09:51 2023
+| Host         : x1g9 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_control_sets -verbose -file ntt_memory_wrapper_control_sets_placed.rpt
+| Design       : ntt_memory_wrapper
+| Device       : xc7vx485t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    23 |
+|    Minimum number of control sets                        |    23 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    23 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    16 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           11155 |         2888 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             197 |           73 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             457 |          131 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                            Enable Signal                           |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                                                    | DUT_NTT/genblk3[6].NTT_SDF_STAGE/counter_reg[2]_0        |                1 |              5 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[3].NTT_SDF_STAGE/DELAY_START/delay_start           | rst_IBUF                                                 |                4 |              8 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[2].NTT_SDF_STAGE/DELAY_START/delay_start           | rst_IBUF                                                 |                4 |              9 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[1].NTT_SDF_STAGE/DELAY_START/fifo_rd               | rst_IBUF                                                 |                2 |             10 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[0].NTT_SDF_STAGE/DELAY_START/delay_start           | rst_IBUF                                                 |                5 |             11 |
+|  clk_IBUF_BUFG | DELAY_START/read_address0                                          | rst_IBUF                                                 |                4 |             13 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[0].NTT_SDF_STAGE/DELAY_FINISH/wea_OBUF             | rst_IBUF                                                 |                4 |             13 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[10].NTT_SDF_STAGE/DELAY_FINISH/stage_start[11]_352 | rst_IBUF                                                 |                6 |             24 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[11].NTT_SDF_STAGE/DELAY_FINISH/stage_start[10]_354 | rst_IBUF                                                 |                6 |             24 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[10].NTT_SDF_STAGE/DELAY_FINISH/stage_start[9]_356  | rst_IBUF                                                 |                7 |             26 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[8].NTT_SDF_STAGE/DELAY_FINISH/stage_start[7]_360   | rst_IBUF                                                 |                7 |             28 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[9].NTT_SDF_STAGE/DELAY_FINISH/stage_start[8]_358   | rst_IBUF                                                 |                8 |             29 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[5].NTT_SDF_STAGE/DELAY_FINISH/stage_start[4]_361   | rst_IBUF                                                 |                8 |             31 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[7].NTT_SDF_STAGE/DELAY_FINISH/stage_start[6]_362   | rst_IBUF                                                 |                9 |             31 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[6].NTT_SDF_STAGE/DELAY_FINISH/stage_start[5]_363   | rst_IBUF                                                 |                9 |             32 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[1].NTT_SDF_STAGE/DELAY_FINISH/stage_start[0]_353   | rst_IBUF                                                 |               10 |             36 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[4].NTT_SDF_STAGE/DELAY_FINISH/stage_start[3]_359   | rst_IBUF                                                 |               11 |             42 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[3].NTT_SDF_STAGE/DELAY_FINISH/stage_start[2]_357   | rst_IBUF                                                 |               13 |             44 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[2].NTT_SDF_STAGE/DELAY_FINISH/stage_start[1]_355   | rst_IBUF                                                 |               14 |             46 |
+|  clk_IBUF_BUFG |                                                                    | DUT_NTT/genblk3[9].NTT_SDF_STAGE/p_0_in                  |               19 |             64 |
+|  clk_IBUF_BUFG |                                                                    | DUT_NTT/genblk3[11].NTT_SDF_STAGE/counter_intt_gs_reg[0] |               27 |             64 |
+|  clk_IBUF_BUFG |                                                                    | DUT_NTT/genblk3[10].NTT_SDF_STAGE/p_0_in                 |               26 |             64 |
+|  clk_IBUF_BUFG |                                                                    |                                                          |             2915 |          13300 |
++----------------+--------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+
+

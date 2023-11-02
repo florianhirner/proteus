@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov  7 12:25:24 2022
+# Process ID: 17168
+# Current directory: C:/CryptoProcessor_2022_23/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3492 C:\CryptoProcessor_2022_23\project_1\project_1.xpr
+# Log file: C:/CryptoProcessor_2022_23/project_1/vivado.log
+# Journal file: C:/CryptoProcessor_2022_23/project_1\vivado.jou
+#-----------------------------------------------------------
+sstart_guiopen_project C:/CryptoProcessor_2022_23/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/Verilog_src/aes/AES128.v] -no_script -reset -force -quiet
+remove_files  C:/CryptoProcessor_2022_23/Verilog_src/aes/AES128.v
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/shift_row.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/subbyte_invsubbyte.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/add_round_key.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/mix_Column.v] -no_script -reset -force -quiet
+remove_files  {C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/shift_row.v C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/subbyte_invsubbyte.v C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/add_round_key.v C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/mix_Column.v}
+file delete -force C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/shift_row.v C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/subbyte_invsubbyte.v C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/add_round_key.v C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/mix_Column.v
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/Verilog_src/trng/RO_rng/trng_wrapper.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/Verilog_src/trng/RO_rng/trng_ro.v] -no_script -reset -force -quiet
+remove_files  {C:/CryptoProcessor_2022_23/Verilog_src/trng/RO_rng/trng_wrapper.v C:/CryptoProcessor_2022_23/Verilog_src/trng/RO_rng/trng_ro.v}
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/polynomial_addsub.v] -no_script -reset -force -quiet
+remove_files  C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/polynomial_addsub.v
+file delete -force C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/polynomial_addsub.v
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/polynomial_64_multiplication.v] -no_script -reset -force -quiet
+remove_files  C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/new/polynomial_64_multiplication.v
+add_files -norecurse C:/CryptoProcessor_2022_23/Verilog_src/poly_arithmetic/polynomial_multiplication.v
+update_compile_order -fileset sources_1
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+launch_sdk -workspace C:/CryptoProcessor_2022_23/project_1/project_1.sdk -hwspec C:/CryptoProcessor_2022_23/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+launch_sdk -workspace C:/CryptoProcessor_2022_23/project_1/project_1.sdk -hwspec C:/CryptoProcessor_2022_23/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+generate_target all [get_files  C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd]
+catch { config_ip_cache -export [get_ips -all cryptoprocessor_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd]
+launch_runs -jobs 4 cryptoprocessor_ComputeCoreWrapper_0_0_synth_1
+export_simulation -of_objects [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd] -directory C:/CryptoProcessor_2022_23/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/CryptoProcessor_2022_23/project_1/project_1.ip_user_files -ipstatic_source_dir C:/CryptoProcessor_2022_23/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/CryptoProcessor_2022_23/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/CryptoProcessor_2022_23/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/CryptoProcessor_2022_23/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/CryptoProcessor_2022_23/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+file mkdir C:/CryptoProcessor_2022_23/project_1/project_1.sdk
+file copy -force C:/CryptoProcessor_2022_23/project_1/project_1.runs/impl_3/cryptoprocessor_wrapper.sysdef C:/CryptoProcessor_2022_23/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+
+launch_sdk -workspace C:/CryptoProcessor_2022_23/project_1/project_1.sdk -hwspec C:/CryptoProcessor_2022_23/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top polynomial_multiplication [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_file C:/CryptoProcessor_2022_23/Verilog_src/poly_arithmetic/polynomial_multiplication.v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cryptoprocessor_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+generate_target Simulation [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/INS_RAM/INS_RAM.xci]
+generate_target Simulation [get_files C:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM64_1024_1/BRAM64_1024.xci]
+launch_simulation
+open_wave_config C:/CryptoProcessor_2022_23/project_1/tb_behav.wcfg
+source tb_polmul.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10us
+relaunch_sim
+run 20us
+run 20us
+relaunch_sim
+run 40us
+relaunch_sim
+run 40us
+save_wave_config {C:/CryptoProcessor_2022_23/project_1/tb_behav.wcfg}
+save_wave_config {C:/CryptoProcessor_2022_23/project_1/tb_behav.wcfg}
+restart
+run 40us
+file copy -force C:/CryptoProcessor_2022_23/project_1/project_1.runs/impl_3/cryptoprocessor_wrapper.sysdef C:/CryptoProcessor_2022_23/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name BRAM_memory -dir c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {BRAM_memory} CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Depth_A {32} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Enable_A {Always_Enabled} CONFIG.Operating_Mode_B {READ_FIRST} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips BRAM_memory]
+generate_target {instantiation_template} [get_files c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM_memory/BRAM_memory.xci]
+generate_target all [get_files  c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM_memory/BRAM_memory.xci]
+catch { config_ip_cache -export [get_ips -all BRAM_memory] }
+export_ip_user_files -of_objects [get_files c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM_memory/BRAM_memory.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM_memory/BRAM_memory.xci]
+launch_runs -jobs 4 BRAM_memory_synth_1
+export_simulation -of_objects [get_files c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM_memory/BRAM_memory.xci] -directory C:/CryptoProcessor_2022_23/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/CryptoProcessor_2022_23/project_1/project_1.ip_user_files -ipstatic_source_dir C:/CryptoProcessor_2022_23/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/CryptoProcessor_2022_23/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/CryptoProcessor_2022_23/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/CryptoProcessor_2022_23/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/CryptoProcessor_2022_23/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM_memory/BRAM_memory.xci] -no_script -reset -force -quiet
+remove_files  -fileset BRAM_memory c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM_memory/BRAM_memory.xci
+file delete -force c:/CryptoProcessor_2022_23/project_1/project_1.srcs/sources_1/ip/BRAM_memory
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+close_sim

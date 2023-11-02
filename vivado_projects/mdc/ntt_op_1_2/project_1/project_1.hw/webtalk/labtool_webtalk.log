@@ -1,0 +1,9 @@
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/SABER_FPGA/project_1/project_1.hw/webtalk/labtool_webtalk.tcl -notrace
+Access is denied.
+INFO: [Common 17-206] Exiting Webtalk at Tue Mar 17 18:14:00 2020...

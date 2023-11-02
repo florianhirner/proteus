@@ -1,0 +1,15 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 2 -y 540 -defaultsOSRD
+preplace inst fpga_adder_0 -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 20 190 450 630 1110
+levelinfo -pg 1 0 250 810 1310 1650 1820 -top -190 -bot 640
+",
+}
+{
+   da_axi4_cnt: "4",
+   da_clkrst_cnt: "2",
+   da_zynq_ultra_ps_e_cnt: "1",
+}

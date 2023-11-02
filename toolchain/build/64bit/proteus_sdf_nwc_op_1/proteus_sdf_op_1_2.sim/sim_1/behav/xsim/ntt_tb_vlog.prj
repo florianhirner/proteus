@@ -1,0 +1,43 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../../hw" \
+"../../../../../../hw/common/csa/csa_tree.sv" \
+"../../../../../../hw/common/csa/csa_2.sv" \
+
+verilog xil_defaultlib  --include "../../../../../../hw" \
+"../../../../../../hw/common/bitreverse/bitreverse.v" \
+"../../../../../../hw/common/btf/btf_dif_gs.v" \
+"../../../../../../hw/common/btf/btf_dit_ct.v" \
+"../../../../../../hw/common/btf/btf_unified.v" \
+"../../../../../../hw/common/fifo/fifo.v" \
+"../../../../../../hw/common/mod/modadd.v" \
+"../../../../../../hw/common/mod/moddiv_by_2.v" \
+"../../../../../../hw/common/mod/modmul.v" \
+"../../../../../../hw/common/mod/modred_64.v" \
+"../../../../../../hw/common/mod/modsub.v" \
+"../../../../../../hw/common/shift/shiftreg.v" \
+"../../../../../../hw/constant/tw_roms.v" \
+
+sv xil_defaultlib  --include "../../../../../../hw" \
+"../../../../../../hw/common/wlmont/add_chunked.sv" \
+"../../../../../../hw/common/wlmont/csa_2.sv" \
+"../../../../../../hw/common/wlmont/csa_tree.sv" \
+"../../../../../../hw/common/wlmont/int_mult_add.sv" \
+"../../../../../../hw/common/intmul/intmul.sv" \
+"../../../../../../hw/common/wlmont/sub_chunked.sv" \
+"../../../../../../hw/common/wlmont/wlmont.sv" \
+"../../../../../../hw/common/wlmont/wlmont_sub.sv" \
+"../../../../../../hw/common/wlmont/wlmont_tb.sv" \
+
+verilog xil_defaultlib  --include "../../../../../../hw" \
+"../../../../../../hw/sdf/nwc_op_1/ntt_wrapper.v" \
+"../../../../../../hw/sdf/nwc_op_1/ntt_tb.v" \
+"../../../../../../hw/sdf/nwc_op_1/tw_roms_wrapper.v" \
+"../../../../../../hw/sdf/nwc_op_1/ntt_memory_wrapper.v" \
+"../../../../../../hw/sdf/nwc_op_1/stage_wrapper.v" \
+"../../../../../../hw/common/mod/modred_28.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

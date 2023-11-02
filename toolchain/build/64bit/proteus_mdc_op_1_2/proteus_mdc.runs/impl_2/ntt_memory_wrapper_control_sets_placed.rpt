@@ -1,0 +1,133 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Mon Feb  6 23:08:58 2023
+| Host         : x1g9 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_control_sets -verbose -file ntt_memory_wrapper_control_sets_placed.rpt
+| Design       : ntt_memory_wrapper
+| Device       : xc7vx485t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    55 |
+|    Minimum number of control sets                        |    55 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   183 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    55 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |    10 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     6 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    24 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           21576 |         5673 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              50 |           28 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             727 |          257 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                                                                Enable Signal                                                               |                                             Set/Reset Signal                                             | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | DELAY_START/delay_start                                                                                                                    | rst_IBUF                                                                                                 |                1 |              1 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                2 |              3 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/DELAY_SW_ENABLE/intt_reg_reg                                                                      | rst_IBUF                                                                                                 |                2 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                2 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                2 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                2 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                2 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                2 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk2[3].TW_ROM/tw3/brom_out[8]_i_1_n_0                                                |                2 |              4 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[8].NTT_MDC_STAGE/DELAY_SW_ENABLE/intt_reg_reg                                                                      | rst_IBUF                                                                                                 |                1 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[3].NTT_MDC_STAGE/intt_reg_reg_0                                                  |                3 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                2 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                3 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                1 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                2 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                1 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                            | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                2 |              4 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[7].NTT_MDC_STAGE/DELAY_INTT_EN/intt_reg_reg                                                                        | rst_IBUF                                                                                                 |                1 |              5 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/DELAY_INTT_EN/intt_reg_reg                                                                        | rst_IBUF                                                                                                 |                3 |              6 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[5].NTT_MDC_STAGE/DELAY_INTT_EN/intt_reg_reg                                                                        | rst_IBUF                                                                                                 |                2 |              7 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/DELAY_INTT_EN/intt_reg_reg                                                                        | rst_IBUF                                                                                                 |                2 |              8 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[3].NTT_MDC_STAGE/DELAY_INTT_EN/DELAY_BLOCK[11].shift_array_reg[12][0]__0_0                                         | rst_IBUF                                                                                                 |                3 |              9 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/DELAY_INTT_EN/sel                                                                                 | rst_IBUF                                                                                                 |                3 |             11 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/DELAY_INTT_EN/sel                                                                                 | rst_IBUF                                                                                                 |                4 |             12 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/DELAY_INTT_EN/sel_0                                                                               | rst_IBUF                                                                                                 |                3 |             12 |
+|  clk_IBUF_BUFG | DELAY_START/read_address0                                                                                                                  | rst_IBUF                                                                                                 |                4 |             13 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/start_reg                                                                                        | rst_IBUF                                                                                                 |                4 |             13 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[11].NTT_MDC_STAGE/start_reg                                                                                        | rst_IBUF                                                                                                 |                4 |             13 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/wea_OBUF                                                                                          | rst_IBUF                                                                                                 |                4 |             13 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                6 |             14 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[8].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                4 |             15 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[7].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                4 |             16 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/rdp_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1]   | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                7 |             16 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/ram_wr_en_pf                            | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             16 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/rdp_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1]   | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             16 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/ram_wr_en_pf                            | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             16 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                4 |             17 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/rdp_inst/E[0]                                             | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             18 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[5].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                6 |             18 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0]                                    | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             18 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/rdp_inst/E[0]                                             | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             18 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0]                                    | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                5 |             18 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                6 |             19 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[3].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                7 |             20 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                7 |             21 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1] | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                8 |             21 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/ram_wr_en_pf                            | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_1/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             21 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/ram_wr_en_pf                            | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             21 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1] | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             21 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                7 |             22 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/start_reg                                                                                         | rst_IBUF                                                                                                 |                7 |             23 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/gen_fwft.ram_regout_en                                    | NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |               19 |             64 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/gen_fwft.ram_regout_en                                    | NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |               28 |             64 |
+|  clk_IBUF_BUFG | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/gen_fwft.ram_regout_en                                    | NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |               37 |             64 |
+|  clk_IBUF_BUFG |                                                                                                                                            |                                                                                                          |             5684 |          23706 |
++----------------+--------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../hw" \
+"../../../../../../../../../hw/common/mod/modadd.v" \
+"../../../../../../../../../hw/common/mod/modmul.v" \
+"../../../../../../../../../hw/common/mod/modred_28.v" \
+"../../../../../../../../../hw/common/mod/modred_64.v" \
+"../../../../../../../../../hw/common/mod/modsub.v" \
+"../../../../../../../../../hw/common/shift/shiftreg.v" \
+
+sv xil_defaultlib  --include "../../../../../../../../../hw" \
+"../../../../../../../../../hw/common/wlmont/csa_2.sv" \
+"../../../../../../../../../hw/common/wlmont/csa_tree.sv" \
+"../../../../../../../../../hw/common/wlmont/int_mult_add.sv" \
+"../../../../../../../../../hw/common/intmul/intmul.sv" \
+"../../../../../../../../../hw/common/wlmont/wlmont.sv" \
+"../../../../../../../../../hw/common/wlmont/wlmont_sub.sv" \
+
+verilog xil_defaultlib  --include "../../../../../../../../../hw" \
+"../../../../../../../../../hw/common/btf/btf_unified.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

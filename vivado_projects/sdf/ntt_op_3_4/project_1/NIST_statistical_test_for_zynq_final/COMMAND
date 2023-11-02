@@ -1,0 +1,1 @@
+gcc -Wall assess.c utilities.c NIST_tests.c cephes.c -lm dfft.c matrix.c

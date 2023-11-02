@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 12 21:52:58 2023
+# Process ID: 80169
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/256bit
+# Command line: vivado
+# Log file: /home/florian/Desktop/proteus/toolchain/build/256bit/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/256bit/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1

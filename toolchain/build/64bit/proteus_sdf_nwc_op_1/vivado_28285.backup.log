@@ -1,0 +1,925 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 12 19:35:52 2023
+# Process ID: 28285
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1
+# Command line: vivado -source proteus_sdf_op_1_2.xpr
+# Log file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project proteus_sdf_op_1_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+add_files -norecurse /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ntt_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj ntt_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/csa/csa_tree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/csa/csa_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitreverse
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dif_gs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dif_gs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dit_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dit_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_unified
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/fifo/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moddiv_by_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_rom_0_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_0_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_intt_nwc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/add_chunked.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_chunked
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_2
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'csa_2' [/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv:17]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_tree
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'csa_tree' [/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv:13]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/int_mult_add.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module int_mult_add
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/intmul/intmul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intmul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/sub_chunked.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_chunked
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wlmont
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_sub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wlmont_sub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wlmont_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/ntt_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_sdf_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/ntt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/tw_roms_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_roms_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/ntt_memory_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_memory_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_sdf_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'modred_64' [/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v:9]
+INFO: [VRFC 10-311] analyzing module modred_28
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v:138]
+WARNING: [VRFC 10-3091] actual bit length 56 differs from formal bit length 128 for port 'DATA_IN' [/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v:71]
+WARNING: [VRFC 10-3091] actual bit length 28 differs from formal bit length 64 for port 'DATA_OUT' [/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v:72]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tw_rom_0_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_0_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_1_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_1_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_2_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_2_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_3_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_3_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=15,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=0)
+Compiling module xil_defaultlib.modadd(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.modsub(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.shiftreg(SHIFT=5,DATA=28)
+Compiling module xil_defaultlib.csa_2(K=58)
+Compiling module xil_defaultlib.csa_tree(SIZE_I=57,DEPTH=3,SIZE_...
+Compiling module xil_defaultlib.csa_tree(SIZE_I=56,DEPTH=4,SIZE_...
+Compiling module xil_defaultlib.intmul(LOGQ=28)
+Compiling module xil_defaultlib.modred_64
+Compiling module xil_defaultlib.modmul(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=28)
+Compiling module xil_defaultlib.moddiv_by_2(LOGQ=28,IS_Q_FIXED=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=28)
+Compiling module xil_defaultlib.shiftreg(DATA=1)
+Compiling module xil_defaultlib.shiftreg(DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=11,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=1)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=9,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=2)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=8,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=3)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.ntt_sdf_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=10,DATA=1)
+Compiling module xil_defaultlib.ntt_memory_wrapper_default
+Compiling module xil_defaultlib.ntt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ntt_tb_behav
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 7135.938 ; gain = 40.988 ; free physical = 19474 ; free virtual = 28397
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 7135.938 ; gain = 40.988 ; free physical = 19549 ; free virtual = 28472
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ntt_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj ntt_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitreverse
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dif_gs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dif_gs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dit_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dit_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_unified
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/fifo/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moddiv_by_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_rom_0_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_0_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_intt_nwc
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v:138]
+WARNING: [VRFC 10-3091] actual bit length 56 differs from formal bit length 128 for port 'DATA_IN' [/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v:71]
+WARNING: [VRFC 10-3091] actual bit length 28 differs from formal bit length 64 for port 'DATA_OUT' [/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v:72]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tw_rom_0_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_0_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_1_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_1_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_2_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_2_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_3_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_3_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=15,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=0)
+Compiling module xil_defaultlib.modadd(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.modsub(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.shiftreg(SHIFT=5,DATA=28)
+Compiling module xil_defaultlib.csa_2(K=58)
+Compiling module xil_defaultlib.csa_tree(SIZE_I=57,DEPTH=3,SIZE_...
+Compiling module xil_defaultlib.csa_tree(SIZE_I=56,DEPTH=4,SIZE_...
+Compiling module xil_defaultlib.intmul(LOGQ=28)
+Compiling module xil_defaultlib.modred_64
+Compiling module xil_defaultlib.modmul(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=28)
+Compiling module xil_defaultlib.moddiv_by_2(LOGQ=28,IS_Q_FIXED=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=28)
+Compiling module xil_defaultlib.shiftreg(DATA=1)
+Compiling module xil_defaultlib.shiftreg(DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=11,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=1)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=9,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=2)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=8,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=3)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.ntt_sdf_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=10,DATA=1)
+Compiling module xil_defaultlib.ntt_memory_wrapper_default
+Compiling module xil_defaultlib.ntt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ntt_tb_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 7175.957 ; gain = 0.000 ; free physical = 19517 ; free virtual = 28442
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ntt_tb_behav -key {Behavioral:sim_1:Functional:ntt_tb} -tclbatch {ntt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ntt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[INTT] test took                   78 cycles
+[INTT] test failed
+[FNTT] test took                   78 cycles
+[FNTT] test failed
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ntt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:25 . Memory (MB): peak = 7278.113 ; gain = 102.156 ; free physical = 19419 ; free virtual = 28369
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 7288.543 ; gain = 0.000 ; free physical = 19408 ; free virtual = 28360
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ntt_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj ntt_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+INFO: [VRFC 10-311] analyzing module modred_28
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v:138]
+WARNING: [VRFC 10-3091] actual bit length 56 differs from formal bit length 128 for port 'DATA_IN' [/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v:71]
+WARNING: [VRFC 10-3091] actual bit length 28 differs from formal bit length 64 for port 'DATA_OUT' [/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v:72]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tw_rom_0_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_0_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_1_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_1_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_2_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_2_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_3_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_3_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=15,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=0)
+Compiling module xil_defaultlib.modadd(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.modsub(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.shiftreg(SHIFT=5,DATA=28)
+Compiling module xil_defaultlib.csa_2(K=58)
+Compiling module xil_defaultlib.csa_tree(SIZE_I=57,DEPTH=3,SIZE_...
+Compiling module xil_defaultlib.csa_tree(SIZE_I=56,DEPTH=4,SIZE_...
+Compiling module xil_defaultlib.intmul(LOGQ=28)
+Compiling module xil_defaultlib.modred_64
+Compiling module xil_defaultlib.modmul(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=28)
+Compiling module xil_defaultlib.moddiv_by_2(LOGQ=28,IS_Q_FIXED=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=28)
+Compiling module xil_defaultlib.shiftreg(DATA=1)
+Compiling module xil_defaultlib.shiftreg(DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=11,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=1)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=9,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=2)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=8,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=3)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.ntt_sdf_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=10,DATA=1)
+Compiling module xil_defaultlib.ntt_memory_wrapper_default
+Compiling module xil_defaultlib.ntt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ntt_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 7288.543 ; gain = 0.000 ; free physical = 19392 ; free virtual = 28344
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 7288.543 ; gain = 0.000 ; free physical = 19392 ; free virtual = 28344
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+[INTT] test took                   78 cycles
+[INTT] test failed
+[FNTT] test took                   78 cycles
+[FNTT] test failed
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:49 . Memory (MB): peak = 7288.543 ; gain = 0.000 ; free physical = 19374 ; free virtual = 28327
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 7333.562 ; gain = 0.000 ; free physical = 19430 ; free virtual = 28360
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ntt_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj ntt_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitreverse
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dif_gs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dif_gs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dit_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dit_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_unified
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/fifo/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moddiv_by_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_rom_0_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_0_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_intt_nwc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/ntt_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_sdf_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/ntt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/tw_roms_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_roms_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/ntt_memory_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_memory_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_sdf_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_28
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v:138]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tw_rom_0_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_0_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_1_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_1_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_2_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_2_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_3_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_3_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=15,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=0)
+Compiling module xil_defaultlib.modadd(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.modsub(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.shiftreg(SHIFT=5,DATA=28)
+Compiling module xil_defaultlib.csa_2(K=58)
+Compiling module xil_defaultlib.csa_tree(SIZE_I=57,DEPTH=3,SIZE_...
+Compiling module xil_defaultlib.csa_tree(SIZE_I=56,DEPTH=4,SIZE_...
+Compiling module xil_defaultlib.intmul(LOGQ=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=28)
+Compiling module xil_defaultlib.modred_28
+Compiling module xil_defaultlib.modmul(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=28)
+Compiling module xil_defaultlib.moddiv_by_2(LOGQ=28,IS_Q_FIXED=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=28)
+Compiling module xil_defaultlib.shiftreg(DATA=1)
+Compiling module xil_defaultlib.shiftreg(DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=11,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=1)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=9,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=2)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=8,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=3)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.ntt_sdf_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=10,DATA=1)
+Compiling module xil_defaultlib.ntt_memory_wrapper_default
+Compiling module xil_defaultlib.ntt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ntt_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 7333.562 ; gain = 0.000 ; free physical = 19444 ; free virtual = 28373
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 7333.562 ; gain = 0.000 ; free physical = 19444 ; free virtual = 28373
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+[INTT] test took                   78 cycles
+[INTT] test failed
+[FNTT] test took                   78 cycles
+[FNTT] test failed
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:44 . Memory (MB): peak = 7370.555 ; gain = 36.992 ; free physical = 19374 ; free virtual = 28303
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 7403.816 ; gain = 0.000 ; free physical = 19358 ; free virtual = 28316
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ntt_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj ntt_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitreverse
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dif_gs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dif_gs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dit_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dit_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_unified
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/fifo/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moddiv_by_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_rom_0_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_0_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_intt_nwc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_28
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v:138]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tw_rom_0_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_0_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_1_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_1_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_2_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_2_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.tw_rom_3_ntt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_rom_3_intt_nwc(LOGN=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=15,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=0)
+Compiling module xil_defaultlib.modadd(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.modsub(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.shiftreg(SHIFT=5,DATA=28)
+Compiling module xil_defaultlib.csa_2(K=58)
+Compiling module xil_defaultlib.csa_tree(SIZE_I=57,DEPTH=3,SIZE_...
+Compiling module xil_defaultlib.csa_tree(SIZE_I=56,DEPTH=4,SIZE_...
+Compiling module xil_defaultlib.intmul(LOGQ=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=28)
+Compiling module xil_defaultlib.modred_28
+Compiling module xil_defaultlib.modmul(LOGQ=28,LOGN=4,Q=28'b01,D...
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=28)
+Compiling module xil_defaultlib.moddiv_by_2(LOGQ=28,IS_Q_FIXED=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=28)
+Compiling module xil_defaultlib.shiftreg(DATA=1)
+Compiling module xil_defaultlib.shiftreg(DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=11,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=1)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=9,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=2)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.shiftreg(SHIFT=8,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=3)
+Compiling module xil_defaultlib.btf_unified(LOGQ=28,LOGN=4,Q=28'...
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=4,Q=2...
+Compiling module xil_defaultlib.ntt_sdf_wrapper(LOGQ=28,LOGN=4,Q...
+Compiling module xil_defaultlib.shiftreg(SHIFT=10,DATA=1)
+Compiling module xil_defaultlib.ntt_memory_wrapper_default
+Compiling module xil_defaultlib.ntt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ntt_tb_behav
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 7403.816 ; gain = 0.000 ; free physical = 19348 ; free virtual = 28302
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 7403.816 ; gain = 0.000 ; free physical = 19348 ; free virtual = 28302
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+[INTT] test took                   78 cycles
+[INTT] test failed
+[FNTT] test took                   78 cycles
+[FNTT] test failed
+relaunch_sim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:45 . Memory (MB): peak = 7403.816 ; gain = 0.000 ; free physical = 19286 ; free virtual = 28249
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 7427.824 ; gain = 0.000 ; free physical = 19218 ; free virtual = 28176
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ntt_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj ntt_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v:138]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1

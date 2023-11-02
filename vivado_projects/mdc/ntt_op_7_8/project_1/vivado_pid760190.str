@@ -1,0 +1,569 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 760190
+License: Customer
+
+Current time: 	Thu Feb 02 15:06:40 CET 2023
+Time zone: 	Central European Standard Time (Europe/Vienna)
+
+OS: Ubuntu
+OS Version: 5.14.0-1056-oem
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 3840x2160
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 314 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	florian
+User home directory: /home/florian
+User working directory: /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.1
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/florian/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/florian/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/florian/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/vivado.log
+Vivado journal file location: 	/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-760190-x1g9
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@servitus.student.iaik.tugraz.at
+XILINX_DSP: /opt/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.1
+XILINX_SDK: /opt/Xilinx/SDK/2019.1
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.1
+XILINX_XRT: /opt/xilinx/xrt
+
+
+GUI allocated memory:	197 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 996 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 122 MB (+125591kb) [00:00:03]
+// [Engine Memory]: 883 MB (+774916kb) [00:00:03]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: project_1.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,053 MB (+131002kb) [00:00:06]
+// [GUI Memory]: 131 MB (+3058kb) [00:00:07]
+// [Engine Memory]: 1,108 MB (+2585kb) [00:00:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  1805 ms.
+// Tcl Message: open_project project_1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/florian/Desktop/proteus/mdc/ntt_op_5_6/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXI_Slave8Ports_new_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXI_Slave8Ports_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXIslave_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'. 
+// [Engine Memory]: 1,165 MB (+2140kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,169 MB. GUI used memory: 70 MB. Current time: 2/2/23, 3:06:43 PM CET
+// Project name: project_1; location: /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1; part: xc7z020clg400-1
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 1,251 MB (+29352kb) [00:00:13]
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,266 MB. GUI used memory: 71 MB. Current time: 2/2/23, 3:07:02 PM CET
+// Elapsed time: 366 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h (cS, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// by (cl):  Refresh Changed Modules : addNotify
+// Tcl Message: update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXI_Slave8Ports_new_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXI_Slave8Ports_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXIslave_1.0'. 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- tugraz.at:user:AXI_Slave8Ports_new:1.0 - AXI_Slave8Ports_new_0 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Adding component instance block -- xilinx.com:module_ref:ComputeCoreWrapper:1.0 - ComputeCoreWrapper_0 Successfully read diagram <cryptoprocessor> from BD file </home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Upgrading '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated cryptoprocessor_ComputeCoreWrapper_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd>  
+dismissDialog("Refresh Changed Modules"); // by (cl)
+// [Engine Memory]: 1,396 MB (+86343kb) [00:06:19]
+// [GUI Memory]: 144 MB (+6332kb) [00:06:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,339 MB. GUI used memory: 72 MB. Current time: 2/2/23, 3:12:58 PM CET
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "System Hierarchy_search"); // u (f, cl): TRUE
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cryptoprocessor_wrapper (cryptoprocessor_wrapper.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cryptoprocessor_wrapper (cryptoprocessor_wrapper.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_SYSTEM, "System"); // gl
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 0); // k (j, cl)
+// PAResourceOtoP.PAViews_ADDRESS_EDITOR: Address Editor: close view
+closeView(PAResourceOtoP.PAViews_ADDRESS_EDITOR, "Address Editor"); // c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cryptoprocessor_wrapper (cryptoprocessor_wrapper.v), cryptoprocessor_i : cryptoprocessor (cryptoprocessor.bd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cryptoprocessor_wrapper (cryptoprocessor_wrapper.v), cryptoprocessor_i : cryptoprocessor (cryptoprocessor.bd), cryptoprocessor_ComputeCoreWrapper_0_0 (Module Reference Wrapper), ComputeCoreWrapper (ComputeCoreWrapper.v), CORE : ComputeCore (ComputeCore.v)]", 5, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cryptoprocessor_wrapper (cryptoprocessor_wrapper.v), cryptoprocessor_i : cryptoprocessor (cryptoprocessor.bd), cryptoprocessor_ComputeCoreWrapper_0_0 (Module Reference Wrapper), ComputeCoreWrapper (ComputeCoreWrapper.v), CORE : ComputeCore (ComputeCore.v)]", 5, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v)]", 4, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v)]", 5, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v)]", 5, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v)]", 6, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v)]", 6, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v), genblk2[0].TW_ROM : tw_roms_wrapper (tw_roms_wrapper.v)]", 7, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v), genblk2[0].TW_ROM : tw_roms_wrapper (tw_roms_wrapper.v)]", 7, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v), genblk2[0].TW_ROM : tw_roms_wrapper (tw_roms_wrapper.v), tw_rom_11_ntt_ct (tw_roms.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v), genblk2[0].TW_ROM : tw_roms_wrapper (tw_roms_wrapper.v), tw_rom_1_ntt_ct (tw_roms.v)]", 18, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v), genblk2[0].TW_ROM : tw_roms_wrapper (tw_roms_wrapper.v), tw_rom_1_ntt_ct (tw_roms.v)]", 18, false, false, false, false, false, true); // B (F, cl) - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v)]", 6); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v)]", 6); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v), genblk2[0].TW_ROM : tw_roms_wrapper (tw_roms_wrapper.v)]", 7); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v), genblk3[0].NTT_MDC_STAGE : ntt_mdc_stage (sdf_stage.v)]", 11, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ntt_tb (ntt_tb.v), DUT_FNTT_MEM_WRAPPER : ntt_memory_wrapper (ntt_memory_wrapper.v), NTT_MDC_WRAPPER : ntt_mdc_wrapper (ntt_sdf_wrapper.v), genblk3[0].NTT_MDC_STAGE : ntt_mdc_stage (sdf_stage.v)]", 11, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("sdf_stage.v", 238, 249); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,407 MB. GUI used memory: 80 MB. Current time: 2/2/23, 3:13:33 PM CET
+selectCodeEditor("sdf_stage.v", 412, 249); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File]", 36, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File]", 36, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File, NTT_DOUT.mem]", 40, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File, NTT_DOUT.mem]", 40, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File, INTT_DIN.mem]", 37, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File, INTT_DIN.mem]", 37, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ComputeCore.v", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ntt_tb.v", 1); // k (j, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectCodeEditor("ntt_tb.v", 432, 237); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false, false, false, false, true, false); // u (O, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RESET_BEHAVIORAL, "Reset Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RESET_BEHAVIORAL
+// by (cl):  Reset Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RESET_SIM
+// TclEventType: LAUNCH_SIM
+// Tcl Message: reset_simulation -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-2266] Removing simulation data... INFO: [Vivado 12-2267] Reset complete 
+dismissDialog("Reset Simulation"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// Tcl Message: INFO: [Vivado 12-5457] ref source:/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/ip/INS_RAM/INS_RAM.xci 
+// Tcl Message: generate_target Simulation [get_files /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/ip/INS_RAM/INS_RAM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'INS_RAM'. Target already exists and is up to date. 
+// Tcl Message: INFO: [Vivado 12-5457] ref source:/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/ip/BRAM64_1024_1/BRAM64_1024.xci 
+// Tcl Message: generate_target Simulation [get_files /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/ip/BRAM64_1024_1/BRAM64_1024.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'BRAM64_1024'. Target already exists and is up to date. 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.sim/sim_1/behav/xsim' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,434 MB. GUI used memory: 81 MB. Current time: 2/2/23, 3:14:03 PM CET
+// Tcl Message: Built simulation snapshot ntt_tb_behav 
+// Tcl Message:  ****** Webtalk v2019.1 (64-bit)   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.  source /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Feb  2 15:14:05 2023. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html. INFO: [Common 17-206] Exiting Webtalk at Thu Feb  2 15:14:05 2023... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "ntt_tb_behav -key {Behavioral:sim_1:Functional:ntt_tb} -tclbatch {ntt_tb.tcl} -view {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2019.1 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [Engine Memory]: 1,477 MB (+11549kb) [00:07:32]
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,529 MB. GUI used memory: 150 MB. Current time: 2/2/23, 3:14:08 PM CET
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 2,075 MB (+549091kb) [00:07:33]
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg 
+// Tcl Message: source ntt_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 2000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'ntt_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 2000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 7502.281 ; gain = 668.973 ; free physical = 6109 ; free virtual = 23236 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (cl)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,081 MB. GUI used memory: 150 MB. Current time: 2/2/23, 3:14:14 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 801, 311); // n (o, cl)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,084 MB. GUI used memory: 136 MB. Current time: 2/2/23, 3:14:16 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,084 MB. GUI used memory: 142 MB. Current time: 2/2/23, 3:14:21 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 166 MB (+15231kb) [00:07:47]
+// [Engine Memory]: 2,322 MB (+150368kb) [00:07:47]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,813 MB. GUI used memory: 151 MB. Current time: 2/2/23, 3:14:22 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 2,930 MB (+515962kb) [00:07:47]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,041 MB. GUI used memory: 163 MB. Current time: 2/2/23, 3:14:23 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,270 MB. GUI used memory: 174 MB. Current time: 2/2/23, 3:14:24 PM CET
+// [GUI Memory]: 175 MB (+1451kb) [00:07:52]
+// [Engine Memory]: 3,270 MB (+202824kb) [00:07:52]
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ComputeCore.v", 0); // k (j, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("ComputeCore.v", 688, 1317); // cl (w, cl)
+typeControlKey((HResource) null, "ComputeCore.v", 'v'); // cl (w, cl)
+selectCodeEditor("ComputeCore.v", 191, 1031); // cl (w, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ntt_tb.v", 849, 1152); // cl (w, cl)
+selectCodeEditor("ntt_tb.v", 389, 908); // cl (w, cl)
+selectCodeEditor("ntt_tb.v", 704, 1111); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_tb.v", 'v'); // cl (w, cl)
+selectCodeEditor("ntt_tb.v", 198, 95); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,318 MB. GUI used memory: 115 MB. Current time: 2/2/23, 3:15:08 PM CET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ComputeCore.v", 0); // k (j, cl)
+selectCodeEditor("ComputeCore.v", 90, 1099); // cl (w, cl)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("ntt_tb.v", 73, 1216); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ntt_tb.v", 340, 1213); // cl (w, cl)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+selectCodeEditor("ntt_tb.v", 372, 1196); // cl (w, cl)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ntt_tb.v", 217, 688); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_tb.v", 'v'); // cl (w, cl)
+selectCodeEditor("ntt_tb.v", 186, 1228); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_tb.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ntt_memory_wrapper.v", 269, 316); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_memory_wrapper.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_memory_wrapper.v", 'c'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ntt_sdf_wrapper.v", 412, 302); // cl (w, cl)
+selectCodeEditor("ntt_sdf_wrapper.v", 398, 331); // cl (w, cl)
+selectCodeEditor("ntt_sdf_wrapper.v", 390, 319); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_sdf_wrapper.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tw_roms_wrapper.v", 400, 314); // cl (w, cl)
+typeControlKey((HResource) null, "tw_roms_wrapper.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("sdf_stage.v", 392, 314); // cl (w, cl)
+typeControlKey((HResource) null, "sdf_stage.v", 'v'); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("ntt_memory_wrapper.v", 200, 1280); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_memory_wrapper.v", 'v'); // cl (w, cl)
+selectCodeEditor("ntt_memory_wrapper.v", 1, 1012); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("ComputeCore.v", 266, 856); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ntt_sdf_wrapper.v", 62, 1164); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ntt_sdf_wrapper.v", 273, 1422); // cl (w, cl)
+selectCodeEditor("ntt_sdf_wrapper.v", 275, 1426); // cl (w, cl)
+selectCodeEditor("ntt_sdf_wrapper.v", 277, 1432); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_sdf_wrapper.v", 'v'); // cl (w, cl)
+selectCodeEditor("ntt_sdf_wrapper.v", 32, 1149); // cl (w, cl)
+selectCodeEditor("ntt_sdf_wrapper.v", 239, 1145); // cl (w, cl)
+selectCodeEditor("ntt_sdf_wrapper.v", 242, 1122, true, false, false, false, false); // cl (w, cl) - Shift Key
+typeControlKey((HResource) null, "ntt_sdf_wrapper.v", 'c'); // cl (w, cl)
+selectCodeEditor("ntt_sdf_wrapper.v", 308, 1229); // cl (w, cl)
+typeControlKey((HResource) null, "ntt_sdf_wrapper.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ntt_sdf_wrapper.v", 351, 1188); // cl (w, cl)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("tw_roms_wrapper.v", 149, 1585); // cl (w, cl)
+typeControlKey((HResource) null, "tw_roms_wrapper.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tw_roms_wrapper.v", 59, 1575); // cl (w, cl)
+selectCodeEditor("tw_roms_wrapper.v", 754, 492); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sdf_stage.v", 6); // k (j, cl)
+selectCodeEditor("sdf_stage.v", 152, 251); // cl (w, cl)
+selectCodeEditor("sdf_stage.v", 152, 251, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "sdf_stage.v", 'c'); // cl (w, cl)
+selectCodeEditor("sdf_stage.v", 1044, 514); // cl (w, cl)
+selectCodeEditor("sdf_stage.v", 499, 433); // cl (w, cl)
+selectCodeEditor("sdf_stage.v", 433, 449); // cl (w, cl)
+selectCodeEditor("sdf_stage.v", 717, 828); // cl (w, cl)
+selectCodeEditor("sdf_stage.v", 972, 969); // cl (w, cl)
+selectCodeEditor("sdf_stage.v", 403, 971); // cl (w, cl)
+typeControlKey((HResource) null, "sdf_stage.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("sdf_stage.v", 598, 941); // cl (w, cl)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+selectCodeEditor("sdf_stage.v", 661, 909); // cl (w, cl)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/tb_behav.wcfg} 
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 185 MB (+666kb) [00:11:34]
+selectCodeEditor("ntt_tb.v", 400, 161); // cl (w, cl)
+selectCodeEditor("ntt_tb.v", 385, 169); // cl (w, cl)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - ntt_tb", "DesignTask.SIMULATION");
+// by (cl):  Close : addNotify
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // by (cl)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h (cS, cl)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// by (cl):  Refresh Changed Modules : addNotify
+// Tcl Message: update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXI_Slave8Ports_new_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXI_Slave8Ports_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/ip_repo/AXIslave_1.0'. 
+// Tcl Message: Upgrading '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated cryptoprocessor_ComputeCoreWrapper_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd>  
+dismissDialog("Refresh Changed Modules"); // by (cl)
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // z (N, cl)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false, false, false, false, true, false); // u (O, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RESET_BEHAVIORAL, "Reset Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RESET_BEHAVIORAL
+// by (cl):  Reset Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RESET_SIM
+// TclEventType: LAUNCH_SIM
+// Tcl Message: reset_simulation -simset sim_1 -mode behavioral 
+// Tcl Message: INFO: [Vivado 12-2266] Removing simulation data... INFO: [Vivado 12-2267] Reset complete 
+dismissDialog("Reset Simulation"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cl):  Run Simulation : addNotify
+// Tcl Message: INFO: [Vivado 12-5457] ref source:/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/ip/INS_RAM/INS_RAM.xci 
+// Tcl Message: generate_target Simulation [get_files /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/ip/INS_RAM/INS_RAM.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'INS_RAM'. Target already exists and is up to date. 
+// Tcl Message: INFO: [Vivado 12-5457] ref source:/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/ip/BRAM64_1024_1/BRAM64_1024.xci 
+// Tcl Message: generate_target Simulation [get_files /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.srcs/sources_1/ip/BRAM64_1024_1/BRAM64_1024.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'BRAM64_1024'. Target already exists and is up to date. 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot ntt_tb_behav 
+// Tcl Message:  ****** Webtalk v2019.1 (64-bit)   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.  source /home/florian/Desktop/proteus/mdc/ntt_op_7_8/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/xsim_webtalk.tcl -notrace 

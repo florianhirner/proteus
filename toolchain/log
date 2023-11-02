@@ -1,0 +1,21 @@
+NTT_TYPE       : NORMAL
+RADIX2_TYPE    : MDC
+OP             : 3
+LOGN           : 12
+LOGQ           : 64
+REDUCTION_TYPE : MONTGOMERY
+
+Parameters:
+- n=4096
+- q=9223372036855300097
+- psi=7000248747822997178
+- psi_inv=4159809411629470058
+- w=7471113432342323446
+- w_inv=561937182808484582
+
+
+-------------------------------------------------
+Calculate NTT - OP=3: FNTT_DIT_NR - INTT_DIT_RN
+
+OP3...OK
+-------------------------------------------------

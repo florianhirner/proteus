@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+[INTT] test took                 8298 cycles
+[INTT] test passed
+[FNTT] test took                 8298 cycles
+[FNTT] test passed
+$finish called at time : 84015 ns : File "/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.srcs/sources_1/imports/op_1_2/ntt_tb.v" Line 223

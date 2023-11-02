@@ -1,0 +1,1240 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Feb  2 12:09:39 2023
+| Host         : x1g9 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_timing_summary -max_paths 10 -file cryptoprocessor_wrapper_timing_summary_routed.rpt -pb cryptoprocessor_wrapper_timing_summary_routed.pb -rpx cryptoprocessor_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : cryptoprocessor_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.833        0.000                      0                12264        0.013        0.000                      0                12264        3.750        0.000                       0                  8235  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0          0.833        0.000                      0                12264        0.013        0.000                      0                12264        3.750        0.000                       0                  8235  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.833ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.013ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.833ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[9]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.348ns  (logic 0.580ns (10.846%)  route 4.768ns (89.154%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.057ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.887ns = ( 12.887 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.756     7.157    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/Q[0]
+    SLICE_X103Y21        LUT4 (Prop_lut4_I2_O)        0.124     7.281 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_8__0/O
+                         net (fo=3, routed)           1.012     8.293    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[9]
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.708    12.887    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/CLK
+                         clock pessimism              0.115    13.002    
+                         clock uncertainty           -0.154    12.848    
+    DSP48_X4Y13          DSP48E1 (Setup_dsp48e1_CLK_A[9])
+                                                     -3.722     9.126    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]
+  -------------------------------------------------------------------
+                         required time                          9.126    
+                         arrival time                          -8.293    
+  -------------------------------------------------------------------
+                         slack                                  0.833    
+
+Slack (MET) :             0.925ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[0]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.255ns  (logic 0.580ns (11.036%)  route 4.675ns (88.964%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.057ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.887ns = ( 12.887 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.617     7.018    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/Q[0]
+    SLICE_X102Y19        LUT4 (Prop_lut4_I2_O)        0.124     7.142 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_17__0/O
+                         net (fo=3, routed)           1.059     8.200    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[0]
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.708    12.887    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/CLK
+                         clock pessimism              0.115    13.002    
+                         clock uncertainty           -0.154    12.848    
+    DSP48_X4Y13          DSP48E1 (Setup_dsp48e1_CLK_A[0])
+                                                     -3.722     9.126    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]
+  -------------------------------------------------------------------
+                         required time                          9.126    
+                         arrival time                          -8.200    
+  -------------------------------------------------------------------
+                         slack                                  0.925    
+
+Slack (MET) :             0.939ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[6]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.242ns  (logic 0.580ns (11.064%)  route 4.662ns (88.936%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.057ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.887ns = ( 12.887 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.792     7.193    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/Q[0]
+    SLICE_X102Y21        LUT4 (Prop_lut4_I2_O)        0.124     7.317 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_11__0/O
+                         net (fo=3, routed)           0.870     8.187    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[6]
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.708    12.887    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/CLK
+                         clock pessimism              0.115    13.002    
+                         clock uncertainty           -0.154    12.848    
+    DSP48_X4Y13          DSP48E1 (Setup_dsp48e1_CLK_A[6])
+                                                     -3.722     9.126    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]
+  -------------------------------------------------------------------
+                         required time                          9.126    
+                         arrival time                          -8.187    
+  -------------------------------------------------------------------
+                         slack                                  0.939    
+
+Slack (MET) :             0.940ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[2].MUL_reg[8]/A[4]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.108ns  (logic 0.580ns (11.354%)  route 4.528ns (88.646%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.075ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.755ns = ( 12.755 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.005     6.406    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[2].TW_ROM/Q[0]
+    SLICE_X7Y25          LUT4 (Prop_lut4_I2_O)        0.124     6.530 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[2].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_6__2/O
+                         net (fo=3, routed)           1.523     8.053    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[23]
+    DSP48_X2Y12          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[2].MUL_reg[8]/A[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.576    12.755    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X2Y12          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[2].MUL_reg[8]/CLK
+                         clock pessimism              0.115    12.870    
+                         clock uncertainty           -0.154    12.716    
+    DSP48_X2Y12          DSP48E1 (Setup_dsp48e1_CLK_A[4])
+                                                     -3.722     8.994    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[2].MUL_reg[8]
+  -------------------------------------------------------------------
+                         required time                          8.994    
+                         arrival time                          -8.053    
+  -------------------------------------------------------------------
+                         slack                                  0.940    
+
+Slack (MET) :             0.947ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[14]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.234ns  (logic 0.580ns (11.082%)  route 4.654ns (88.918%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.057ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.887ns = ( 12.887 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.720     7.121    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/Q[0]
+    SLICE_X103Y23        LUT4 (Prop_lut4_I2_O)        0.124     7.245 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_3__0/O
+                         net (fo=3, routed)           0.934     8.179    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[13]
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.708    12.887    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/CLK
+                         clock pessimism              0.115    13.002    
+                         clock uncertainty           -0.154    12.848    
+    DSP48_X4Y13          DSP48E1 (Setup_dsp48e1_CLK_A[14])
+                                                     -3.722     9.126    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]
+  -------------------------------------------------------------------
+                         required time                          9.126    
+                         arrival time                          -8.179    
+  -------------------------------------------------------------------
+                         slack                                  0.947    
+
+Slack (MET) :             0.965ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[0].MUL_reg[0]/B[4]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.273ns  (logic 0.580ns (10.999%)  route 4.693ns (89.001%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.072ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.758ns = ( 12.758 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.132     6.533    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[2].TW_ROM/Q[0]
+    SLICE_X7Y23          LUT4 (Prop_lut4_I2_O)        0.124     6.657 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[2].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_10__2/O
+                         net (fo=3, routed)           1.561     8.218    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[3]
+    DSP48_X2Y6           DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[0].MUL_reg[0]/B[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.579    12.758    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X2Y6           DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[0].MUL_reg[0]/CLK
+                         clock pessimism              0.115    12.873    
+                         clock uncertainty           -0.154    12.719    
+    DSP48_X2Y6           DSP48E1 (Setup_dsp48e1_CLK_B[4])
+                                                     -3.536     9.183    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[0].MUL_reg[0]
+  -------------------------------------------------------------------
+                         required time                          9.183    
+                         arrival time                          -8.218    
+  -------------------------------------------------------------------
+                         slack                                  0.965    
+
+Slack (MET) :             0.966ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]/B[8]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.406ns  (logic 0.580ns (10.728%)  route 4.826ns (89.272%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.063ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.893ns = ( 12.893 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.850     7.251    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[0].TW_ROM/data_out_reg[0]_1[0]
+    SLICE_X100Y20        LUT4 (Prop_lut4_I2_O)        0.124     7.375 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[0].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_8/O
+                         net (fo=3, routed)           0.977     8.351    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[23]
+    DSP48_X4Y3           DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]/B[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.714    12.893    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X4Y3           DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]/CLK
+                         clock pessimism              0.115    13.008    
+                         clock uncertainty           -0.154    12.854    
+    DSP48_X4Y3           DSP48E1 (Setup_dsp48e1_CLK_B[8])
+                                                     -3.536     9.318    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]
+  -------------------------------------------------------------------
+                         required time                          9.318    
+                         arrival time                          -8.351    
+  -------------------------------------------------------------------
+                         slack                                  0.966    
+
+Slack (MET) :             0.975ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]/A[8]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.200ns  (logic 0.580ns (11.154%)  route 4.620ns (88.846%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.051ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.881ns = ( 12.881 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.850     7.251    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[0].TW_ROM/data_out_reg[0]_1[0]
+    SLICE_X100Y20        LUT4 (Prop_lut4_I2_O)        0.124     7.375 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[0].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_8/O
+                         net (fo=3, routed)           0.770     8.145    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[23]
+    DSP48_X3Y7           DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]/A[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.702    12.881    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X3Y7           DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]/CLK
+                         clock pessimism              0.115    12.996    
+                         clock uncertainty           -0.154    12.842    
+    DSP48_X3Y7           DSP48E1 (Setup_dsp48e1_CLK_A[8])
+                                                     -3.722     9.120    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]
+  -------------------------------------------------------------------
+                         required time                          9.120    
+                         arrival time                          -8.145    
+  -------------------------------------------------------------------
+                         slack                                  0.975    
+
+Slack (MET) :             0.976ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[8]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.205ns  (logic 0.580ns (11.143%)  route 4.625ns (88.857%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.057ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.887ns = ( 12.887 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.627     7.028    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/Q[0]
+    SLICE_X102Y19        LUT4 (Prop_lut4_I2_O)        0.124     7.152 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_9__0/O
+                         net (fo=3, routed)           0.998     8.150    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[8]
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/A[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.708    12.887    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X4Y13          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/CLK
+                         clock pessimism              0.115    13.002    
+                         clock uncertainty           -0.154    12.848    
+    DSP48_X4Y13          DSP48E1 (Setup_dsp48e1_CLK_A[8])
+                                                     -3.722     9.126    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]
+  -------------------------------------------------------------------
+                         required time                          9.126    
+                         arrival time                          -8.150    
+  -------------------------------------------------------------------
+                         slack                                  0.976    
+
+Slack (MET) :             0.991ns  (required time - arrival time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]/A[8]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.196ns  (logic 0.580ns (11.162%)  route 4.616ns (88.838%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.894ns = ( 12.894 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.945ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.651     2.945    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/clk
+    SLICE_X47Y53         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y53         FDRE (Prop_fdre_C_Q)         0.456     3.401 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/command_reg0_reg[15]/Q
+                         net (fo=987, routed)         3.466     6.867    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/Q[0]
+    SLICE_X100Y20        LUT4 (Prop_lut4_I2_O)        0.124     6.991 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk2[3].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_8__0/O
+                         net (fo=3, routed)           1.151     8.141    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_b[23]
+    DSP48_X4Y17          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]/A[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        1.715    12.894    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk
+    DSP48_X4Y17          DSP48E1                                      r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]/CLK
+                         clock pessimism              0.115    13.009    
+                         clock uncertainty           -0.154    12.855    
+    DSP48_X4Y17          DSP48E1 (Setup_dsp48e1_CLK_A[8])
+                                                     -3.722     9.133    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]
+  -------------------------------------------------------------------
+                         required time                          9.133    
+                         arrival time                          -8.141    
+  -------------------------------------------------------------------
+                         slack                                  0.991    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.013ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][32]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[32]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.342ns  (logic 0.141ns (41.193%)  route 0.201ns (58.807%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.190ns
+    Source Clock Delay      (SCD):    0.896ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.560     0.896    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk
+    SLICE_X49Y41         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][32]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y41         FDRE (Prop_fdre_C_Q)         0.141     1.037 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][32]/Q
+                         net (fo=1, routed)           0.201     1.238    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/STAGE_OUT_DIV2[32]
+    SLICE_X53Y42         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[32]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.824     1.190    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/clk
+    SLICE_X53Y42         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[32]/C
+                         clock pessimism             -0.035     1.155    
+    SLICE_X53Y42         FDRE (Hold_fdre_C_D)         0.070     1.225    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[32]
+  -------------------------------------------------------------------
+                         required time                         -1.225    
+                         arrival time                           1.238    
+  -------------------------------------------------------------------
+                         slack                                  0.013    
+
+Slack (MET) :             0.025ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][46]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[46]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.357ns  (logic 0.141ns (39.524%)  route 0.216ns (60.476%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.191ns
+    Source Clock Delay      (SCD):    0.897ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.561     0.896    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk
+    SLICE_X49Y44         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][46]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y44         FDRE (Prop_fdre_C_Q)         0.141     1.038 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][46]/Q
+                         net (fo=1, routed)           0.216     1.253    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/STAGE_OUT_DIV2[46]
+    SLICE_X51Y45         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[46]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.825     1.191    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/clk
+    SLICE_X51Y45         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[46]/C
+                         clock pessimism             -0.035     1.156    
+    SLICE_X51Y45         FDRE (Hold_fdre_C_D)         0.072     1.228    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[46]
+  -------------------------------------------------------------------
+                         required time                         -1.228    
+                         arrival time                           1.253    
+  -------------------------------------------------------------------
+                         slack                                  0.025    
+
+Slack (MET) :             0.027ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][40]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[40]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.356ns  (logic 0.141ns (39.576%)  route 0.215ns (60.424%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.191ns
+    Source Clock Delay      (SCD):    0.897ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.561     0.896    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk
+    SLICE_X49Y43         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][40]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y43         FDRE (Prop_fdre_C_Q)         0.141     1.038 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][40]/Q
+                         net (fo=1, routed)           0.215     1.253    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/STAGE_OUT_DIV2[40]
+    SLICE_X52Y44         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[40]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.825     1.191    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/clk
+    SLICE_X52Y44         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[40]/C
+                         clock pessimism             -0.035     1.156    
+    SLICE_X52Y44         FDRE (Hold_fdre_C_D)         0.070     1.226    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[40]
+  -------------------------------------------------------------------
+                         required time                         -1.226    
+                         arrival time                           1.253    
+  -------------------------------------------------------------------
+                         slack                                  0.027    
+
+Slack (MET) :             0.028ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.359ns  (logic 0.141ns (39.245%)  route 0.218ns (60.755%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.190ns
+    Source Clock Delay      (SCD):    0.896ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.560     0.896    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk
+    SLICE_X49Y40         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y40         FDRE (Prop_fdre_C_Q)         0.141     1.037 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][31]/Q
+                         net (fo=1, routed)           0.218     1.255    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/STAGE_OUT_DIV2[31]
+    SLICE_X53Y40         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.824     1.190    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/clk
+    SLICE_X53Y40         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[31]/C
+                         clock pessimism             -0.035     1.155    
+    SLICE_X53Y40         FDRE (Hold_fdre_C_D)         0.072     1.227    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[31]
+  -------------------------------------------------------------------
+                         required time                         -1.227    
+                         arrival time                           1.255    
+  -------------------------------------------------------------------
+                         slack                                  0.028    
+
+Slack (MET) :             0.028ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][47]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[47]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.359ns  (logic 0.141ns (39.245%)  route 0.218ns (60.755%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.191ns
+    Source Clock Delay      (SCD):    0.897ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.561     0.896    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk
+    SLICE_X49Y44         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][47]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y44         FDRE (Prop_fdre_C_Q)         0.141     1.038 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][47]/Q
+                         net (fo=1, routed)           0.218     1.256    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/STAGE_OUT_DIV2[47]
+    SLICE_X53Y46         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[47]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.825     1.191    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/clk
+    SLICE_X53Y46         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[47]/C
+                         clock pessimism             -0.035     1.156    
+    SLICE_X53Y46         FDRE (Hold_fdre_C_D)         0.072     1.228    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[47]
+  -------------------------------------------------------------------
+                         required time                         -1.228    
+                         arrival time                           1.256    
+  -------------------------------------------------------------------
+                         slack                                  0.028    
+
+Slack (MET) :             0.029ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/ab_reg[58]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c_reg[58]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.403ns  (logic 0.186ns (46.127%)  route 0.217ns (53.873%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.254ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.211ns
+    Source Clock Delay      (SCD):    0.927ns
+    Clock Pessimism Removal (CPR):    0.030ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.591     0.927    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/clk
+    SLICE_X28Y48         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/ab_reg[58]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y48         FDRE (Prop_fdre_C_Q)         0.141     1.068 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/ab_reg[58]/Q
+                         net (fo=3, routed)           0.217     1.285    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/ab_reg_n_0_[58]
+    SLICE_X30Y50         LUT3 (Prop_lut3_I0_O)        0.045     1.330 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c[58]_i_1__1/O
+                         net (fo=1, routed)           0.000     1.330    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c[58]_i_1__1_n_0
+    SLICE_X30Y50         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c_reg[58]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.845     1.211    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/clk
+    SLICE_X30Y50         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c_reg[58]/C
+                         clock pessimism             -0.030     1.181    
+    SLICE_X30Y50         FDRE (Hold_fdre_C_D)         0.120     1.301    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c_reg[58]
+  -------------------------------------------------------------------
+                         required time                         -1.301    
+                         arrival time                           1.330    
+  -------------------------------------------------------------------
+                         slack                                  0.029    
+
+Slack (MET) :             0.032ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][38]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[38]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.364ns  (logic 0.141ns (38.739%)  route 0.223ns (61.261%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.260ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.191ns
+    Source Clock Delay      (SCD):    0.896ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.560     0.896    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk
+    SLICE_X49Y42         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][38]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y42         FDRE (Prop_fdre_C_Q)         0.141     1.037 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][38]/Q
+                         net (fo=1, routed)           0.223     1.259    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/STAGE_OUT_DIV2[38]
+    SLICE_X52Y43         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[38]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.825     1.191    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/clk
+    SLICE_X52Y43         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[38]/C
+                         clock pessimism             -0.035     1.156    
+    SLICE_X52Y43         FDRE (Hold_fdre_C_D)         0.072     1.228    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[38]
+  -------------------------------------------------------------------
+                         required time                         -1.228    
+                         arrival time                           1.259    
+  -------------------------------------------------------------------
+                         slack                                  0.032    
+
+Slack (MET) :             0.037ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/stage_in_reg_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.386ns  (logic 0.186ns (48.144%)  route 0.200ns (51.856%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.258ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.892ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.556     0.891    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/clk
+    SLICE_X48Y33         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y33         FDRE (Prop_fdre_C_Q)         0.141     1.033 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out_reg_reg[0]/Q
+                         net (fo=2, routed)           0.200     1.233    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_out[0]
+    SLICE_X53Y34         LUT3 (Prop_lut3_I0_O)        0.045     1.278 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/stage_in_reg[0]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.278    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/stage_in[0]
+    SLICE_X53Y34         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/stage_in_reg_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.819     1.185    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/clk
+    SLICE_X53Y34         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/stage_in_reg_reg[0]/C
+                         clock pessimism             -0.035     1.150    
+    SLICE_X53Y34         FDRE (Hold_fdre_C_D)         0.091     1.241    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/stage_in_reg_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.241    
+                         arrival time                           1.278    
+  -------------------------------------------------------------------
+                         slack                                  0.037    
+
+Slack (MET) :             0.039ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c_reg[32]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[8].shift_array_reg[9][32]_srl10/D
+                            (rising edge-triggered cell SRL16E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.400ns  (logic 0.186ns (46.498%)  route 0.214ns (53.502%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.190ns
+    Source Clock Delay      (SCD):    0.896ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.560     0.896    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/clk
+    SLICE_X48Y40         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c_reg[32]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y40         FDRE (Prop_fdre_C_Q)         0.141     1.037 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/c_reg[32]/Q
+                         net (fo=2, routed)           0.159     1.195    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/FIFO/DELAY_BLOCK[9].shift_array_reg[10][63][32]
+    SLICE_X51Y40         LUT4 (Prop_lut4_I2_O)        0.045     1.240 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/FIFO/DELAY_BLOCK[8].shift_array_reg[9][32]_srl10_i_1__0/O
+                         net (fo=1, routed)           0.055     1.296    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/BUF_IN[32]
+    SLICE_X50Y40         SRL16E                                       r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[8].shift_array_reg[9][32]_srl10/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.824     1.190    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/clk
+    SLICE_X50Y40         SRL16E                                       r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[8].shift_array_reg[9][32]_srl10/CLK
+                         clock pessimism             -0.035     1.155    
+    SLICE_X50Y40         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.102     1.257    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[8].shift_array_reg[9][32]_srl10
+  -------------------------------------------------------------------
+                         required time                         -1.257    
+                         arrival time                           1.296    
+  -------------------------------------------------------------------
+                         slack                                  0.039    
+
+Slack (MET) :             0.039ns  (arrival time - required time)
+  Source:                 cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/shift_array_reg[0][7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/DELAY_BLOCK[5].shift_array_reg[6][7]_srl6/D
+                            (rising edge-triggered cell SRL16E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.255ns  (logic 0.141ns (55.307%)  route 0.114ns (44.693%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.033ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.216ns
+    Source Clock Delay      (SCD):    0.920ns
+    Clock Pessimism Removal (CPR):    0.263ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.584     0.919    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/clk
+    SLICE_X81Y33         FDRE                                         r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/shift_array_reg[0][7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X81Y33         FDRE (Prop_fdre_C_Q)         0.141     1.061 r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/shift_array_reg[0][7]/Q
+                         net (fo=1, routed)           0.114     1.174    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/shift_array_reg[0]_37[7]
+    SLICE_X82Y32         SRL16E                                       r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/DELAY_BLOCK[5].shift_array_reg[6][7]_srl6/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    cryptoprocessor_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=8235, routed)        0.850     1.216    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/clk
+    SLICE_X82Y32         SRL16E                                       r  cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/DELAY_BLOCK[5].shift_array_reg[6][7]_srl6/CLK
+                         clock pessimism             -0.263     0.953    
+    SLICE_X82Y32         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.183     1.136    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/DELAY_BLOCK[5].shift_array_reg[6][7]_srl6
+  -------------------------------------------------------------------
+                         required time                         -1.135    
+                         arrival time                           1.174    
+  -------------------------------------------------------------------
+                         slack                                  0.039    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { cryptoprocessor_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X3Y9     cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/BR/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X3Y9     cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/BR/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X3Y10    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/BR/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X3Y10    cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/BR/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16  cryptoprocessor_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X4Y17     cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[2].MUL_reg[5]/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X4Y19     cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[0].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[3].genblk1[2].MUL_reg[11]/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X1Y4      cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X1Y12     cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         10.000      7.846      DSP48_X0Y10     cryptoprocessor_i/ComputeCoreWrapper_0/inst/CORE/DUT_NTT_MEM_WRAPPER/DUT_NTT/genblk3[2].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y54    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_15_17/RAMA/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y54    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_15_17/RAMB/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y54    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_15_17/RAMC/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y54    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_15_17/RAMD/CLK
+Low Pulse Width   Slow    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y50    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_24_26/RAMA/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y50    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_24_26/RAMA/CLK
+Low Pulse Width   Slow    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y50    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_24_26/RAMB/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y50    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_24_26/RAMB/CLK
+Low Pulse Width   Slow    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y50    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_24_26/RAMC/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X46Y50    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_24_26/RAMC/CLK
+High Pulse Width  Slow    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y52    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2/RAMA/CLK
+High Pulse Width  Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y52    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2/RAMA/CLK
+High Pulse Width  Slow    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y52    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2/RAMB/CLK
+High Pulse Width  Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y52    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2/RAMB/CLK
+High Pulse Width  Slow    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y52    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2/RAMC/CLK
+High Pulse Width  Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y52    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2/RAMC/CLK
+High Pulse Width  Slow    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y52    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2/RAMD/CLK
+High Pulse Width  Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y52    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2/RAMD/CLK
+High Pulse Width  Slow    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y53    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_12_14/RAMA/CLK
+High Pulse Width  Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X50Y53    cryptoprocessor_i/ComputeCoreWrapper_0/inst/ISA_CTRL/IR/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_12_14/RAMA/CLK
+
+
+

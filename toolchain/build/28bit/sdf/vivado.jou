@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb 13 09:33:22 2023
+# Process ID: 130878
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf
+# Command line: vivado
+# Log file: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op34/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ntt_tb.tcl
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+run 100 ms
+close_sim
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+close_project
+create_project project_1 /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op56/project_1 -part xc7vx485tffg1157-1
+add_files {/home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DOUT.mem /home/florian/Desktop/proteus/toolchain/hw/parameters.vh /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DOUT.mem}
+add_files {/home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v /home/florian/Desktop/proteus/toolchain/hw/common/intmul/intmul.sv /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_tb.sv /home/florian/Desktop/proteus/toolchain/hw/common/csa/csa_2.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/add_chunked.sv /home/florian/Desktop/proteus/toolchain/hw/common/fifo/fifo.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dif_gs.v /home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/int_mult_add.sv /home/florian/Desktop/proteus/toolchain/hw/common/csa/csa_tree.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_256bit.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_sub.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/csa_256.v /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dit_ct.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/sub_chunked.sv /home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_5_6/ntt_memory_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_5_6/ntt_tb.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_5_6/ntt_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_5_6/stage_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_5_6/tw_roms_wrapper.v}
+add_files -fileset constrs_1 -norecurse /home/florian/Desktop/proteus/toolchain/hw/const.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ntt_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ntt_memory_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source ntt_tb.tcl
+run all
+close_sim
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+close_project
+create_project project_1 /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op78/project_1 -part xc7vx485tffg1157-1
+add_files {/home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DOUT.mem /home/florian/Desktop/proteus/toolchain/hw/parameters.vh /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DOUT.mem}
+add_files {/home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/ntt_sdf_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/sdf_stage.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/ntt_memory_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/ntt_tb.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/tw_roms_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v /home/florian/Desktop/proteus/toolchain/hw/common/intmul/intmul.sv /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_tb.sv /home/florian/Desktop/proteus/toolchain/hw/common/csa/csa_2.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/add_chunked.sv /home/florian/Desktop/proteus/toolchain/hw/common/fifo/fifo.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dif_gs.v /home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/int_mult_add.sv /home/florian/Desktop/proteus/toolchain/hw/common/csa/csa_tree.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_256bit.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_sub.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/csa_256.v /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dit_ct.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/sub_chunked.sv /home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v}
+add_files -fileset constrs_1 -norecurse /home/florian/Desktop/proteus/toolchain/hw/const.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ntt_memory_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ntt_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source ntt_tb.tcl
+run all
+close_sim
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1

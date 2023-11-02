@@ -1,0 +1,1321 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Mon Feb  6 20:11:27 2023
+| Host         : x1g9 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_timing_summary -max_paths 10 -file ntt_memory_wrapper_timing_summary_routed.rpt -pb ntt_memory_wrapper_timing_summary_routed.pb -rpx ntt_memory_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : ntt_memory_wrapper
+| Device       : 7vx485t-ffg1157
+| Speed File   : -1  PRODUCTION 1.12 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 132 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 90 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.291        0.000                      0                20563        0.043        0.000                      0                20563        2.553        0.000                       0                 14129  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)         Period(ns)      Frequency(MHz)
+-----  ------------         ----------      --------------
+clk    {0.000 3.333}        6.667           149.992         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 0.291        0.000                      0                20563        0.043        0.000                      0                20563        2.553        0.000                       0                 14129  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.291ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.043ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        2.553ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.291ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[8].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][33]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[9].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]/A[9]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        3.288ns  (logic 0.414ns (12.592%)  route 2.874ns (87.408%))
+  Logic Levels:           2  (LUT3=1 LUT4=1)
+  Clock Path Skew:        0.101ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.285ns = ( 11.952 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.521ns
+    Clock Pessimism Removal (CPR):    0.338ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.050     5.521    DUT_NTT/genblk3[8].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk_IBUF_BUFG
+    SLICE_X62Y37         FDRE                                         r  DUT_NTT/genblk3[8].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][33]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y37         FDRE (Prop_fdre_C_Q)         0.308     5.829 r  DUT_NTT/genblk3[8].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][33]/Q
+                         net (fo=3, routed)           1.307     7.136    DUT_NTT/genblk3[10].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/Q[33]
+    SLICE_X41Y30         LUT3 (Prop_lut3_I1_O)        0.053     7.189 r  DUT_NTT/genblk3[10].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array[0][33]_i_1__3/O
+                         net (fo=4, routed)           0.407     7.596    DUT_NTT/genblk3[9].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/stage_din[9]_346[33]
+    SLICE_X41Y28         LUT4 (Prop_lut4_I1_O)        0.053     7.649 r  DUT_NTT/genblk3[9].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_15__8/O
+                         net (fo=4, routed)           1.159     8.809    DUT_NTT/genblk3[9].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[33]
+    DSP48_X3Y7           DSP48E1                                      r  DUT_NTT/genblk3[9].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]/A[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.063    11.952    DUT_NTT/genblk3[9].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X3Y7           DSP48E1                                      r  DUT_NTT/genblk3[9].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]/CLK
+                         clock pessimism              0.338    12.289    
+                         clock uncertainty           -0.035    12.254    
+    DSP48_X3Y7           DSP48E1 (Setup_dsp48e1_CLK_A[9])
+                                                     -3.154     9.100    DUT_NTT/genblk3[9].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]
+  -------------------------------------------------------------------
+                         required time                          9.100    
+                         arrival time                          -8.809    
+  -------------------------------------------------------------------
+                         slack                                  0.291    
+
+Slack (MET) :             0.442ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[11].NTT_SDF_STAGE/counter_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[11].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/B[11]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        3.237ns  (logic 0.361ns (11.154%)  route 2.876ns (88.846%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.044ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.379ns = ( 12.046 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.672ns
+    Clock Pessimism Removal (CPR):    0.338ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.201     5.672    DUT_NTT/genblk3[11].NTT_SDF_STAGE/clk_IBUF_BUFG
+    SLICE_X36Y10         FDRE                                         r  DUT_NTT/genblk3[11].NTT_SDF_STAGE/counter_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y10         FDRE (Prop_fdre_C_Q)         0.308     5.980 r  DUT_NTT/genblk3[11].NTT_SDF_STAGE/counter_reg[0]/Q
+                         net (fo=450, routed)         1.992     7.972    DUT_NTT/genblk3[11].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/out[0]
+    SLICE_X31Y49         LUT4 (Prop_lut4_I0_O)        0.053     8.025 r  DUT_NTT/genblk3[11].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_5__10/O
+                         net (fo=4, routed)           0.884     8.908    DUT_NTT/genblk3[11].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[59]
+    DSP48_X0Y14          DSP48E1                                      r  DUT_NTT/genblk3[11].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/B[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.157    12.046    DUT_NTT/genblk3[11].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X0Y14          DSP48E1                                      r  DUT_NTT/genblk3[11].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]/CLK
+                         clock pessimism              0.338    12.383    
+                         clock uncertainty           -0.035    12.348    
+    DSP48_X0Y14          DSP48E1 (Setup_dsp48e1_CLK_B[11])
+                                                     -2.997     9.351    DUT_NTT/genblk3[11].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[2].MUL_reg[2]
+  -------------------------------------------------------------------
+                         required time                          9.351    
+                         arrival time                          -8.908    
+  -------------------------------------------------------------------
+                         slack                                  0.442    
+
+Slack (MET) :             0.447ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[1].NTT_SDF_STAGE/counter_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[2].MUL_reg[8]/B[15]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        2.916ns  (logic 0.322ns (11.041%)  route 2.594ns (88.959%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.272ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.995ns = ( 11.662 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.528ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.057     5.528    DUT_NTT/genblk3[1].NTT_SDF_STAGE/clk_IBUF_BUFG
+    SLICE_X3Y66          FDRE                                         r  DUT_NTT/genblk3[1].NTT_SDF_STAGE/counter_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y66          FDRE (Prop_fdre_C_Q)         0.269     5.797 r  DUT_NTT/genblk3[1].NTT_SDF_STAGE/counter_reg[10]/Q
+                         net (fo=67, routed)          1.571     7.368    DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/O84[0]
+    SLICE_X32Y85         LUT4 (Prop_lut4_I0_O)        0.053     7.421 r  DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_1__4/O
+                         net (fo=4, routed)           1.024     8.444    DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[63]
+    DSP48_X0Y40          DSP48E1                                      r  DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[2].MUL_reg[8]/B[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.773    11.662    DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X0Y40          DSP48E1                                      r  DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[2].MUL_reg[8]/CLK
+                         clock pessimism              0.262    11.923    
+                         clock uncertainty           -0.035    11.888    
+    DSP48_X0Y40          DSP48E1 (Setup_dsp48e1_CLK_B[15])
+                                                     -2.997     8.891    DUT_NTT/genblk3[1].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[2].MUL_reg[8]
+  -------------------------------------------------------------------
+                         required time                          8.891    
+                         arrival time                          -8.444    
+  -------------------------------------------------------------------
+                         slack                                  0.447    
+
+Slack (MET) :             0.473ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT_SEL_OUT/DELAY_BLOCK[5].shift_array_reg[6][0]__0/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[4].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][61]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        6.314ns  (logic 1.014ns (16.059%)  route 5.300ns (83.941%))
+  Logic Levels:           5  (CARRY4=4 LUT6=1)
+  Clock Path Skew:        0.105ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.032ns = ( 11.699 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.263ns
+    Clock Pessimism Removal (CPR):    0.336ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.792     5.263    DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT_SEL_OUT/clk_IBUF_BUFG
+    SLICE_X92Y82         FDRE                                         r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT_SEL_OUT/DELAY_BLOCK[5].shift_array_reg[6][0]__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y82         FDRE (Prop_fdre_C_Q)         0.308     5.571 r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT_SEL_OUT/DELAY_BLOCK[5].shift_array_reg[6][0]__0/Q
+                         net (fo=189, routed)         5.300    10.871    DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/SEL_OUT
+    SLICE_X49Y83         LUT6 (Prop_lut6_I1_O)        0.053    10.924 r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array[0][51]_i_8__7/O
+                         net (fo=1, routed)           0.000    10.924    DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array[0][51]_i_8__7_n_0
+    SLICE_X49Y83         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.324    11.248 r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array_reg[0][51]_i_1__7/CO[3]
+                         net (fo=1, routed)           0.000    11.248    DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array_reg[0][51]_i_1__7_n_0
+    SLICE_X49Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.058    11.306 r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array_reg[0][55]_i_1__7/CO[3]
+                         net (fo=1, routed)           0.000    11.306    DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array_reg[0][55]_i_1__7_n_0
+    SLICE_X49Y85         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.058    11.364 r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array_reg[0][59]_i_1__7/CO[3]
+                         net (fo=1, routed)           0.000    11.364    DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array_reg[0][59]_i_1__7_n_0
+    SLICE_X49Y86         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.213    11.577 r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/SHIFT/shift_array_reg[0][63]_i_1__7/O[1]
+                         net (fo=1, routed)           0.000    11.577    DUT_NTT/genblk3[4].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/D[61]
+    SLICE_X49Y86         FDRE                                         r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][61]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.811    11.699    DUT_NTT/genblk3[4].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk_IBUF_BUFG
+    SLICE_X49Y86         FDRE                                         r  DUT_NTT/genblk3[4].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][61]/C
+                         clock pessimism              0.336    12.035    
+                         clock uncertainty           -0.035    11.999    
+    SLICE_X49Y86         FDRE (Setup_fdre_C_D)        0.051    12.050    DUT_NTT/genblk3[4].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][61]
+  -------------------------------------------------------------------
+                         required time                         12.050    
+                         arrival time                         -11.577    
+  -------------------------------------------------------------------
+                         slack                                  0.473    
+
+Slack (MET) :             0.485ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/counter_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/A[21]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        3.012ns  (logic 0.375ns (12.452%)  route 2.637ns (87.548%))
+  Logic Levels:           2  (LUT3=1 LUT4=1)
+  Clock Path Skew:        0.019ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.154ns = ( 11.821 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.472ns
+    Clock Pessimism Removal (CPR):    0.338ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.001     5.472    DUT_NTT/genblk3[7].NTT_SDF_STAGE/clk_IBUF_BUFG
+    SLICE_X80Y47         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/counter_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X80Y47         FDRE (Prop_fdre_C_Q)         0.269     5.741 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/counter_reg[4]/Q
+                         net (fo=131, routed)         0.957     6.698    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/out[0]
+    SLICE_X70Y45         LUT4 (Prop_lut4_I0_O)        0.053     6.751 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_ADD/genblk3[0].genblk1[1].MUL_reg[1]_i_27__4/O
+                         net (fo=3, routed)           0.343     7.094    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/BTF_IN[1]_385[45]
+    SLICE_X70Y45         LUT3 (Prop_lut3_I1_O)        0.053     7.147 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_3__0/O
+                         net (fo=4, routed)           1.337     8.483    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[45]
+    DSP48_X8Y17          DSP48E1                                      r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/A[21]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.932    11.821    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X8Y17          DSP48E1                                      r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/CLK
+                         clock pessimism              0.338    12.158    
+                         clock uncertainty           -0.035    12.123    
+    DSP48_X8Y17          DSP48E1 (Setup_dsp48e1_CLK_A[21])
+                                                     -3.154     8.969    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]
+  -------------------------------------------------------------------
+                         required time                          8.969    
+                         arrival time                          -8.483    
+  -------------------------------------------------------------------
+                         slack                                  0.485    
+
+Slack (MET) :             0.486ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][29]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]/A[5]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        2.679ns  (logic 0.322ns (12.018%)  route 2.357ns (87.982%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.313ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.948ns = ( 11.615 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.524ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.053     5.524    DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk_IBUF_BUFG
+    SLICE_X69Y47         FDRE                                         r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][29]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X69Y47         FDRE (Prop_fdre_C_Q)         0.269     5.793 r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][29]/Q
+                         net (fo=5, routed)           1.420     7.213    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[3].genblk1[2].MUL_reg[11][29]
+    SLICE_X92Y64         LUT6 (Prop_lut6_I2_O)        0.053     7.266 r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_19__1/O
+                         net (fo=4, routed)           0.937     8.203    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[29]
+    DSP48_X8Y31          DSP48E1                                      r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]/A[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.726    11.615    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X8Y31          DSP48E1                                      r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]/CLK
+                         clock pessimism              0.264    11.878    
+                         clock uncertainty           -0.035    11.843    
+    DSP48_X8Y31          DSP48E1 (Setup_dsp48e1_CLK_A[5])
+                                                     -3.154     8.689    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]
+  -------------------------------------------------------------------
+                         required time                          8.689    
+                         arrival time                          -8.203    
+  -------------------------------------------------------------------
+                         slack                                  0.486    
+
+Slack (MET) :             0.495ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][36]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]/A[12]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        2.670ns  (logic 0.322ns (12.059%)  route 2.348ns (87.941%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.313ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.948ns = ( 11.615 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.524ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.053     5.524    DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk_IBUF_BUFG
+    SLICE_X69Y49         FDRE                                         r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][36]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X69Y49         FDRE (Prop_fdre_C_Q)         0.269     5.793 r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][36]/Q
+                         net (fo=5, routed)           1.646     7.438    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[3].genblk1[2].MUL_reg[11][36]
+    SLICE_X99Y71         LUT6 (Prop_lut6_I2_O)        0.053     7.491 r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_12__1/O
+                         net (fo=4, routed)           0.703     8.194    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[36]
+    DSP48_X8Y28          DSP48E1                                      r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]/A[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.726    11.615    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X8Y28          DSP48E1                                      r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]/CLK
+                         clock pessimism              0.264    11.878    
+                         clock uncertainty           -0.035    11.843    
+    DSP48_X8Y28          DSP48E1 (Setup_dsp48e1_CLK_A[12])
+                                                     -3.154     8.689    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[0].genblk1[1].MUL_reg[1]
+  -------------------------------------------------------------------
+                         required time                          8.689    
+                         arrival time                          -8.194    
+  -------------------------------------------------------------------
+                         slack                                  0.495    
+
+Slack (MET) :             0.497ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[3].NTT_SDF_STAGE/counter_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/A[9]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        2.908ns  (logic 0.361ns (12.415%)  route 2.547ns (87.585%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.073ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.986ns = ( 11.653 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.320ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.849     5.320    DUT_NTT/genblk3[3].NTT_SDF_STAGE/clk_IBUF_BUFG
+    SLICE_X60Y67         FDRE                                         r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/counter_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y67         FDRE (Prop_fdre_C_Q)         0.308     5.628 r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/counter_reg[8]/Q
+                         net (fo=67, routed)          1.620     7.248    DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/O94[0]
+    SLICE_X44Y87         LUT4 (Prop_lut4_I0_O)        0.053     7.301 r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_15__6/O
+                         net (fo=4, routed)           0.927     8.228    DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[33]
+    DSP48_X2Y40          DSP48E1                                      r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/A[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.764    11.653    DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X2Y40          DSP48E1                                      r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/CLK
+                         clock pessimism              0.262    11.914    
+                         clock uncertainty           -0.035    11.879    
+    DSP48_X2Y40          DSP48E1 (Setup_dsp48e1_CLK_A[9])
+                                                     -3.154     8.725    DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]
+  -------------------------------------------------------------------
+                         required time                          8.725    
+                         arrival time                          -8.228    
+  -------------------------------------------------------------------
+                         slack                                  0.497    
+
+Slack (MET) :             0.501ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[3].NTT_SDF_STAGE/counter_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/A[16]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        2.904ns  (logic 0.361ns (12.430%)  route 2.543ns (87.570%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.073ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.986ns = ( 11.653 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.320ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.849     5.320    DUT_NTT/genblk3[3].NTT_SDF_STAGE/clk_IBUF_BUFG
+    SLICE_X60Y67         FDRE                                         r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/counter_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y67         FDRE (Prop_fdre_C_Q)         0.308     5.628 r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/counter_reg[8]/Q
+                         net (fo=67, routed)          1.582     7.210    DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/O94[0]
+    SLICE_X44Y88         LUT4 (Prop_lut4_I0_O)        0.053     7.263 r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_8__6/O
+                         net (fo=4, routed)           0.961     8.224    DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[40]
+    DSP48_X2Y40          DSP48E1                                      r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/A[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.764    11.653    DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X2Y40          DSP48E1                                      r  DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]/CLK
+                         clock pessimism              0.262    11.914    
+                         clock uncertainty           -0.035    11.879    
+    DSP48_X2Y40          DSP48E1 (Setup_dsp48e1_CLK_A[16])
+                                                     -3.154     8.725    DUT_NTT/genblk3[3].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[1].MUL_reg[7]
+  -------------------------------------------------------------------
+                         required time                          8.725    
+                         arrival time                          -8.224    
+  -------------------------------------------------------------------
+                         slack                                  0.501    
+
+Slack (MET) :             0.502ns  (required time - arrival time)
+  Source:                 DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][28]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]/A[4]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk rise@6.667ns - clk rise@0.000ns)
+  Data Path Delay:        2.663ns  (logic 0.322ns (12.091%)  route 2.341ns (87.909%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.313ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.948ns = ( 11.615 - 6.667 ) 
+    Source Clock Delay      (SCD):    5.524ns
+    Clock Pessimism Removal (CPR):    0.264ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.765     0.765 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.586     3.351    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.120     3.471 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       2.053     5.524    DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/clk_IBUF_BUFG
+    SLICE_X69Y47         FDRE                                         r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][28]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X69Y47         FDRE (Prop_fdre_C_Q)         0.269     5.793 r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/MODDIV_BY_2/BUFFER_DIV2/shift_array_reg[0][28]/Q
+                         net (fo=5, routed)           1.214     7.007    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[3].genblk1[2].MUL_reg[11][28]
+    SLICE_X76Y63         LUT6 (Prop_lut6_I2_O)        0.053     7.060 r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_20__1/O
+                         net (fo=4, routed)           1.127     8.187    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/in_a[28]
+    DSP48_X8Y31          DSP48E1                                      r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]/A[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        6.667     6.667 r  
+    AL31                                              0.000     6.667 r  clk (IN)
+                         net (fo=0)                   0.000     6.667    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.639     7.306 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.469     9.775    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.113     9.888 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.726    11.615    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/clk_IBUF_BUFG
+    DSP48_X8Y31          DSP48E1                                      r  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]/CLK
+                         clock pessimism              0.264    11.878    
+                         clock uncertainty           -0.035    11.843    
+    DSP48_X8Y31          DSP48E1 (Setup_dsp48e1_CLK_A[4])
+                                                     -3.154     8.689    DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[1].MUL_reg[4]
+  -------------------------------------------------------------------
+                         required time                          8.689    
+                         arrival time                          -8.187    
+  -------------------------------------------------------------------
+                         slack                                  0.502    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.043ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[62]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[62]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.381ns  (logic 0.179ns (47.005%)  route 0.202ns (52.995%))
+  Logic Levels:           2  (CARRY4=1 LUT3=1)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.525ns
+    Source Clock Delay      (SCD):    1.969ns
+    Clock Pessimism Removal (CPR):    0.289ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.691     1.969    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X63Y53         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[62]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y53         FDRE (Prop_fdre_C_Q)         0.100     2.069 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[62]/Q
+                         net (fo=2, routed)           0.202     2.271    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg_n_0_[62]
+    SLICE_X61Y49         LUT3 (Prop_lut3_I0_O)        0.028     2.299 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__14_i_2__4/O
+                         net (fo=1, routed)           0.000     2.299    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__14_i_2__4_n_0
+    SLICE_X61Y49         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.051     2.350 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__14/O[2]
+                         net (fo=1, routed)           0.000     2.350    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c0[62]
+    SLICE_X61Y49         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[62]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.006     2.525    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X61Y49         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[62]/C
+                         clock pessimism             -0.289     2.236    
+    SLICE_X61Y49         FDRE (Hold_fdre_C_D)         0.071     2.307    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[62]
+  -------------------------------------------------------------------
+                         required time                         -2.307    
+                         arrival time                           2.350    
+  -------------------------------------------------------------------
+                         slack                                  0.043    
+
+Slack (MET) :             0.044ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[50]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[50]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.179ns (47.079%)  route 0.201ns (52.921%))
+  Logic Levels:           2  (CARRY4=1 LUT3=1)
+  Clock Path Skew:        0.265ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.524ns
+    Source Clock Delay      (SCD):    1.970ns
+    Clock Pessimism Removal (CPR):    0.289ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.692     1.970    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X63Y50         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[50]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y50         FDRE (Prop_fdre_C_Q)         0.100     2.070 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[50]/Q
+                         net (fo=2, routed)           0.201     2.271    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg_n_0_[50]
+    SLICE_X61Y46         LUT3 (Prop_lut3_I0_O)        0.028     2.299 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__11_i_2__4/O
+                         net (fo=1, routed)           0.000     2.299    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__11_i_2__4_n_0
+    SLICE_X61Y46         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.051     2.350 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__11/O[2]
+                         net (fo=1, routed)           0.000     2.350    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c0[50]
+    SLICE_X61Y46         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[50]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.005     2.524    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X61Y46         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[50]/C
+                         clock pessimism             -0.289     2.235    
+    SLICE_X61Y46         FDRE (Hold_fdre_C_D)         0.071     2.306    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[50]
+  -------------------------------------------------------------------
+                         required time                         -2.306    
+                         arrival time                           2.350    
+  -------------------------------------------------------------------
+                         slack                                  0.044    
+
+Slack (MET) :             0.046ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[54]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[54]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.383ns  (logic 0.179ns (46.718%)  route 0.204ns (53.282%))
+  Logic Levels:           2  (CARRY4=1 LUT3=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.525ns
+    Source Clock Delay      (SCD):    1.970ns
+    Clock Pessimism Removal (CPR):    0.289ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.692     1.970    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X63Y51         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[54]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y51         FDRE (Prop_fdre_C_Q)         0.100     2.070 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[54]/Q
+                         net (fo=2, routed)           0.204     2.274    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg_n_0_[54]
+    SLICE_X61Y47         LUT3 (Prop_lut3_I0_O)        0.028     2.302 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__12_i_2__4/O
+                         net (fo=1, routed)           0.000     2.302    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__12_i_2__4_n_0
+    SLICE_X61Y47         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.051     2.353 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__12/O[2]
+                         net (fo=1, routed)           0.000     2.353    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c0[54]
+    SLICE_X61Y47         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.006     2.525    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X61Y47         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[54]/C
+                         clock pessimism             -0.289     2.236    
+    SLICE_X61Y47         FDRE (Hold_fdre_C_D)         0.071     2.307    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[54]
+  -------------------------------------------------------------------
+                         required time                         -2.307    
+                         arrival time                           2.353    
+  -------------------------------------------------------------------
+                         slack                                  0.046    
+
+Slack (MET) :             0.059ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[7].shift_array_reg[8][59]__0/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][59]_srl6/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.227ns  (logic 0.118ns (52.062%)  route 0.109ns (47.938%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.451ns
+    Source Clock Delay      (SCD):    1.968ns
+    Clock Pessimism Removal (CPR):    0.469ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.690     1.968    DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT_REG/clk_IBUF_BUFG
+    SLICE_X66Y54         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[7].shift_array_reg[8][59]__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X66Y54         FDRE (Prop_fdre_C_Q)         0.118     2.086 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[7].shift_array_reg[8][59]__0/Q
+                         net (fo=2, routed)           0.109     2.195    DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[7].shift_array_reg[8]_35[59]
+    SLICE_X66Y55         SRL16E                                       r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][59]_srl6/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.932     2.451    DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/clk_IBUF_BUFG
+    SLICE_X66Y55         SRL16E                                       r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][59]_srl6/CLK
+                         clock pessimism             -0.469     1.982    
+    SLICE_X66Y55         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.154     2.136    DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][59]_srl6
+  -------------------------------------------------------------------
+                         required time                         -2.136    
+                         arrival time                           2.195    
+  -------------------------------------------------------------------
+                         slack                                  0.059    
+
+Slack (MET) :             0.061ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/shift_array_reg[0][23]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[1].shift_array_reg[2][23]_srl2/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.190ns  (logic 0.091ns (47.978%)  route 0.099ns (52.022%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.605ns
+    Source Clock Delay      (SCD):    2.103ns
+    Clock Pessimism Removal (CPR):    0.491ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.825     2.103    DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/clk_IBUF_BUFG
+    SLICE_X37Y35         FDRE                                         r  DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/shift_array_reg[0][23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y35         FDRE (Prop_fdre_C_Q)         0.091     2.194 r  DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/shift_array_reg[0][23]/Q
+                         net (fo=1, routed)           0.099     2.293    DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/shift_array_reg_n_0_[0][23]
+    SLICE_X36Y35         SRL16E                                       r  DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[1].shift_array_reg[2][23]_srl2/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.086     2.605    DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/clk_IBUF_BUFG
+    SLICE_X36Y35         SRL16E                                       r  DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[1].shift_array_reg[2][23]_srl2/CLK
+                         clock pessimism             -0.491     2.114    
+    SLICE_X36Y35         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.118     2.232    DUT_NTT/genblk3[9].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[1].shift_array_reg[2][23]_srl2
+  -------------------------------------------------------------------
+                         required time                         -2.232    
+                         arrival time                           2.293    
+  -------------------------------------------------------------------
+                         slack                                  0.061    
+
+Slack (MET) :             0.062ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[7].shift_array_reg[8][11]__0/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][11]_srl6/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.231ns  (logic 0.118ns (51.052%)  route 0.113ns (48.948%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.525ns
+    Source Clock Delay      (SCD):    2.022ns
+    Clock Pessimism Removal (CPR):    0.488ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.744     2.022    DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT_REG/clk_IBUF_BUFG
+    SLICE_X58Y42         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[7].shift_array_reg[8][11]__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y42         FDRE (Prop_fdre_C_Q)         0.118     2.140 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[7].shift_array_reg[8][11]__0/Q
+                         net (fo=2, routed)           0.113     2.253    DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[7].shift_array_reg[8]_35[11]
+    SLICE_X58Y43         SRL16E                                       r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][11]_srl6/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.006     2.525    DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/clk_IBUF_BUFG
+    SLICE_X58Y43         SRL16E                                       r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][11]_srl6/CLK
+                         clock pessimism             -0.488     2.037    
+    SLICE_X58Y43         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.154     2.191    DUT_NTT/genblk3[7].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][11]_srl6
+  -------------------------------------------------------------------
+                         required time                         -2.191    
+                         arrival time                           2.253    
+  -------------------------------------------------------------------
+                         slack                                  0.062    
+
+Slack (MET) :             0.065ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[55].shift_array_reg[56][47]__0/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][47]_srl6/D
+                            (rising edge-triggered cell SRL16E clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.230ns  (logic 0.118ns (51.242%)  route 0.112ns (48.758%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.411ns
+    Source Clock Delay      (SCD):    1.932ns
+    Clock Pessimism Removal (CPR):    0.468ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.654     1.932    DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT_REG/clk_IBUF_BUFG
+    SLICE_X72Y81         FDRE                                         r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[55].shift_array_reg[56][47]__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X72Y81         FDRE (Prop_fdre_C_Q)         0.118     2.050 r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT_REG/DELAY_BLOCK[55].shift_array_reg[56][47]__0/Q
+                         net (fo=4, routed)           0.112     2.162    DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[55].shift_array_reg[56]_30[47]
+    SLICE_X72Y80         SRL16E                                       r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][47]_srl6/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.892     2.411    DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT/clk_IBUF_BUFG
+    SLICE_X72Y80         SRL16E                                       r  DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][47]_srl6/CLK
+                         clock pessimism             -0.468     1.943    
+    SLICE_X72Y80         SRL16E (Hold_srl16e_CLK_D)
+                                                      0.154     2.097    DUT_NTT/genblk3[5].NTT_SDF_STAGE/SHIFT/DELAY_BLOCK[4].shift_array_reg[5][47]_srl6
+  -------------------------------------------------------------------
+                         required time                         -2.097    
+                         arrival time                           2.162    
+  -------------------------------------------------------------------
+                         slack                                  0.065    
+
+Slack (MET) :             0.067ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[62]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[63]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.405ns  (logic 0.203ns (50.147%)  route 0.202ns (49.853%))
+  Logic Levels:           2  (CARRY4=1 LUT3=1)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.525ns
+    Source Clock Delay      (SCD):    1.969ns
+    Clock Pessimism Removal (CPR):    0.289ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.691     1.969    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X63Y53         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[62]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y53         FDRE (Prop_fdre_C_Q)         0.100     2.069 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[62]/Q
+                         net (fo=2, routed)           0.202     2.271    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg_n_0_[62]
+    SLICE_X61Y49         LUT3 (Prop_lut3_I0_O)        0.028     2.299 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__14_i_2__4/O
+                         net (fo=1, routed)           0.000     2.299    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__14_i_2__4_n_0
+    SLICE_X61Y49         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.075     2.374 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__14/O[3]
+                         net (fo=1, routed)           0.000     2.374    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c0[63]
+    SLICE_X61Y49         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[63]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.006     2.525    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X61Y49         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[63]/C
+                         clock pessimism             -0.289     2.236    
+    SLICE_X61Y49         FDRE (Hold_fdre_C_D)         0.071     2.307    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[63]
+  -------------------------------------------------------------------
+                         required time                         -2.307    
+                         arrival time                           2.374    
+  -------------------------------------------------------------------
+                         slack                                  0.067    
+
+Slack (MET) :             0.068ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[50]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[51]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.404ns  (logic 0.203ns (50.221%)  route 0.201ns (49.779%))
+  Logic Levels:           2  (CARRY4=1 LUT3=1)
+  Clock Path Skew:        0.265ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.524ns
+    Source Clock Delay      (SCD):    1.970ns
+    Clock Pessimism Removal (CPR):    0.289ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.692     1.970    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X63Y50         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[50]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y50         FDRE (Prop_fdre_C_Q)         0.100     2.070 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[50]/Q
+                         net (fo=2, routed)           0.201     2.271    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg_n_0_[50]
+    SLICE_X61Y46         LUT3 (Prop_lut3_I0_O)        0.028     2.299 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__11_i_2__4/O
+                         net (fo=1, routed)           0.000     2.299    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__11_i_2__4_n_0
+    SLICE_X61Y46         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.075     2.374 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__11/O[3]
+                         net (fo=1, routed)           0.000     2.374    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c0[51]
+    SLICE_X61Y46         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[51]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.005     2.524    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X61Y46         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[51]/C
+                         clock pessimism             -0.289     2.235    
+    SLICE_X61Y46         FDRE (Hold_fdre_C_D)         0.071     2.306    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[51]
+  -------------------------------------------------------------------
+                         required time                         -2.306    
+                         arrival time                           2.374    
+  -------------------------------------------------------------------
+                         slack                                  0.068    
+
+Slack (MET) :             0.070ns  (arrival time - required time)
+  Source:                 DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[54]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[55]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.407ns  (logic 0.203ns (49.859%)  route 0.204ns (50.141%))
+  Logic Levels:           2  (CARRY4=1 LUT3=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.525ns
+    Source Clock Delay      (SCD):    1.970ns
+    Clock Pessimism Removal (CPR):    0.289ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.165     0.165 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.087     1.252    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.278 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       0.692     1.970    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X63Y51         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[54]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y51         FDRE (Prop_fdre_C_Q)         0.100     2.070 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg[54]/Q
+                         net (fo=2, routed)           0.204     2.274    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_reg_n_0_[54]
+    SLICE_X61Y47         LUT3 (Prop_lut3_I0_O)        0.028     2.302 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__12_i_2__4/O
+                         net (fo=1, routed)           0.000     2.302    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__12_i_2__4_n_0
+    SLICE_X61Y47         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.075     2.377 r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/ab_pq_carry__12/O[3]
+                         net (fo=1, routed)           0.000     2.377    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c0[55]
+    SLICE_X61Y47         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[55]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AL31                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AL31                 IBUF (Prop_ibuf_I_O)         0.332     0.332 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.157     1.489    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030     1.519 r  clk_IBUF_BUFG_inst/O
+                         net (fo=14128, routed)       1.006     2.525    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/clk_IBUF_BUFG
+    SLICE_X61Y47         FDRE                                         r  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[55]/C
+                         clock pessimism             -0.289     2.236    
+    SLICE_X61Y47         FDRE (Hold_fdre_C_D)         0.071     2.307    DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/MOD_SUB/c_reg[55]
+  -------------------------------------------------------------------
+                         required time                         -2.307    
+                         arrival time                           2.377    
+  -------------------------------------------------------------------
+                         slack                                  0.070    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 3.333 }
+Period(ns):         6.667
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.495         6.667       4.172      RAMB36_X2Y13  DUT_NTT/genblk3[1].NTT_SDF_STAGE/FIFO/fifo_reg_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.495         6.667       4.172      RAMB36_X2Y14  DUT_NTT/genblk3[1].NTT_SDF_STAGE/FIFO/fifo_reg_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.495         6.667       4.172      RAMB36_X1Y3   DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/fifo_reg_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.495         6.667       4.172      RAMB36_X1Y4   DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/fifo_reg_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.495         6.667       4.172      RAMB36_X4Y6   DUT_NTT/genblk3[2].NTT_SDF_STAGE/FIFO/fifo_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.495         6.667       4.172      RAMB36_X4Y6   DUT_NTT/genblk3[2].NTT_SDF_STAGE/FIFO/fifo_reg/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.495         6.667       4.172      RAMB36_X1Y5   DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/fifo_reg_2/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.495         6.667       4.172      RAMB36_X1Y6   DUT_NTT/genblk3[0].NTT_SDF_STAGE/FIFO/fifo_reg_3/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.495         6.667       4.172      RAMB36_X4Y16  DUT_NTT/genblk3[3].NTT_SDF_STAGE/FIFO/fifo_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.495         6.667       4.172      RAMB36_X4Y16  DUT_NTT/genblk3[3].NTT_SDF_STAGE/FIFO/fifo_reg/CLKBWRCLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X62Y65  DUT_NTT/genblk3[8].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][48]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X62Y65  DUT_NTT/genblk3[8].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][49]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X62Y65  DUT_NTT/genblk3[8].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][50]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X62Y65  DUT_NTT/genblk3[8].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][51]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X62Y65  DUT_NTT/genblk3[8].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][52]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X62Y65  DUT_NTT/genblk3[8].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][53]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X62Y65  DUT_NTT/genblk3[8].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][54]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X62Y65  DUT_NTT/genblk3[8].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][55]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X94Y74  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][56]_srl4/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X94Y74  DUT_NTT/genblk3[6].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][57]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X48Y67  DELAY_START/DELAY_BLOCK[7].shift_array_reg[8][0]_srl8/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X58Y44  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][24]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X58Y44  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][25]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X58Y44  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][26]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X58Y44  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][27]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X58Y44  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][28]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X58Y44  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][29]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X58Y44  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][30]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X58Y44  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][31]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.780         3.333       2.553      SLICE_X66Y47  DUT_NTT/genblk3[7].NTT_SDF_STAGE/BTF_UNIFIED/SHIFT_A/DELAY_BLOCK[2].shift_array_reg[3][32]_srl4/CLK
+
+
+

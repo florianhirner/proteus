@@ -1,0 +1,7 @@
+Running: xsim.dir/ntt_tb_behav/xsimk -simmode gui -wdb ntt_tb_behav.wdb -simrunnum 0 -socket 60647
+Design successfully loaded
+Design Loading Memory Usage: 39332 KB (Peak: 39332 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 126544 KB (Peak: 178600 KB)
+Simulation CPU Usage: 1240 ms

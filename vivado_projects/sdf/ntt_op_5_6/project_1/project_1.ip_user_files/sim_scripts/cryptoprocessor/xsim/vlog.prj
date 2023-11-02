@@ -1,0 +1,12 @@
+verilog xil_defaultlib --include "../../../../project_1.srcs/sources_1/bd/cryptoprocessor/ipshared/ec67/hdl" --include "../../../../project_1.srcs/sources_1/bd/cryptoprocessor/ipshared/8c62/hdl" --include "../../../../project_1.srcs/sources_1/bd/cryptoprocessor/ip/cryptoprocessor_processing_system7_0_0" \
+"../../../bd/cryptoprocessor/ip/cryptoprocessor_processing_system7_0_0/sim/cryptoprocessor_processing_system7_0_0.v" \
+"../../../bd/cryptoprocessor/ipshared/b70b/hdl/AXI_Slave8Ports_new_v1_0_S00_AXI.v" \
+"../../../bd/cryptoprocessor/ipshared/b70b/hdl/AXI_Slave8Ports_new_v1_0.v" \
+"../../../bd/cryptoprocessor/ip/cryptoprocessor_AXI_Slave8Ports_new_0_0/sim/cryptoprocessor_AXI_Slave8Ports_new_0_0.v" \
+"../../../bd/cryptoprocessor/ip/cryptoprocessor_ComputeCoreWrapper_0_0/sim/cryptoprocessor_ComputeCoreWrapper_0_0.v" \
+"../../../bd/cryptoprocessor/ip/cryptoprocessor_auto_pc_0/sim/cryptoprocessor_auto_pc_0.v" \
+"../../../bd/cryptoprocessor/sim/cryptoprocessor.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb  6 19:07:48 2023
+# Process ID: 1730448
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2
+# Command line: vivado -source proteus_sdf_op_1_2.xpr
+# Log file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project proteus_sdf_op_1_2.xpr
+update_compile_order -fileset sources_1
+import_files {/home/florian/Desktop/proteus/toolchain/hw/sdf/op_1_2/tw_roms_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_1_2/stage_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_1_2/ntt_memory_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_1_2/ntt_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/sdf/op_1_2/ntt_tb.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DIN.mem] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DOUT.mem] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DIN.mem] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DOUT.mem] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {/home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DOUT.mem /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DOUT.mem}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {/home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DOUT.mem /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DOUT.mem}
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/top/ntt_memory_wrapper.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/top/ntt_tb.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/top/ntt_wrapper.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/top/stage_wrapper.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/florian/Desktop/proteus/toolchain/hw/top/tw_roms_wrapper.v] -no_script -reset -force -quiet
+remove_files  {/home/florian/Desktop/proteus/toolchain/hw/top/ntt_memory_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/top/ntt_tb.v /home/florian/Desktop/proteus/toolchain/hw/top/ntt_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/top/stage_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/top/tw_roms_wrapper.v}
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source ntt_tb.tcl
+run all
+close_sim
+create_run synth_2 -flow {Vivado Synthesis 2019}
+create_run impl_2 -parent_run synth_2 -flow {Vivado Implementation 2019}
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/fhirner/Desktop/proteus/vivado_projects/mdc/ntt_op_7_8/Verilog_src/ntt/ntt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_tb
+WARNING: [VRFC 10-3380] identifier 'TYPE_RED' is used before its declaration [/home/fhirner/Desktop/proteus/vivado_projects/mdc/ntt_op_7_8/Verilog_src/ntt/ntt_tb.v:8]
+WARNING: [VRFC 10-3380] identifier 'TYPE_RED' is used before its declaration [/home/fhirner/Desktop/proteus/vivado_projects/mdc/ntt_op_7_8/Verilog_src/ntt/ntt_tb.v:14]

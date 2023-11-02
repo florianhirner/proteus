@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 12 19:35:52 2023
+# Process ID: 28285
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1
+# Command line: vivado -source proteus_sdf_op_1_2.xpr
+# Log file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project proteus_sdf_op_1_2.xpr
+add_files -norecurse /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+launch_simulation
+source ntt_tb.tcl
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim

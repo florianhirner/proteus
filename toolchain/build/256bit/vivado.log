@@ -1,0 +1,217 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 12 21:52:58 2023
+# Process ID: 80169
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/256bit
+# Command line: vivado
+# Log file: /home/florian/Desktop/proteus/toolchain/build/256bit/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/256bit/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.xpr
+INFO: [Project 1-313] Project file moved from '/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ntt_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj ntt_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitreverse
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_unified
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moddiv_by_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_28
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_memory_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_memory_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_mdc_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/stage_wapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_mdc_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_rom_0_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_0_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_intt_nwc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/tw_roms_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_roms_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/int_mult_add.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module int_mult_add
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/intmul/intmul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intmul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wlmont
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_sub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wlmont_sub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim'
+xelab -wto a686e0842847438bb3afe2fd4aff6f1f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto a686e0842847438bb3afe2fd4aff6f1f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/stage_wapper.v:165]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=512,DEPTH=176,SIZE_O=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=513,DEPTH=118,SIZE_O=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=520) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=514,DEPTH=79,SIZE_O=520) doesn't have a timescale but at least one module in design has a timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4099' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:01:24 ; elapsed = 00:36:54 . Memory (MB): peak = 6744.000 ; gain = 13.148 ; free physical = 19192 ; free virtual = 28231
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:01:25 ; elapsed = 00:36:55 . Memory (MB): peak = 6744.000 ; gain = 13.148 ; free physical = 19192 ; free virtual = 28231
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Sun Feb 12 22:35:22 2023] Launched synth_1...
+Run output will be captured here: /home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.runs/synth_1/runme.log
+[Sun Feb 12 22:35:22 2023] Launched impl_1...
+Run output will be captured here: /home/florian/Desktop/proteus/toolchain/build/256bit/sdf_nwc_op_1/sdf_nwc_op_1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 13 08:23:11 2023...

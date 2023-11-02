@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 12 20:20:20 2023
+# Process ID: 38182
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1
+# Command line: vivado -source proteus_sdf_op_1_2.xpr
+# Log file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project proteus_sdf_op_1_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ntt_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/INTT_DOUT.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DIN.mem'
+INFO: [SIM-utils-43] Exported '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/NTT_DOUT.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj ntt_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 37b0fe42c6c547ceaaac991d375c6a73 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/nwc_op_1/stage_wrapper.v:138]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/florian/Desktop/proteus/toolchain/build/proteus_sdf_nwc_op_1/proteus_sdf_op_1_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ntt_tb_behav -key {Behavioral:sim_1:Functional:ntt_tb} -tclbatch {ntt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ntt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+[INTT] test took                   78 cycles
+[INTT] test failed
+[FNTT] test took                   78 cycles
+[FNTT] test failed
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ntt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 6849.188 ; gain = 151.633 ; free physical = 19360 ; free virtual = 28329
+close_sim
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 6849.188 ; gain = 0.000 ; free physical = 19353 ; free virtual = 28327
+INFO: [Common 17-344] 'close_sim' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 12 20:21:43 2023...

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Wed May 23 10:04:46 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="f80dd786f9c349708854ae5df2edfb3b" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="2" type="JavaHandler"/>
+<property name="CreateBlockDesign" value="2" type="JavaHandler"/>
+<property name="CreateTopHDL" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="IPPackagerHandler" value="1" type="JavaHandler"/>
+<property name="IPPackagerWizardHandler" value="2" type="JavaHandler"/>
+<property name="ToolsSettings" value="2" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Handlers">
+<property name="BaseDialog_APPLY" value="1" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="3" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="13" type="GuiHandlerData"/>
+<property name="BoardChooser_BOARD_TABLE" value="4" type="GuiHandlerData"/>
+<property name="BoardChooser_NAME" value="4" type="GuiHandlerData"/>
+<property name="CmdMsgDialog_OK" value="2" type="GuiHandlerData"/>
+<property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="8" type="GuiHandlerData"/>
+<property name="CreateNewDiagramDialog_DESIGN_NAME" value="2" type="GuiHandlerData"/>
+<property name="CreateSrcFileDialog_FILE_NAME" value="1" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="10" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="6" type="GuiHandlerData"/>
+<property name="MainMenuMgr_TOOLS" value="4" type="GuiHandlerData"/>
+<property name="NewIpWizard_ADD_NEW_INTERFACE" value="2" type="GuiHandlerData"/>
+<property name="NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4" value="2" type="GuiHandlerData"/>
+<property name="NewIpWizard_DELETE_SELECTED_INTERFACE" value="3" type="GuiHandlerData"/>
+<property name="NewIpWizard_EDIT_IP" value="1" type="GuiHandlerData"/>
+<property name="NewIpWizard_INTERFACES_TREE" value="8" type="GuiHandlerData"/>
+<property name="NewIpWizard_INTERFACE_MODE" value="1" type="GuiHandlerData"/>
+<property name="NewIpWizard_NAME_MYIP" value="2" type="GuiHandlerData"/>
+<property name="NewIpWizard_NUMBER_OF_REGISTERS" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_UPDATE_HIER" value="2" type="GuiHandlerData"/>
+<property name="PACommandNames_CREATE_TOP_HDL" value="1" type="GuiHandlerData"/>
+<property name="PACommandNames_IP_PACKAGER_WIZARD" value="2" type="GuiHandlerData"/>
+<property name="PAViews_PACKAGE_IP" value="2" type="GuiHandlerData"/>
+<property name="RSBAddModuleDialog_MODULE_LIST" value="1" type="GuiHandlerData"/>
+<property name="RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION" value="2" type="GuiHandlerData"/>
+<property name="SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT" value="2" type="GuiHandlerData"/>
+<property name="SrcChooserPanel_CREATE_FILE" value="1" type="GuiHandlerData"/>
+<property name="SrcMenu_IP_HIERARCHY" value="2" type="GuiHandlerData"/>
+<property name="SystemBuilderMenu_ADD_IP" value="2" type="GuiHandlerData"/>
+<property name="SystemBuilderMenu_ADD_MODULE" value="1" type="GuiHandlerData"/>
+<property name="SystemBuilderView_PINNING" value="3" type="GuiHandlerData"/>
+<property name="SystemTreeView_SYSTEM_TREE" value="3" type="GuiHandlerData"/>
+<property name="TaskBanner_CLOSE" value="1" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="14" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="11" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

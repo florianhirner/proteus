@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado_Projects/SABER_HW/project_1/project_1.sim/sim_1/synth/func/xsim/tb_lfsr_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr_array
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado_Projects/SABER_HW/project_1/project_1.srcs/sim_1/new/tb_lfsr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_lfsr

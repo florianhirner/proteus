@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ntt_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ntt_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="742000001fs"></ZoomEndTime>
+      <Cursor1Time time="225000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="269"></NameColumnWidth>
+      <ValueColumnWidth column_width="183"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject type="group" fp_name="group107">
+      <obj_property name="label">tb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/fntt_start">
+         <obj_property name="ElementShortName">fntt_start</obj_property>
+         <obj_property name="ObjectShortName">fntt_start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/intt_start">
+         <obj_property name="ElementShortName">intt_start</obj_property>
+         <obj_property name="ObjectShortName">intt_start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/fntt_intt">
+         <obj_property name="ElementShortName">fntt_intt</obj_property>
+         <obj_property name="ObjectShortName">fntt_intt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/intt_intt">
+         <obj_property name="ElementShortName">intt_intt</obj_property>
+         <obj_property name="ObjectShortName">intt_intt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/fntt_btf_gs">
+         <obj_property name="ElementShortName">fntt_btf_gs</obj_property>
+         <obj_property name="ObjectShortName">fntt_btf_gs</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/intt_btf_gs">
+         <obj_property name="ElementShortName">intt_btf_gs</obj_property>
+         <obj_property name="ObjectShortName">intt_btf_gs</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/fntt_read_address">
+         <obj_property name="ElementShortName">fntt_read_address[9:0]</obj_property>
+         <obj_property name="ObjectShortName">fntt_read_address[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/intt_read_address">
+         <obj_property name="ElementShortName">intt_read_address[9:0]</obj_property>
+         <obj_property name="ObjectShortName">intt_read_address[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/fntt_write_address">
+         <obj_property name="ElementShortName">fntt_write_address[9:0]</obj_property>
+         <obj_property name="ObjectShortName">fntt_write_address[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/intt_write_address">
+         <obj_property name="ElementShortName">intt_write_address[9:0]</obj_property>
+         <obj_property name="ObjectShortName">intt_write_address[9:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/fntt_wea">
+         <obj_property name="ElementShortName">fntt_wea</obj_property>
+         <obj_property name="ObjectShortName">fntt_wea</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/intt_wea">
+         <obj_property name="ElementShortName">intt_wea</obj_property>
+         <obj_property name="ObjectShortName">intt_wea</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/fntt_data64_in">
+         <obj_property name="ElementShortName">fntt_data64_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">fntt_data64_in[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/intt_data64_in">
+         <obj_property name="ElementShortName">intt_data64_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">intt_data64_in[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/fntt_finish">
+         <obj_property name="ElementShortName">fntt_finish</obj_property>
+         <obj_property name="ObjectShortName">fntt_finish</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/intt_finish">
+         <obj_property name="ElementShortName">intt_finish</obj_property>
+         <obj_property name="ObjectShortName">intt_finish</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/fntt_data64_out">
+         <obj_property name="ElementShortName">fntt_data64_out[27:0]</obj_property>
+         <obj_property name="ObjectShortName">fntt_data64_out[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/intt_data64_out">
+         <obj_property name="ElementShortName">intt_data64_out[27:0]</obj_property>
+         <obj_property name="ObjectShortName">intt_data64_out[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/ntt_din">
+         <obj_property name="ElementShortName">ntt_din[0:15][27:0]</obj_property>
+         <obj_property name="ObjectShortName">ntt_din[0:15][27:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/ntt_dout">
+         <obj_property name="ElementShortName">ntt_dout[0:15][27:0]</obj_property>
+         <obj_property name="ObjectShortName">ntt_dout[0:15][27:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/ntt_dout_hw">
+         <obj_property name="ElementShortName">ntt_dout_hw[0:15][27:0]</obj_property>
+         <obj_property name="ObjectShortName">ntt_dout_hw[0:15][27:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/intt_din">
+         <obj_property name="ElementShortName">intt_din[0:15][27:0]</obj_property>
+         <obj_property name="ObjectShortName">intt_din[0:15][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/intt_dout">
+         <obj_property name="ElementShortName">intt_dout[0:15][27:0]</obj_property>
+         <obj_property name="ObjectShortName">intt_dout[0:15][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/intt_dout_hw">
+         <obj_property name="ElementShortName">intt_dout_hw[0:15][27:0]</obj_property>
+         <obj_property name="ObjectShortName">intt_dout_hw[0:15][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/valid_ntt">
+         <obj_property name="ElementShortName">valid_ntt</obj_property>
+         <obj_property name="ObjectShortName">valid_ntt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/valid_intt">
+         <obj_property name="ElementShortName">valid_intt</obj_property>
+         <obj_property name="ObjectShortName">valid_intt</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/valid_counter_ntt">
+         <obj_property name="ElementShortName">valid_counter_ntt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">valid_counter_ntt[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/valid_counter_intt">
+         <obj_property name="ElementShortName">valid_counter_intt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">valid_counter_intt[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/i">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/fntt_cycle_counter">
+         <obj_property name="ElementShortName">fntt_cycle_counter[63:0]</obj_property>
+         <obj_property name="ObjectShortName">fntt_cycle_counter[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/intt_cycle_counter">
+         <obj_property name="ElementShortName">intt_cycle_counter[63:0]</obj_property>
+         <obj_property name="ObjectShortName">intt_cycle_counter[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/LOGQ">
+         <obj_property name="ElementShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/LOGN">
+         <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/TYPE_RED">
+         <obj_property name="ElementShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/IS_Q_FIXED">
+         <obj_property name="ElementShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IS_Q_FIXED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/Q">
+         <obj_property name="ElementShortName">Q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DELAY_ADD">
+         <obj_property name="ElementShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_ADD[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DELAY_SUB">
+         <obj_property name="ElementShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_SUB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DSP_W">
+         <obj_property name="ElementShortName">DSP_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DSP_H">
+         <obj_property name="ElementShortName">DSP_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DELAY_MUL">
+         <obj_property name="ElementShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_MUL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/W">
+         <obj_property name="ElementShortName">W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/L">
+         <obj_property name="ElementShortName">L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/MULLAT">
+         <obj_property name="ElementShortName">MULLAT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MULLAT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/ADDPIP">
+         <obj_property name="ElementShortName">ADDPIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDPIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/R_w">
+         <obj_property name="ElementShortName">R_w[63:0]</obj_property>
+         <obj_property name="ObjectShortName">R_w[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/TOTAL_LATENCY">
+         <obj_property name="ElementShortName">TOTAL_LATENCY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TOTAL_LATENCY[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DELAY_RED">
+         <obj_property name="ElementShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DELAY_DIV2">
+         <obj_property name="ElementShortName">DELAY_DIV2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_DIV2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DELAY_BRAM">
+         <obj_property name="ElementShortName">DELAY_BRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DELAY_BROM">
+         <obj_property name="ElementShortName">DELAY_BROM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BROM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DELAY_FIFO">
+         <obj_property name="ElementShortName">DELAY_FIFO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_FIFO[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/BTF_GS">
+         <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/N">
+         <obj_property name="ElementShortName">N[31:0]</obj_property>
+         <obj_property name="ObjectShortName">N[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group108">
+      <obj_property name="label">NTT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/intt">
+         <obj_property name="ElementShortName">intt</obj_property>
+         <obj_property name="ObjectShortName">intt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/btf_gs">
+         <obj_property name="ElementShortName">btf_gs</obj_property>
+         <obj_property name="ObjectShortName">btf_gs</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/ntt_in">
+         <obj_property name="ElementShortName">ntt_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">ntt_in[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/finish">
+         <obj_property name="ElementShortName">finish</obj_property>
+         <obj_property name="ObjectShortName">finish</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/ntt_out">
+         <obj_property name="ElementShortName">ntt_out[27:0]</obj_property>
+         <obj_property name="ObjectShortName">ntt_out[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_start">
+         <obj_property name="ElementShortName">stage_start[0:3]</obj_property>
+         <obj_property name="ObjectShortName">stage_start[0:3]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_din">
+         <obj_property name="ElementShortName">stage_din[0:3][27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_din[0:3][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_finish">
+         <obj_property name="ElementShortName">stage_finish[0:3]</obj_property>
+         <obj_property name="ObjectShortName">stage_finish[0:3]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_dout">
+         <obj_property name="ElementShortName">stage_dout[0:3][27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_dout[0:3][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_tw_addr">
+         <obj_property name="ElementShortName">stage_tw_addr[0:3][3:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_tw_addr[0:3][3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_tw_data">
+         <obj_property name="ElementShortName">stage_tw_data[0:3][27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_tw_data[0:3][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/LOGQ">
+         <obj_property name="ElementShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/LOGN">
+         <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/IS_Q_FIXED">
+         <obj_property name="ElementShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IS_Q_FIXED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/Q">
+         <obj_property name="ElementShortName">Q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DELAY_ADD">
+         <obj_property name="ElementShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_ADD[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DELAY_SUB">
+         <obj_property name="ElementShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_SUB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DELAY_MUL">
+         <obj_property name="ElementShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_MUL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DSP_W">
+         <obj_property name="ElementShortName">DSP_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DSP_H">
+         <obj_property name="ElementShortName">DSP_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DELAY_RED">
+         <obj_property name="ElementShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/TYPE_RED">
+         <obj_property name="ElementShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/W">
+         <obj_property name="ElementShortName">W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/L">
+         <obj_property name="ElementShortName">L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/MULLAT">
+         <obj_property name="ElementShortName">MULLAT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MULLAT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/ADDPIP">
+         <obj_property name="ElementShortName">ADDPIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDPIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/R_w">
+         <obj_property name="ElementShortName">R_w[63:0]</obj_property>
+         <obj_property name="ObjectShortName">R_w[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DELAY_DIV2">
+         <obj_property name="ElementShortName">DELAY_DIV2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_DIV2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DELAY_BRAM">
+         <obj_property name="ElementShortName">DELAY_BRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DELAY_BROM">
+         <obj_property name="ElementShortName">DELAY_BROM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BROM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/DELAY_FIFO">
+         <obj_property name="ElementShortName">DELAY_FIFO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_FIFO[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/BTF_GS">
+         <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group109">
+      <obj_property name="label">stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /intt">
+         <obj_property name="ElementShortName">intt</obj_property>
+         <obj_property name="ObjectShortName">intt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /btf_gs">
+         <obj_property name="ElementShortName">btf_gs</obj_property>
+         <obj_property name="ObjectShortName">btf_gs</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /stage_in">
+         <obj_property name="ElementShortName">stage_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_in[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /finish">
+         <obj_property name="ElementShortName">finish</obj_property>
+         <obj_property name="ObjectShortName">finish</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /stage_out">
+         <obj_property name="ElementShortName">stage_out[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_out[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /tw_addr">
+         <obj_property name="ElementShortName">tw_addr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tw_addr[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /tw_data">
+         <obj_property name="ElementShortName">tw_data[27:0]</obj_property>
+         <obj_property name="ObjectShortName">tw_data[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /counter">
+         <obj_property name="ElementShortName">counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /SEL_IN">
+         <obj_property name="ElementShortName">SEL_IN</obj_property>
+         <obj_property name="ObjectShortName">SEL_IN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /SEL_BTF">
+         <obj_property name="ElementShortName">SEL_BTF</obj_property>
+         <obj_property name="ObjectShortName">SEL_BTF</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /SEL_OUT">
+         <obj_property name="ElementShortName">SEL_OUT</obj_property>
+         <obj_property name="ObjectShortName">SEL_OUT</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN">
+         <obj_property name="ElementShortName">BTF_IN[0:2][27:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_IN[0:2][27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[0]">
+            <obj_property name="ElementShortName">[0][27:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][27:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[1]">
+            <obj_property name="ElementShortName">[1][27:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][27:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[2]">
+            <obj_property name="ElementShortName">[2][27:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][27:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_OUT">
+         <obj_property name="ElementShortName">BTF_OUT[0:1][27:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_OUT[0:1][27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_OUT[0]">
+            <obj_property name="ElementShortName">[0][27:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][27:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_OUT[1]">
+            <obj_property name="ElementShortName">[1][27:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][27:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /FIFO_IN">
+         <obj_property name="ElementShortName">FIFO_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_IN[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /FIFO_OUT">
+         <obj_property name="ElementShortName">FIFO_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_OUT[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /SHIFT_IN">
+         <obj_property name="ElementShortName">SHIFT_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_IN[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /SHIFT_OUT">
+         <obj_property name="ElementShortName">SHIFT_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_OUT[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group109">
+      <obj_property name="label">stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /intt">
+         <obj_property name="ElementShortName">intt</obj_property>
+         <obj_property name="ObjectShortName">intt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /btf_gs">
+         <obj_property name="ElementShortName">btf_gs</obj_property>
+         <obj_property name="ObjectShortName">btf_gs</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /stage_in">
+         <obj_property name="ElementShortName">stage_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_in[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /finish">
+         <obj_property name="ElementShortName">finish</obj_property>
+         <obj_property name="ObjectShortName">finish</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /stage_out">
+         <obj_property name="ElementShortName">stage_out[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_out[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /tw_addr">
+         <obj_property name="ElementShortName">tw_addr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tw_addr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /tw_data">
+         <obj_property name="ElementShortName">tw_data[27:0]</obj_property>
+         <obj_property name="ObjectShortName">tw_data[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /counter">
+         <obj_property name="ElementShortName">counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /counter_inv_ntt">
+         <obj_property name="ElementShortName">counter_inv_ntt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_inv_ntt[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /counter_ntt_ct">
+         <obj_property name="ElementShortName">counter_ntt_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_ntt_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /counter_intt_ct">
+         <obj_property name="ElementShortName">counter_intt_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_intt_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /counter_ntt_gs">
+         <obj_property name="ElementShortName">counter_ntt_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_ntt_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /counter_intt_gs">
+         <obj_property name="ElementShortName">counter_intt_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_intt_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /SEL_IN">
+         <obj_property name="ElementShortName">SEL_IN</obj_property>
+         <obj_property name="ObjectShortName">SEL_IN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /SEL_BTF">
+         <obj_property name="ElementShortName">SEL_BTF</obj_property>
+         <obj_property name="ObjectShortName">SEL_BTF</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /SEL_OUT">
+         <obj_property name="ElementShortName">SEL_OUT</obj_property>
+         <obj_property name="ObjectShortName">SEL_OUT</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_IN">
+         <obj_property name="ElementShortName">BTF_IN[0:2][27:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_IN[0:2][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_OUT">
+         <obj_property name="ElementShortName">BTF_OUT[0:1][27:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_OUT[0:1][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /FIFO_IN">
+         <obj_property name="ElementShortName">FIFO_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_IN[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /FIFO_OUT">
+         <obj_property name="ElementShortName">FIFO_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /SHIFT_IN">
+         <obj_property name="ElementShortName">SHIFT_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_IN[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /SHIFT_OUT">
+         <obj_property name="ElementShortName">SHIFT_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /STAGE_OUT">
+         <obj_property name="ElementShortName">STAGE_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /STAGE_OUT_DIV2">
+         <obj_property name="ElementShortName">STAGE_OUT_DIV2[27:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_OUT_DIV2[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /finish_delay">
+         <obj_property name="ElementShortName">finish_delay</obj_property>
+         <obj_property name="ObjectShortName">finish_delay</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /start_reg">
+         <obj_property name="ElementShortName">start_reg</obj_property>
+         <obj_property name="ObjectShortName">start_reg</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /finish_reg">
+         <obj_property name="ElementShortName">finish_reg</obj_property>
+         <obj_property name="ObjectShortName">finish_reg</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /stage_in_reg">
+         <obj_property name="ElementShortName">stage_in_reg[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_in_reg[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /stage_out_reg">
+         <obj_property name="ElementShortName">stage_out_reg[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_out_reg[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr">
+         <obj_property name="ElementShortName">raddr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /addr_gs">
+         <obj_property name="ElementShortName">addr_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /addr_ct">
+         <obj_property name="ElementShortName">addr_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_bitreverse_gs">
+         <obj_property name="ElementShortName">raddr_bitreverse_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_bitreverse_pad_gs">
+         <obj_property name="ElementShortName">raddr_bitreverse_pad_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_pad_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_index_sub_gs">
+         <obj_property name="ElementShortName">raddr_index_sub_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_sub_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_index_split_gs">
+         <obj_property name="ElementShortName">raddr_index_split_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_split_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_tw_gs">
+         <obj_property name="ElementShortName">raddr_tw_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_tw_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_bitreverse_ct">
+         <obj_property name="ElementShortName">raddr_bitreverse_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_bitreverse_pad_ct">
+         <obj_property name="ElementShortName">raddr_bitreverse_pad_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_pad_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_index_sub_ct">
+         <obj_property name="ElementShortName">raddr_index_sub_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_sub_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_index_split_ct">
+         <obj_property name="ElementShortName">raddr_index_split_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_split_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_tw_ct">
+         <obj_property name="ElementShortName">raddr_tw_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_tw_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /delay_start">
+         <obj_property name="ElementShortName">delay_start</obj_property>
+         <obj_property name="ObjectShortName">delay_start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /fifo_wr">
+         <obj_property name="ElementShortName">fifo_wr</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /fifo_rd">
+         <obj_property name="ElementShortName">fifo_rd</obj_property>
+         <obj_property name="ObjectShortName">fifo_rd</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /LOGQ">
+         <obj_property name="ElementShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /LOGN">
+         <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /IS_Q_FIXED">
+         <obj_property name="ElementShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IS_Q_FIXED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /Q">
+         <obj_property name="ElementShortName">Q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_ADD">
+         <obj_property name="ElementShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_ADD[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_SUB">
+         <obj_property name="ElementShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_SUB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_MUL">
+         <obj_property name="ElementShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_MUL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DSP_W">
+         <obj_property name="ElementShortName">DSP_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DSP_H">
+         <obj_property name="ElementShortName">DSP_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_RED">
+         <obj_property name="ElementShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /TYPE_RED">
+         <obj_property name="ElementShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /W">
+         <obj_property name="ElementShortName">W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /L">
+         <obj_property name="ElementShortName">L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /MULLAT">
+         <obj_property name="ElementShortName">MULLAT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MULLAT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /ADDPIP">
+         <obj_property name="ElementShortName">ADDPIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDPIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_DIV2">
+         <obj_property name="ElementShortName">DELAY_DIV2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_DIV2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_BRAM">
+         <obj_property name="ElementShortName">DELAY_BRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_BROM">
+         <obj_property name="ElementShortName">DELAY_BROM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BROM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_FIFO">
+         <obj_property name="ElementShortName">DELAY_FIFO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_FIFO[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_GS">
+         <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /STAGE">
+         <obj_property name="ElementShortName">STAGE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /STAGE_INPUT">
+         <obj_property name="ElementShortName">STAGE_INPUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_INPUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /DELAY_TOTAL">
+         <obj_property name="ElementShortName">DELAY_TOTAL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_TOTAL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /N_HALF">
+         <obj_property name="ElementShortName">N_HALF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">N_HALF[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /CASE">
+         <obj_property name="ElementShortName">CASE</obj_property>
+         <obj_property name="ObjectShortName">CASE</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /FIFO_SIZE">
+         <obj_property name="ElementShortName">FIFO_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_SIZE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group109">
+      <obj_property name="label">stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /intt">
+         <obj_property name="ElementShortName">intt</obj_property>
+         <obj_property name="ObjectShortName">intt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /btf_gs">
+         <obj_property name="ElementShortName">btf_gs</obj_property>
+         <obj_property name="ObjectShortName">btf_gs</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /stage_in">
+         <obj_property name="ElementShortName">stage_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_in[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /finish">
+         <obj_property name="ElementShortName">finish</obj_property>
+         <obj_property name="ObjectShortName">finish</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /stage_out">
+         <obj_property name="ElementShortName">stage_out[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_out[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /tw_addr">
+         <obj_property name="ElementShortName">tw_addr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tw_addr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /tw_data">
+         <obj_property name="ElementShortName">tw_data[27:0]</obj_property>
+         <obj_property name="ObjectShortName">tw_data[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /counter">
+         <obj_property name="ElementShortName">counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /counter_inv_ntt">
+         <obj_property name="ElementShortName">counter_inv_ntt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_inv_ntt[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /counter_ntt_ct">
+         <obj_property name="ElementShortName">counter_ntt_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_ntt_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /counter_intt_ct">
+         <obj_property name="ElementShortName">counter_intt_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_intt_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /counter_ntt_gs">
+         <obj_property name="ElementShortName">counter_ntt_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_ntt_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /counter_intt_gs">
+         <obj_property name="ElementShortName">counter_intt_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_intt_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /SEL_IN">
+         <obj_property name="ElementShortName">SEL_IN</obj_property>
+         <obj_property name="ObjectShortName">SEL_IN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /SEL_BTF">
+         <obj_property name="ElementShortName">SEL_BTF</obj_property>
+         <obj_property name="ObjectShortName">SEL_BTF</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /SEL_OUT">
+         <obj_property name="ElementShortName">SEL_OUT</obj_property>
+         <obj_property name="ObjectShortName">SEL_OUT</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_IN">
+         <obj_property name="ElementShortName">BTF_IN[0:2][27:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_IN[0:2][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_OUT">
+         <obj_property name="ElementShortName">BTF_OUT[0:1][27:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_OUT[0:1][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /FIFO_IN">
+         <obj_property name="ElementShortName">FIFO_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_IN[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /FIFO_OUT">
+         <obj_property name="ElementShortName">FIFO_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /SHIFT_IN">
+         <obj_property name="ElementShortName">SHIFT_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_IN[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /SHIFT_OUT">
+         <obj_property name="ElementShortName">SHIFT_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /STAGE_OUT">
+         <obj_property name="ElementShortName">STAGE_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /STAGE_OUT_DIV2">
+         <obj_property name="ElementShortName">STAGE_OUT_DIV2[27:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_OUT_DIV2[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /finish_delay">
+         <obj_property name="ElementShortName">finish_delay</obj_property>
+         <obj_property name="ObjectShortName">finish_delay</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /start_reg">
+         <obj_property name="ElementShortName">start_reg</obj_property>
+         <obj_property name="ObjectShortName">start_reg</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /finish_reg">
+         <obj_property name="ElementShortName">finish_reg</obj_property>
+         <obj_property name="ObjectShortName">finish_reg</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /stage_in_reg">
+         <obj_property name="ElementShortName">stage_in_reg[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_in_reg[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /stage_out_reg">
+         <obj_property name="ElementShortName">stage_out_reg[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_out_reg[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr">
+         <obj_property name="ElementShortName">raddr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /addr_gs">
+         <obj_property name="ElementShortName">addr_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /addr_ct">
+         <obj_property name="ElementShortName">addr_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_bitreverse_gs">
+         <obj_property name="ElementShortName">raddr_bitreverse_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_bitreverse_pad_gs">
+         <obj_property name="ElementShortName">raddr_bitreverse_pad_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_pad_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_index_sub_gs">
+         <obj_property name="ElementShortName">raddr_index_sub_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_sub_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_index_split_gs">
+         <obj_property name="ElementShortName">raddr_index_split_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_split_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_tw_gs">
+         <obj_property name="ElementShortName">raddr_tw_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_tw_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_bitreverse_ct">
+         <obj_property name="ElementShortName">raddr_bitreverse_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_bitreverse_pad_ct">
+         <obj_property name="ElementShortName">raddr_bitreverse_pad_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_pad_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_index_sub_ct">
+         <obj_property name="ElementShortName">raddr_index_sub_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_sub_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_index_split_ct">
+         <obj_property name="ElementShortName">raddr_index_split_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_split_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /raddr_tw_ct">
+         <obj_property name="ElementShortName">raddr_tw_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_tw_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /delay_start">
+         <obj_property name="ElementShortName">delay_start</obj_property>
+         <obj_property name="ObjectShortName">delay_start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /fifo_wr">
+         <obj_property name="ElementShortName">fifo_wr</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /fifo_rd">
+         <obj_property name="ElementShortName">fifo_rd</obj_property>
+         <obj_property name="ObjectShortName">fifo_rd</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /LOGQ">
+         <obj_property name="ElementShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /LOGN">
+         <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /IS_Q_FIXED">
+         <obj_property name="ElementShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IS_Q_FIXED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /Q">
+         <obj_property name="ElementShortName">Q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_ADD">
+         <obj_property name="ElementShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_ADD[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_SUB">
+         <obj_property name="ElementShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_SUB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_MUL">
+         <obj_property name="ElementShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_MUL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DSP_W">
+         <obj_property name="ElementShortName">DSP_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DSP_H">
+         <obj_property name="ElementShortName">DSP_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_RED">
+         <obj_property name="ElementShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /TYPE_RED">
+         <obj_property name="ElementShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /W">
+         <obj_property name="ElementShortName">W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /L">
+         <obj_property name="ElementShortName">L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /MULLAT">
+         <obj_property name="ElementShortName">MULLAT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MULLAT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /ADDPIP">
+         <obj_property name="ElementShortName">ADDPIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDPIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_DIV2">
+         <obj_property name="ElementShortName">DELAY_DIV2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_DIV2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_BRAM">
+         <obj_property name="ElementShortName">DELAY_BRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_BROM">
+         <obj_property name="ElementShortName">DELAY_BROM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BROM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_FIFO">
+         <obj_property name="ElementShortName">DELAY_FIFO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_FIFO[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_GS">
+         <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /STAGE">
+         <obj_property name="ElementShortName">STAGE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /STAGE_INPUT">
+         <obj_property name="ElementShortName">STAGE_INPUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_INPUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /DELAY_TOTAL">
+         <obj_property name="ElementShortName">DELAY_TOTAL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_TOTAL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /N_HALF">
+         <obj_property name="ElementShortName">N_HALF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">N_HALF[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /CASE">
+         <obj_property name="ElementShortName">CASE</obj_property>
+         <obj_property name="ObjectShortName">CASE</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /FIFO_SIZE">
+         <obj_property name="ElementShortName">FIFO_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_SIZE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group109">
+      <obj_property name="label">stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /intt">
+         <obj_property name="ElementShortName">intt</obj_property>
+         <obj_property name="ObjectShortName">intt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /btf_gs">
+         <obj_property name="ElementShortName">btf_gs</obj_property>
+         <obj_property name="ObjectShortName">btf_gs</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /stage_in">
+         <obj_property name="ElementShortName">stage_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_in[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /finish">
+         <obj_property name="ElementShortName">finish</obj_property>
+         <obj_property name="ObjectShortName">finish</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /stage_out">
+         <obj_property name="ElementShortName">stage_out[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_out[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /tw_addr">
+         <obj_property name="ElementShortName">tw_addr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">tw_addr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /tw_data">
+         <obj_property name="ElementShortName">tw_data[27:0]</obj_property>
+         <obj_property name="ObjectShortName">tw_data[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /counter">
+         <obj_property name="ElementShortName">counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /counter_inv_ntt">
+         <obj_property name="ElementShortName">counter_inv_ntt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_inv_ntt[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /counter_ntt_ct">
+         <obj_property name="ElementShortName">counter_ntt_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_ntt_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /counter_intt_ct">
+         <obj_property name="ElementShortName">counter_intt_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_intt_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /counter_ntt_gs">
+         <obj_property name="ElementShortName">counter_ntt_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_ntt_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /counter_intt_gs">
+         <obj_property name="ElementShortName">counter_intt_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_intt_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /SEL_IN">
+         <obj_property name="ElementShortName">SEL_IN</obj_property>
+         <obj_property name="ObjectShortName">SEL_IN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /SEL_BTF">
+         <obj_property name="ElementShortName">SEL_BTF</obj_property>
+         <obj_property name="ObjectShortName">SEL_BTF</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /SEL_OUT">
+         <obj_property name="ElementShortName">SEL_OUT</obj_property>
+         <obj_property name="ObjectShortName">SEL_OUT</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_IN">
+         <obj_property name="ElementShortName">BTF_IN[0:2][27:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_IN[0:2][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_OUT">
+         <obj_property name="ElementShortName">BTF_OUT[0:1][27:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_OUT[0:1][27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /FIFO_IN">
+         <obj_property name="ElementShortName">FIFO_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_IN[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /FIFO_OUT">
+         <obj_property name="ElementShortName">FIFO_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /SHIFT_IN">
+         <obj_property name="ElementShortName">SHIFT_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_IN[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /SHIFT_OUT">
+         <obj_property name="ElementShortName">SHIFT_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /STAGE_OUT">
+         <obj_property name="ElementShortName">STAGE_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_OUT[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /STAGE_OUT_DIV2">
+         <obj_property name="ElementShortName">STAGE_OUT_DIV2[27:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_OUT_DIV2[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /finish_delay">
+         <obj_property name="ElementShortName">finish_delay</obj_property>
+         <obj_property name="ObjectShortName">finish_delay</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /start_reg">
+         <obj_property name="ElementShortName">start_reg</obj_property>
+         <obj_property name="ObjectShortName">start_reg</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /finish_reg">
+         <obj_property name="ElementShortName">finish_reg</obj_property>
+         <obj_property name="ObjectShortName">finish_reg</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /stage_in_reg">
+         <obj_property name="ElementShortName">stage_in_reg[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_in_reg[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /stage_out_reg">
+         <obj_property name="ElementShortName">stage_out_reg[27:0]</obj_property>
+         <obj_property name="ObjectShortName">stage_out_reg[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr">
+         <obj_property name="ElementShortName">raddr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /addr_gs">
+         <obj_property name="ElementShortName">addr_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /addr_ct">
+         <obj_property name="ElementShortName">addr_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_bitreverse_gs">
+         <obj_property name="ElementShortName">raddr_bitreverse_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_bitreverse_pad_gs">
+         <obj_property name="ElementShortName">raddr_bitreverse_pad_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_pad_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_index_sub_gs">
+         <obj_property name="ElementShortName">raddr_index_sub_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_sub_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_index_split_gs">
+         <obj_property name="ElementShortName">raddr_index_split_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_split_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_tw_gs">
+         <obj_property name="ElementShortName">raddr_tw_gs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_tw_gs[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_bitreverse_ct">
+         <obj_property name="ElementShortName">raddr_bitreverse_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_bitreverse_pad_ct">
+         <obj_property name="ElementShortName">raddr_bitreverse_pad_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_bitreverse_pad_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_index_sub_ct">
+         <obj_property name="ElementShortName">raddr_index_sub_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_sub_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_index_split_ct">
+         <obj_property name="ElementShortName">raddr_index_split_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_index_split_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /raddr_tw_ct">
+         <obj_property name="ElementShortName">raddr_tw_ct[3:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr_tw_ct[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /delay_start">
+         <obj_property name="ElementShortName">delay_start</obj_property>
+         <obj_property name="ObjectShortName">delay_start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /fifo_wr">
+         <obj_property name="ElementShortName">fifo_wr</obj_property>
+         <obj_property name="ObjectShortName">fifo_wr</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /fifo_rd">
+         <obj_property name="ElementShortName">fifo_rd</obj_property>
+         <obj_property name="ObjectShortName">fifo_rd</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /LOGQ">
+         <obj_property name="ElementShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /LOGN">
+         <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /IS_Q_FIXED">
+         <obj_property name="ElementShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IS_Q_FIXED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /Q">
+         <obj_property name="ElementShortName">Q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_ADD">
+         <obj_property name="ElementShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_ADD[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_SUB">
+         <obj_property name="ElementShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_SUB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_MUL">
+         <obj_property name="ElementShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_MUL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DSP_W">
+         <obj_property name="ElementShortName">DSP_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DSP_H">
+         <obj_property name="ElementShortName">DSP_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_RED">
+         <obj_property name="ElementShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /TYPE_RED">
+         <obj_property name="ElementShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /W">
+         <obj_property name="ElementShortName">W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /L">
+         <obj_property name="ElementShortName">L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /MULLAT">
+         <obj_property name="ElementShortName">MULLAT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MULLAT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /ADDPIP">
+         <obj_property name="ElementShortName">ADDPIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDPIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_DIV2">
+         <obj_property name="ElementShortName">DELAY_DIV2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_DIV2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_BRAM">
+         <obj_property name="ElementShortName">DELAY_BRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_BROM">
+         <obj_property name="ElementShortName">DELAY_BROM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BROM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_FIFO">
+         <obj_property name="ElementShortName">DELAY_FIFO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_FIFO[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_GS">
+         <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /STAGE">
+         <obj_property name="ElementShortName">STAGE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /STAGE_INPUT">
+         <obj_property name="ElementShortName">STAGE_INPUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_INPUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /DELAY_TOTAL">
+         <obj_property name="ElementShortName">DELAY_TOTAL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_TOTAL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /N_HALF">
+         <obj_property name="ElementShortName">N_HALF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">N_HALF[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /CASE">
+         <obj_property name="ElementShortName">CASE</obj_property>
+         <obj_property name="ObjectShortName">CASE</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /FIFO_SIZE">
+         <obj_property name="ElementShortName">FIFO_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_SIZE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider485" type="divider">
+      <obj_property name="label">-</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group492">
+      <obj_property name="label">btf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/intt">
+         <obj_property name="ElementShortName">intt</obj_property>
+         <obj_property name="ObjectShortName">intt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/btf_gs">
+         <obj_property name="ElementShortName">btf_gs</obj_property>
+         <obj_property name="ObjectShortName">btf_gs</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/btf_in_a">
+         <obj_property name="ElementShortName">btf_in_a[27:0]</obj_property>
+         <obj_property name="ObjectShortName">btf_in_a[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/btf_in_b">
+         <obj_property name="ElementShortName">btf_in_b[27:0]</obj_property>
+         <obj_property name="ObjectShortName">btf_in_b[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/btf_in_w">
+         <obj_property name="ElementShortName">btf_in_w[27:0]</obj_property>
+         <obj_property name="ObjectShortName">btf_in_w[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/btf_out_a">
+         <obj_property name="ElementShortName">btf_out_a[27:0]</obj_property>
+         <obj_property name="ObjectShortName">btf_out_a[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/btf_out_b">
+         <obj_property name="ElementShortName">btf_out_b[27:0]</obj_property>
+         <obj_property name="ObjectShortName">btf_out_b[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD_IN_0">
+         <obj_property name="ElementShortName">MOD_ADD_IN_0[27:0]</obj_property>
+         <obj_property name="ObjectShortName">MOD_ADD_IN_0[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD_IN_1">
+         <obj_property name="ElementShortName">MOD_ADD_IN_1[27:0]</obj_property>
+         <obj_property name="ObjectShortName">MOD_ADD_IN_1[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD_OUT">
+         <obj_property name="ElementShortName">MOD_ADD_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">MOD_ADD_OUT[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB_IN_0">
+         <obj_property name="ElementShortName">MOD_SUB_IN_0[27:0]</obj_property>
+         <obj_property name="ObjectShortName">MOD_SUB_IN_0[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB_IN_1">
+         <obj_property name="ElementShortName">MOD_SUB_IN_1[27:0]</obj_property>
+         <obj_property name="ObjectShortName">MOD_SUB_IN_1[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB_OUT">
+         <obj_property name="ElementShortName">MOD_SUB_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">MOD_SUB_OUT[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/BUF_IN">
+         <obj_property name="ElementShortName">BUF_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">BUF_IN[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/BUF_OUT">
+         <obj_property name="ElementShortName">BUF_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">BUF_OUT[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MUL_IN">
+         <obj_property name="ElementShortName">MUL_IN[27:0]</obj_property>
+         <obj_property name="ObjectShortName">MUL_IN[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MUL_OUT">
+         <obj_property name="ElementShortName">MUL_OUT[55:0]</obj_property>
+         <obj_property name="ObjectShortName">MUL_OUT[55:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_IN">
+         <obj_property name="ElementShortName">MOD_IN[55:0]</obj_property>
+         <obj_property name="ObjectShortName">MOD_IN[55:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_OUT">
+         <obj_property name="ElementShortName">MOD_OUT[27:0]</obj_property>
+         <obj_property name="ObjectShortName">MOD_OUT[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider485" type="divider">
+         <obj_property name="label">-</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/LOGQ">
+         <obj_property name="ElementShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/LOGN">
+         <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/IS_Q_FIXED">
+         <obj_property name="ElementShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/Q">
+         <obj_property name="ElementShortName">Q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/DELAY_ADD">
+         <obj_property name="ElementShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/DELAY_SUB">
+         <obj_property name="ElementShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/DELAY_MUL">
+         <obj_property name="ElementShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/DELAY_RED">
+         <obj_property name="ElementShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/TYPE_RED">
+         <obj_property name="ElementShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/BTF_GS">
+         <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/DELAY_TOTAL">
+         <obj_property name="ElementShortName">DELAY_TOTAL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_TOTAL[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group549">
+      <obj_property name="label">add</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/a">
+         <obj_property name="ElementShortName">a[27:0]</obj_property>
+         <obj_property name="ObjectShortName">a[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/b">
+         <obj_property name="ElementShortName">b[27:0]</obj_property>
+         <obj_property name="ObjectShortName">b[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/c">
+         <obj_property name="ElementShortName">c[27:0]</obj_property>
+         <obj_property name="ObjectShortName">c[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/q_in">
+         <obj_property name="ElementShortName">q_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q_in[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/ab">
+         <obj_property name="ElementShortName">ab[28:0]</obj_property>
+         <obj_property name="ObjectShortName">ab[28:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/ab_mq">
+         <obj_property name="ElementShortName">ab_mq[28:0]</obj_property>
+         <obj_property name="ObjectShortName">ab_mq[28:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/LOGQ">
+         <obj_property name="ElementShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/LOGN">
+         <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/IS_Q_FIXED">
+         <obj_property name="ElementShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IS_Q_FIXED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/Q">
+         <obj_property name="ElementShortName">Q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DELAY_ADD">
+         <obj_property name="ElementShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_ADD[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DELAY_SUB">
+         <obj_property name="ElementShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_SUB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DELAY_MUL">
+         <obj_property name="ElementShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_MUL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DSP_W">
+         <obj_property name="ElementShortName">DSP_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DSP_H">
+         <obj_property name="ElementShortName">DSP_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DELAY_RED">
+         <obj_property name="ElementShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/TYPE_RED">
+         <obj_property name="ElementShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/W">
+         <obj_property name="ElementShortName">W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/L">
+         <obj_property name="ElementShortName">L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/MULLAT">
+         <obj_property name="ElementShortName">MULLAT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MULLAT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/ADDPIP">
+         <obj_property name="ElementShortName">ADDPIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDPIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DELAY_DIV2">
+         <obj_property name="ElementShortName">DELAY_DIV2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_DIV2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DELAY_BRAM">
+         <obj_property name="ElementShortName">DELAY_BRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DELAY_BROM">
+         <obj_property name="ElementShortName">DELAY_BROM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BROM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/DELAY_FIFO">
+         <obj_property name="ElementShortName">DELAY_FIFO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_FIFO[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_ADD/BTF_GS">
+         <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group550">
+      <obj_property name="label">sub</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/a">
+         <obj_property name="ElementShortName">a[27:0]</obj_property>
+         <obj_property name="ObjectShortName">a[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/b">
+         <obj_property name="ElementShortName">b[27:0]</obj_property>
+         <obj_property name="ObjectShortName">b[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/q">
+         <obj_property name="ElementShortName">q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/c">
+         <obj_property name="ElementShortName">c[27:0]</obj_property>
+         <obj_property name="ObjectShortName">c[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/q_in">
+         <obj_property name="ElementShortName">q_in[27:0]</obj_property>
+         <obj_property name="ObjectShortName">q_in[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/ab">
+         <obj_property name="ElementShortName">ab[28:0]</obj_property>
+         <obj_property name="ObjectShortName">ab[28:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/ab_pq">
+         <obj_property name="ElementShortName">ab_pq[28:0]</obj_property>
+         <obj_property name="ObjectShortName">ab_pq[28:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/LOGQ">
+         <obj_property name="ElementShortName">LOGQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/LOGN">
+         <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/IS_Q_FIXED">
+         <obj_property name="ElementShortName">IS_Q_FIXED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IS_Q_FIXED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/Q">
+         <obj_property name="ElementShortName">Q[27:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[27:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DELAY_ADD">
+         <obj_property name="ElementShortName">DELAY_ADD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_ADD[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DELAY_SUB">
+         <obj_property name="ElementShortName">DELAY_SUB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_SUB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DELAY_MUL">
+         <obj_property name="ElementShortName">DELAY_MUL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_MUL[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DSP_W">
+         <obj_property name="ElementShortName">DSP_W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DSP_H">
+         <obj_property name="ElementShortName">DSP_H[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DSP_H[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DELAY_RED">
+         <obj_property name="ElementShortName">DELAY_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/TYPE_RED">
+         <obj_property name="ElementShortName">TYPE_RED[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_RED[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/W">
+         <obj_property name="ElementShortName">W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">W[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/L">
+         <obj_property name="ElementShortName">L[31:0]</obj_property>
+         <obj_property name="ObjectShortName">L[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/MULLAT">
+         <obj_property name="ElementShortName">MULLAT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MULLAT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/ADDPIP">
+         <obj_property name="ElementShortName">ADDPIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDPIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DELAY_DIV2">
+         <obj_property name="ElementShortName">DELAY_DIV2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_DIV2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DELAY_BRAM">
+         <obj_property name="ElementShortName">DELAY_BRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DELAY_BROM">
+         <obj_property name="ElementShortName">DELAY_BROM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_BROM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/DELAY_FIFO">
+         <obj_property name="ElementShortName">DELAY_FIFO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_FIFO[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_UNIFIED/MOD_SUB/BTF_GS">
+         <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

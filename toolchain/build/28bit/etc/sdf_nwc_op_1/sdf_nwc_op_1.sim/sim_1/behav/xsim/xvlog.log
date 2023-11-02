@@ -1,0 +1,49 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitreverse
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_unified
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moddiv_by_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_28
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_memory_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_memory_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_mdc_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/stage_wapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_mdc_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_rom_0_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_4_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_5_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_6_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_7_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_8_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_9_ntt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_0_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_1_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_2_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_3_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_4_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_5_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_6_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_7_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_8_intt_nwc
+INFO: [VRFC 10-311] analyzing module tw_rom_9_intt_nwc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/tw_roms_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_roms_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_tb

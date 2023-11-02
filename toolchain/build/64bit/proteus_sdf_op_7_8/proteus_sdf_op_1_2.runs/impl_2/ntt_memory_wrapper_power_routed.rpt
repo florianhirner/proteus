@@ -1,0 +1,246 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date             : Mon Feb  6 20:28:42 2023
+| Host             : x1g9 running 64-bit Ubuntu 20.04.5 LTS
+| Command          : report_power -file ntt_memory_wrapper_power_routed.rpt -pb ntt_memory_wrapper_power_summary_routed.pb -rpx ntt_memory_wrapper_power_routed.rpx
+| Design           : ntt_memory_wrapper
+| Device           : xc7vx485tffg1157-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 1.531        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.276        |
+| Device Static (W)        | 0.255        |
+| Effective TJA (C/W)      | 1.4          |
+| Max Ambient (C)          | 82.9         |
+| Junction Temperature (C) | 27.1         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.082 |        3 |       --- |             --- |
+| Slice Logic             |     0.387 |    34514 |       --- |             --- |
+|   LUT as Logic          |     0.330 |    15349 |    303600 |            5.06 |
+|   CARRY4                |     0.023 |     2126 |     75900 |            2.80 |
+|   LUT as Shift Register |     0.018 |     1311 |    130800 |            1.00 |
+|   Register              |     0.016 |    10646 |    607200 |            1.75 |
+|   F7/F8 Muxes           |    <0.001 |       64 |    303600 |            0.02 |
+|   Others                |     0.000 |      370 |       --- |             --- |
+| Signals                 |     0.467 |    29860 |       --- |             --- |
+| Block RAM               |     0.059 |       16 |      1030 |            1.55 |
+| DSPs                    |     0.172 |      132 |      2800 |            4.71 |
+| I/O                     |     0.108 |      222 |       600 |           37.00 |
+| Static Power            |     0.255 |          |           |                 |
+| Total                   |     1.531 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     1.309 |       1.164 |      0.145 |
+| Vccaux    |       1.800 |     0.047 |       0.009 |      0.038 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.052 |       0.051 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.008 |       0.004 |      0.004 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| MGTZVccl  |       1.075 |     0.000 |       0.000 |      0.000 |
+| MGTZAVcc  |       1.075 |     0.000 |       0.000 |      0.000 |
+| MGTZVcch  |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.4                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 2.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+| clk   | clk    |             6.7 |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------+-----------+
+| Name                          | Power (W) |
++-------------------------------+-----------+
+| ntt_memory_wrapper            |     1.276 |
+|   DUT_NTT                     |     1.156 |
+|     genblk2[10].TW_ROM        |     0.008 |
+|       tw10                    |     0.008 |
+|     genblk2[11].TW_ROM        |     0.015 |
+|       tw11                    |     0.015 |
+|     genblk2[5].TW_ROM         |     0.001 |
+|       tw5                     |     0.001 |
+|     genblk2[6].TW_ROM         |     0.002 |
+|       tw6                     |     0.002 |
+|     genblk2[7].TW_ROM         |     0.002 |
+|       tw7                     |     0.002 |
+|     genblk2[8].TW_ROM         |     0.008 |
+|       tw8                     |     0.008 |
+|     genblk2[9].TW_ROM         |     0.009 |
+|       tw9                     |     0.009 |
+|     genblk3[0].NTT_SDF_STAGE  |     0.033 |
+|       BTF_DIT_CT              |     0.010 |
+|       MODDIV_BY_2             |     0.003 |
+|       SHIFT                   |     0.001 |
+|       xpm_fifo_sync_inst      |     0.015 |
+|     genblk3[10].NTT_SDF_STAGE |     0.105 |
+|       BTF_DIT_CT              |     0.090 |
+|       FIFO                    |     0.003 |
+|       MODDIV_BY_2             |     0.004 |
+|       SHIFT                   |     0.002 |
+|       SHIFT_SEL_OUT           |     0.003 |
+|     genblk3[11].NTT_SDF_STAGE |     0.105 |
+|       BTF_DIT_CT              |     0.093 |
+|       MODDIV_BY_2             |     0.005 |
+|       SHIFT_SEL_OUT           |     0.002 |
+|     genblk3[1].NTT_SDF_STAGE  |     0.046 |
+|       BTF_DIT_CT              |     0.028 |
+|       MODDIV_BY_2             |     0.003 |
+|       SHIFT                   |     0.001 |
+|       SHIFT_SEL_BTF           |     0.002 |
+|       SHIFT_SEL_OUT           |     0.001 |
+|       xpm_fifo_sync_inst      |     0.008 |
+|     genblk3[2].NTT_SDF_STAGE  |     0.080 |
+|       BTF_DIT_CT              |     0.064 |
+|       MODDIV_BY_2             |     0.003 |
+|       SHIFT                   |     0.001 |
+|       SHIFT_SEL_BTF           |     0.002 |
+|       SHIFT_SEL_OUT           |     0.002 |
+|       xpm_fifo_sync_inst      |     0.005 |
+|     genblk3[3].NTT_SDF_STAGE  |     0.100 |
+|       BTF_DIT_CT              |     0.085 |
+|       MODDIV_BY_2             |     0.003 |
+|       SHIFT                   |     0.001 |
+|       SHIFT_SEL_BTF           |     0.002 |
+|       SHIFT_SEL_OUT           |     0.001 |
+|       xpm_fifo_sync_inst      |     0.005 |
+|     genblk3[4].NTT_SDF_STAGE  |     0.105 |
+|       BTF_DIT_CT              |     0.085 |
+|       FIFO                    |     0.008 |
+|       MODDIV_BY_2             |     0.004 |
+|       SHIFT                   |     0.002 |
+|       SHIFT_SEL_BTF           |     0.002 |
+|       SHIFT_SEL_OUT           |     0.003 |
+|     genblk3[5].NTT_SDF_STAGE  |     0.099 |
+|       BTF_DIT_CT              |     0.080 |
+|       FIFO                    |     0.006 |
+|       MODDIV_BY_2             |     0.005 |
+|       SHIFT                   |     0.002 |
+|       SHIFT_SEL_BTF           |     0.002 |
+|       SHIFT_SEL_OUT           |     0.002 |
+|     genblk3[6].NTT_SDF_STAGE  |     0.106 |
+|       BTF_DIT_CT              |     0.087 |
+|       FIFO                    |     0.004 |
+|       MODDIV_BY_2             |     0.004 |
+|       SHIFT                   |     0.002 |
+|       SHIFT_SEL_BTF           |     0.002 |
+|       SHIFT_SEL_OUT           |     0.003 |
+|     genblk3[7].NTT_SDF_STAGE  |     0.109 |
+|       BTF_DIT_CT              |     0.089 |
+|       FIFO                    |     0.004 |
+|       MODDIV_BY_2             |     0.004 |
+|       SHIFT                   |     0.002 |
+|       SHIFT_SEL_BTF           |     0.002 |
+|       SHIFT_SEL_OUT           |     0.003 |
+|     genblk3[8].NTT_SDF_STAGE  |     0.108 |
+|       BTF_DIT_CT              |     0.091 |
+|       FIFO                    |     0.003 |
+|       MODDIV_BY_2             |     0.005 |
+|       SHIFT                   |     0.002 |
+|       SHIFT_SEL_BTF           |     0.001 |
+|       SHIFT_SEL_OUT           |     0.002 |
+|     genblk3[9].NTT_SDF_STAGE  |     0.111 |
+|       BTF_DIT_CT              |     0.093 |
+|       FIFO                    |     0.004 |
+|       MODDIV_BY_2             |     0.004 |
+|       SHIFT                   |     0.002 |
+|       SHIFT_SEL_OUT           |     0.003 |
++-------------------------------+-----------+
+
+

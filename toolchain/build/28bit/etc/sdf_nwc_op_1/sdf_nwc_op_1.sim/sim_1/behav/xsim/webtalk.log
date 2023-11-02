@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 12 20:30:13 2023
+# Process ID: 40318
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/sdf_nwc_op_1.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Feb 12 20:30:17 2023. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Feb 12 20:30:17 2023...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb  6 20:05:32 2023
+# Process ID: 1859651
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.sim/sim_1/behav/xsim/xsim.dir/ntt_tb_behav/webtalk/xsim_webtalk.tcl -notrace

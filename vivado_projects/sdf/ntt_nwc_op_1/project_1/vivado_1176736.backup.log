@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 12 08:45:05 2022
+# Process ID: 1176736
+# Current directory: /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1
+# Command line: vivado
+# Log file: /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/vivado.log
+# Journal file: /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from '/home/amert/Downloads/vivado-dump-output/CryptoProcessor_2021_22/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/ip_repo/AXI_Slave8Ports_new_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/ip_repo/AXI_Slave8Ports_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/ip_repo/AXIslave_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 6506.109 ; gain = 178.430 ; free physical = 912 ; free virtual = 8939
+update_compile_order -fileset sources_1
+file copy -force /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/project_1.runs/impl_3/cryptoprocessor_wrapper.sysdef /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+
+launch_sdk -workspace /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/project_1.sdk -hwspec /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/project_1.sdk -hwspec /home/aikata/CryptEng_class/CE_Assignment3/CryptoProcessor_2021_22/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 12 09:01:20 2022...

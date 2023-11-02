@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1676278094">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="ntt_memory_wrapper.drc"/>
+  <File Type="BG-BGN" Name="ntt_memory_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="ntt_memory_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ntt_memory_wrapper.ltx"/>
+  <File Type="BITSTR-MMI" Name="ntt_memory_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="ntt_memory_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="ntt_memory_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="ntt_memory_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="ntt_memory_wrapper.msk"/>
+  <File Type="BG-BIN" Name="ntt_memory_wrapper.bin"/>
+  <File Type="BG-BIT" Name="ntt_memory_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ntt_memory_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ntt_memory_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ntt_memory_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="ntt_memory_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ntt_memory_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ntt_memory_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ntt_memory_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ntt_memory_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ntt_memory_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ntt_memory_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ntt_memory_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="ntt_memory_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ntt_memory_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="ntt_memory_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ntt_memory_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ntt_memory_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="ntt_memory_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ntt_memory_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-UTIL-PB" Name="ntt_memory_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="ntt_memory_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ntt_memory_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="ntt_memory_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="ntt_memory_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="ntt_memory_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="ntt_memory_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ntt_memory_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="ntt_memory_wrapper.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ntt_memory_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="ntt_memory_wrapper_reports.tcl"/>
+  <File Type="PWROPT-DRC" Name="ntt_memory_wrapper_drc_pwropted.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ntt_memory_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="ntt_memory_wrapper.tcl"/>
+  <File Type="INIT-TIMING" Name="ntt_memory_wrapper_timing_summary_init.rpt"/>
+  <File Type="PLACE-CTRL" Name="ntt_memory_wrapper_control_sets_placed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ntt_memory_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ntt_memory_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-DCP" Name="ntt_memory_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ntt_memory_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ntt_memory_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-TIMING" Name="ntt_memory_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="ntt_memory_wrapper_drc_routed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ntt_memory_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ntt_memory_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ntt_memory_wrapper_drc_routed.pb"/>
+  <File Type="PHYSOPT-DCP" Name="ntt_memory_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ntt_memory_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="ntt_memory_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-PWR" Name="ntt_memory_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ntt_memory_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ntt_memory_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DCP" Name="ntt_memory_wrapper_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ntt_memory_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ntt_memory_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="ntt_memory_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ntt_memory_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="ntt_memory_wrapper_power_summary_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../../../hw/common/bitreverse/bitreverse.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/btf/btf_dif_gs.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/btf/btf_dit_ct.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/mod/modadd.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/mod/moddiv_by_2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/mod/modmul.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/mod/modred_28.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/mod/modred_64.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/mod/modsub.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/sdf/op_5_6/ntt_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/shift/shiftreg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/sdf/op_5_6/stage_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/constant/tw_roms.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/sdf/op_5_6/tw_roms_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/wlmont/csa_2.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/wlmont/csa_tree.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/wlmont/int_mult_add.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/intmul/intmul.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/wlmont/wlmont.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/wlmont/wlmont_sub.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/parameters.vh">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/sdf/op_5_6/ntt_memory_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/btf/btf_unified.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/csa/csa_tree.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/csa/csa_2.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/mod/csa_256.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/fifo/fifo.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/mod/modred_256bit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/sdf/op_5_6/ntt_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/wlmont/add_chunked.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/wlmont/sub_chunked.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/common/wlmont/wlmont_tb.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/tb/INTT_DIN.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/tb/INTT_DOUT.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/tb/NTT_DIN.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../hw/tb/NTT_DOUT.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ntt_memory_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../../../hw/const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

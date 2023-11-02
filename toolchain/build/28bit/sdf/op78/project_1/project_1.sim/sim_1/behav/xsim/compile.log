@@ -1,0 +1,54 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitreverse
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dif_gs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dif_gs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dit_ct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btf_dit_ct
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moddiv_by_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_28
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modred_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module modsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/ntt_memory_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_memory_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/ntt_sdf_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_sdf_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/sdf_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_sdf_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_rom_1
+INFO: [VRFC 10-311] analyzing module tw_rom_2
+INFO: [VRFC 10-311] analyzing module tw_rom_3
+INFO: [VRFC 10-311] analyzing module tw_rom_4
+INFO: [VRFC 10-311] analyzing module tw_rom_5
+INFO: [VRFC 10-311] analyzing module tw_rom_6
+INFO: [VRFC 10-311] analyzing module tw_rom_7
+INFO: [VRFC 10-311] analyzing module tw_rom_8
+INFO: [VRFC 10-311] analyzing module tw_rom_9
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/tw_roms_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tw_roms_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/int_mult_add.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module int_mult_add
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/intmul/intmul.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intmul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wlmont
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_sub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wlmont_sub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/hw/sdf/op_7_8/ntt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op78/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

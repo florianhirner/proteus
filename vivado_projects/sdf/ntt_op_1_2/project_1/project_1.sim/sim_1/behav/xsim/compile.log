@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/fhirner/Desktop/proteus/vivado_projects/sdf/ntt_op_1_2/Verilog_src/ntt/ntt_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_tb
+WARNING: [VRFC 10-3380] identifier 'TOTAL_LATENCY' is used before its declaration [/home/fhirner/Desktop/proteus/vivado_projects/sdf/ntt_op_1_2/Verilog_src/ntt/ntt_tb.v:15]

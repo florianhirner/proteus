@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb  2 14:27:34 2023
+# Process ID: 746178
+# Current directory: /home/florian/Desktop/proteus/mdc/ntt_op_1_2/project_1
+# Command line: vivado -source project_1.xpr
+# Log file: /home/florian/Desktop/proteus/mdc/ntt_op_1_2/project_1/vivado.log
+# Journal file: /home/florian/Desktop/proteus/mdc/ntt_op_1_2/project_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_1_2/ip_repo/AXI_Slave8Ports_new_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_1_2/ip_repo/AXI_Slave8Ports_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_1_2/ip_repo/AXIslave_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_1_2/ip_repo/AXI_Slave8Ports_new_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_1_2/ip_repo/AXI_Slave8Ports_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/florian/Desktop/proteus/mdc/ntt_op_1_2/ip_repo/AXIslave_1.0'.
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- tugraz.at:user:AXI_Slave8Ports_new:1.0 - AXI_Slave8Ports_new_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:module_ref:ComputeCoreWrapper:1.0 - ComputeCoreWrapper_0
+Successfully read diagram <cryptoprocessor> from BD file </home/florian/Desktop/proteus/mdc/ntt_op_1_2/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd>
+Upgrading '/home/florian/Desktop/proteus/mdc/ntt_op_1_2/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd'
+INFO: [IP_Flow 19-3420] Updated cryptoprocessor_ComputeCoreWrapper_0_0 to use current project options
+Wrote  : </home/florian/Desktop/proteus/mdc/ntt_op_1_2/project_1/project_1.srcs/sources_1/bd/cryptoprocessor/cryptoprocessor.bd> 
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  2 14:28:04 2023...

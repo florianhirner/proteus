@@ -1,0 +1,115 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Mon Feb  6 19:31:54 2023
+| Host         : x1g9 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_control_sets -verbose -file ntt_memory_wrapper_control_sets_placed.rpt
+| Design       : ntt_memory_wrapper
+| Device       : xc7vx485t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    37 |
+|    Minimum number of control sets                        |    37 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   121 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    37 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |    14 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    13 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           16901 |         3996 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             292 |          117 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             326 |           92 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                                                           Enable Signal                                                          |                                        Set/Reset Signal                                        | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[0].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                2 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[1].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                1 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[2].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                1 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[3].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/rst_i |                1 |              3 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[0].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                3 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk2[3].TW_ROM/tw3/brom_out[8]_i_1__0_n_0                                           |                3 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[3].NTT_SDF_STAGE/tw_addr[1]                                                    |                3 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[3].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                2 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[2].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                1 |              4 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[1].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                3 |              4 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[10].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[10]_11                                                               | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[9].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[9]_10                                                                 | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[8].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[8]_8                                                                  | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[7].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[7]_6                                                                  | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | ntt_start                                                                                                                        | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[6].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[6]_5                                                                  | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[5].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[5]_4                                                                  | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[4].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[4]_3                                                                  | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[3].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[3]_2                                                                  | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[2].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[2]_1                                                                  | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[1].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[1]_0                                                                  | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[0].NTT_SDF_STAGE/DELAY_FINISH/stage_finish[0]_12                                                                 | rst_IBUF                                                                                       |                3 |             12 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[11].NTT_SDF_STAGE/DELAY_FINISH/wea_OBUF                                                                          | rst_IBUF                                                                                       |                4 |             13 |
+|  clk_IBUF_BUFG | DELAY_START/read_address0                                                                                                        | rst_IBUF                                                                                       |                4 |             13 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[3].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/rdp_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1]   | DUT_NTT/genblk3[3].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             16 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[3].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/ram_wr_en_pf                            | DUT_NTT/genblk3[3].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             16 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[2].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/rdp_inst/E[0]                                             | DUT_NTT/genblk3[2].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             18 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[2].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/E[0]                                    | DUT_NTT/genblk3[2].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             18 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[1].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/rdpp1_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1] | DUT_NTT/genblk3[1].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             21 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[1].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/ram_wr_en_pf                            | DUT_NTT/genblk3[1].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             21 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[0].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/rdp_inst/FSM_sequential_gen_fwft.curr_fwft_state_reg[1]   | DUT_NTT/genblk3[0].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             23 |
+|  clk_IBUF_BUFG | DUT_NTT/genblk3[0].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/ram_wr_en_pf                            | DUT_NTT/genblk3[0].NTT_SDF_STAGE/xpm_fifo_sync_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/Q[0]  |                6 |             23 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[10].NTT_SDF_STAGE/p_0_in                                                       |               31 |             64 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[9].NTT_SDF_STAGE/p_0_in                                                        |               22 |             64 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[8].NTT_SDF_STAGE/p_0_in                                                        |               22 |             64 |
+|  clk_IBUF_BUFG |                                                                                                                                  | DUT_NTT/genblk3[11].NTT_SDF_STAGE/counter_reg[0]                                               |               22 |             64 |
+|  clk_IBUF_BUFG |                                                                                                                                  |                                                                                                |             4023 |          18979 |
++----------------+----------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

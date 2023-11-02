@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ntt_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ntt_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1172000000001fs"></ZoomEndTime>
+      <Cursor1Time time="401895000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="269"></NameColumnWidth>
+      <ValueColumnWidth column_width="183"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject type="logic" fp_name="/ntt_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider119" type="divider">
+      <obj_property name="label">-</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/fntt_start">
+      <obj_property name="ElementShortName">fntt_start</obj_property>
+      <obj_property name="ObjectShortName">fntt_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/fntt_intt">
+      <obj_property name="ElementShortName">fntt_intt</obj_property>
+      <obj_property name="ObjectShortName">fntt_intt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/fntt_btf_gs">
+      <obj_property name="ElementShortName">fntt_btf_gs</obj_property>
+      <obj_property name="ObjectShortName">fntt_btf_gs</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/fntt_data64_in_0">
+      <obj_property name="ElementShortName">fntt_data64_in_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fntt_data64_in_0[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/fntt_data64_in_1">
+      <obj_property name="ElementShortName">fntt_data64_in_1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fntt_data64_in_1[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/fntt_finish">
+      <obj_property name="ElementShortName">fntt_finish</obj_property>
+      <obj_property name="ObjectShortName">fntt_finish</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/fntt_data64_out_0">
+      <obj_property name="ElementShortName">fntt_data64_out_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fntt_data64_out_0[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/fntt_data64_out_1">
+      <obj_property name="ElementShortName">fntt_data64_out_1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fntt_data64_out_1[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/valid_ntt">
+      <obj_property name="ElementShortName">valid_ntt</obj_property>
+      <obj_property name="ObjectShortName">valid_ntt</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/valid_counter_ntt">
+      <obj_property name="ElementShortName">valid_counter_ntt[12:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_counter_ntt[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider119" type="divider">
+      <obj_property name="label">-</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/intt_start">
+      <obj_property name="ElementShortName">intt_start</obj_property>
+      <obj_property name="ObjectShortName">intt_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/intt_intt">
+      <obj_property name="ElementShortName">intt_intt</obj_property>
+      <obj_property name="ObjectShortName">intt_intt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/intt_btf_gs">
+      <obj_property name="ElementShortName">intt_btf_gs</obj_property>
+      <obj_property name="ObjectShortName">intt_btf_gs</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/intt_data64_in_0">
+      <obj_property name="ElementShortName">intt_data64_in_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">intt_data64_in_0[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/intt_data64_in_1">
+      <obj_property name="ElementShortName">intt_data64_in_1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">intt_data64_in_1[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/intt_finish">
+      <obj_property name="ElementShortName">intt_finish</obj_property>
+      <obj_property name="ObjectShortName">intt_finish</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/intt_data64_out_0">
+      <obj_property name="ElementShortName">intt_data64_out_0[63:0]</obj_property>
+      <obj_property name="ObjectShortName">intt_data64_out_0[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/intt_data64_out_1">
+      <obj_property name="ElementShortName">intt_data64_out_1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">intt_data64_out_1[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ntt_tb/valid_intt">
+      <obj_property name="ElementShortName">valid_intt</obj_property>
+      <obj_property name="ObjectShortName">valid_intt</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ntt_tb/valid_counter_intt">
+      <obj_property name="ElementShortName">valid_counter_intt[12:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_counter_intt[12:0]</obj_property>
+   </wvobject>
+</wave_config>

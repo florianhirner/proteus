@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb  6 20:05:56 2023
+# Process ID: 1860086
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.runs/synth_2
+# Command line: vivado -log ntt_memory_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ntt_memory_wrapper.tcl
+# Log file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.runs/synth_2/ntt_memory_wrapper.vds
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/proteus_sdf_op_1_2/proteus_sdf_op_1_2.runs/synth_2/vivado.jou
+#-----------------------------------------------------------
+source ntt_memory_wrapper.tcl -notrace

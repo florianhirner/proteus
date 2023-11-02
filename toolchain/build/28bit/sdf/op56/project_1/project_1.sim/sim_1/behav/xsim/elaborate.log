@@ -1,0 +1,193 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto e71dbba174324500a09a86db9dcccf57 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 2 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/op_5_6/stage_wrapper.v:91]
+WARNING: [VRFC 10-3091] actual bit length 11 differs from formal bit length 10 for port 'a' [/home/florian/Desktop/proteus/toolchain/hw/sdf/op_5_6/ntt_memory_wrapper.v:127]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=56,DEPTH=4,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv" Line 13. Module csa_tree(SIZE_I=57,DEPTH=3,SIZE_O=58) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv" Line 17. Module csa_2(K=58) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_1(LOGN=10)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_2(LOGN=10,STAGE=2)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_3(LOGN=10,STAGE=3)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_4(LOGN=10,STAGE=4)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_5(LOGN=10,STAGE=5)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_6(LOGN=10,STAGE=6)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_7(LOGN=10,STAGE=7)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_8(LOGN=10,STAGE=8)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.tw_rom_9(LOGN=10,STAGE=9)
+Compiling module xil_defaultlib.tw_roms_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.shiftreg(SHIFT=514,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=0)
+Compiling module xil_defaultlib.modadd(LOGQ=28,LOGN=10,Q=28'b111...
+Compiling module xil_defaultlib.modsub(LOGQ=28,LOGN=10,Q=28'b111...
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(DATA=28)
+Compiling module xil_defaultlib.moddiv_by_2(LOGQ=28,LOGN=10,Q=28...
+Compiling module xil_defaultlib.shiftreg(SHIFT=0,DATA=1)
+Compiling module xil_defaultlib.shiftreg(DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=511,DATA=1)
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=9...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=9...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=5...
+Compiling module xpm.xpm_fifo_sync(FIFO_WRITE_DEPTH=5...
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=262,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=28)
+Compiling module xil_defaultlib.csa_2(K=58)
+Compiling module xil_defaultlib.csa_tree(SIZE_I=57,DEPTH=3,SIZE_...
+Compiling module xil_defaultlib.csa_tree(SIZE_I=56,DEPTH=4,SIZE_...
+Compiling module xil_defaultlib.intmul(LOGQ=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=28)
+Compiling module xil_defaultlib.modred_28
+Compiling module xil_defaultlib.modmul(LOGQ=28,LOGN=10,Q=28'b111...
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=5,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=5,DATA=28)
+Compiling module xil_defaultlib.shiftreg(SHIFT=251,DATA=1)
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=9...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=8...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=8...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=2...
+Compiling module xpm.xpm_fifo_sync(FIFO_WRITE_DEPTH=2...
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=134,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=2)
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=123,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=123,DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=70,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=3)
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=59,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=59,DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=38,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=4)
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=27,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=27,DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=22,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=5)
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=11,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=11,DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=14,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=6)
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=3,DATA=1)
+Compiling module xil_defaultlib.shiftreg(SHIFT=3,DATA=28)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=10,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=7)
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=4,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=8,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=8)
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.shiftreg(SHIFT=2,DATA=1)
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.shiftreg(SHIFT=7,DATA=1)
+Compiling module xil_defaultlib.bitreverse(LOGN=9)
+Compiling module xil_defaultlib.btf_dit_ct(LOGQ=28,LOGN=10,Q=28'...
+Compiling module xil_defaultlib.ntt_sdf_stage(LOGQ=28,LOGN=10,Q=...
+Compiling module xil_defaultlib.ntt_sdf_wrapper(LOGQ=28,LOGN=10,...
+Compiling module xil_defaultlib.bitreverse(LOGN=10)
+Compiling module xil_defaultlib.ntt_memory_wrapper_default
+Compiling module xil_defaultlib.ntt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ntt_tb_behav

@@ -1,0 +1,761 @@
+
+*** Running vivado
+    with args -log ntt_memory_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ntt_memory_wrapper.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ntt_memory_wrapper.tcl -notrace
+Command: link_design -top ntt_memory_wrapper -part xc7vx485tffg1157-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Netlist 29-17] Analyzing 2995 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/florian/Desktop/proteus/toolchain/hw/const.xdc]
+Finished Parsing XDC File [/home/florian/Desktop/proteus/toolchain/hw/const.xdc]
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_1'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_1'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_1'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_1'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_1'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_1'
+Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0'
+Finished Sourcing Tcl File [/opt/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1996.055 ; gain = 0.000 ; free physical = 7271 ; free virtual = 20070
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1996.055 ; gain = 629.746 ; free physical = 7271 ; free virtual = 20070
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-1540] The version limit for your license is '2021.11' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.90 . Memory (MB): peak = 2097.840 ; gain = 93.781 ; free physical = 7274 ; free virtual = 20063
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: ba2cbc60
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2667.613 ; gain = 569.773 ; free physical = 6800 ; free virtual = 19589
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: ba2cbc60
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2786.488 ; gain = 0.000 ; free physical = 6730 ; free virtual = 19519
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Retarget, 5 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 72d284f4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2786.488 ; gain = 0.000 ; free physical = 6726 ; free virtual = 19515
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: a4504fe6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2786.488 ; gain = 0.000 ; free physical = 6710 ; free virtual = 19499
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 740 cells
+INFO: [Opt 31-1021] In phase Sweep, 58 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: a4504fe6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2786.488 ; gain = 0.000 ; free physical = 6710 ; free virtual = 19499
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 10d27c09d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2786.488 ; gain = 0.000 ; free physical = 6709 ; free virtual = 19498
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1204e32dc
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2786.488 ; gain = 0.000 ; free physical = 6709 ; free virtual = 19498
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              5  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |             740  |                                             58  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2786.488 ; gain = 0.000 ; free physical = 6709 ; free virtual = 19498
+Ending Logic Optimization Task | Checksum: 59c254ca
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2786.488 ; gain = 0.000 ; free physical = 6708 ; free virtual = 19497
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.279 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 18 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 4 newly gated: 0 Total Ports: 36
+Ending PowerOpt Patch Enables Task | Checksum: 55497ac4
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3181.496 ; gain = 0.000 ; free physical = 6646 ; free virtual = 19436
+Ending Power Optimization Task | Checksum: 55497ac4
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:07 . Memory (MB): peak = 3181.496 ; gain = 395.008 ; free physical = 6683 ; free virtual = 19473
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 55497ac4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3181.496 ; gain = 0.000 ; free physical = 6683 ; free virtual = 19473
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3181.496 ; gain = 0.000 ; free physical = 6683 ; free virtual = 19473
+Ending Netlist Obfuscation Task | Checksum: ba8c5243
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3181.496 ; gain = 0.000 ; free physical = 6683 ; free virtual = 19473
+INFO: [Common 17-83] Releasing license: Implementation
+33 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:23 . Memory (MB): peak = 3181.496 ; gain = 1185.441 ; free physical = 6683 ; free virtual = 19473
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3181.496 ; gain = 0.000 ; free physical = 6683 ; free virtual = 19473
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_1_2/proteus_mdc.runs/impl_1/ntt_memory_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3181.496 ; gain = 0.000 ; free physical = 6667 ; free virtual = 19466
+INFO: [runtcl-4] Executing : report_drc -file ntt_memory_wrapper_drc_opted.rpt -pb ntt_memory_wrapper_drc_opted.pb -rpx ntt_memory_wrapper_drc_opted.rpx
+Command: report_drc -file ntt_memory_wrapper_drc_opted.rpt -pb ntt_memory_wrapper_drc_opted.pb -rpx ntt_memory_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_1_2/proteus_mdc.runs/impl_1/ntt_memory_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-1540] The version limit for your license is '2021.11' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6633 ; free virtual = 19432
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 09f7638d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6633 ; free virtual = 19432
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6633 ; free virtual = 19432
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1a5e97848
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6547 ; free virtual = 19352
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2544b52f9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6496 ; free virtual = 19295
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2544b52f9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6496 ; free virtual = 19295
+Phase 1 Placer Initialization | Checksum: 2544b52f9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6496 ; free virtual = 19295
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1e961a1a7
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:19 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6469 ; free virtual = 19269
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[35] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_16__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[42] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_9__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[16] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_1__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[8] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_9__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[30] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_4__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[33] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_1__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[6] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_11__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[32] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_16__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[32] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_2__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[36] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_15__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[37] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_14__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[20] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_21__8 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[44] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_4 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[50] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_1__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[24] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_24__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[34] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_17__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[34] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_14__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[13] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_4__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[12] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_5__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[43] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_8__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[44] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_7__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[51] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_13__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[15] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_2__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[14] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_3__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[27] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_7__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[25] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_9__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[10] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_7__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[24] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_10__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_35[18] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]_i_16__2 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_35[17] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]_i_17__2 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[18] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_23__8 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[48] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_16__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[7] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_10__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[33] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_15__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[28] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_6__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_35[24] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]_i_10__2 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[26] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_8__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[23] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_11__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[39] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_12__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[63] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[41] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_10__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[50] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_14__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[45] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_6__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[38] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_13__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[40] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_11__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[21] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_13__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[36] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_12__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[11].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[19] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[11].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_22__10 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[58] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_6__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[40] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_8__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[29] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_5__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[3].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[21] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[3].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_20__2 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[31] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_3__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[2] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_39__5 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_35[21] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]_i_13__2 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[9] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_8__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[2] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_15__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[60] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_4__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[33] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_15 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[11] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_30__8 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[4] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_37__8 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[15] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_26__1 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[0] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_17__10 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[5] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_36__5 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[3].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[23] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[3].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_18__2 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[3] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_14__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[1] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_16__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[7] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_34__8 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[20] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_14__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[4] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_13__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_397[48] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[0].MUL_reg[6]_i_3__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_397[47] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[0].MUL_reg[6]_i_4__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[61] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_3__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_35[20] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[1].genblk1[0].MUL_reg[3]_i_14__2 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[13] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_28__1 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[0] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_41__5 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[5] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[0].genblk1[0].MUL_reg[0]_i_12__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[30] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_18__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[41] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_7__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[49] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_2__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[48] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_3__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[47] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_4__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[46] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[2].genblk1[0].MUL_reg[6]_i_5__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[56] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_8__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[1] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_40__1 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_397[44] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[0].MUL_reg[6]_i_7__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/BTF_IN[2]_397[34] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[10].NTT_MDC_STAGE/BTF_UNIFIED/MODMUL/INTMUL/genblk3[2].genblk1[0].MUL_reg[6]_i_17__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[31] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_17__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[50] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_14__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[22] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_12__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[55] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_9__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[17] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_17__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[52] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_12__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk2[11].TW_ROM/in_b[19] could not be optimized because driver NTT_MDC_WRAPPER/genblk2[11].TW_ROM/genblk3[1].genblk1[0].MUL_reg[3]_i_15__9 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[53] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_11__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[15] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[9].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_26__8 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[3] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_38__1 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[49] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[2].MUL_reg[2]_i_15__0 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[26] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[4].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[1].MUL_reg[1]_i_22__3 could not be replicated
+INFO: [Physopt 32-117] Net NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/in_a[17] could not be optimized because driver NTT_MDC_WRAPPER/genblk3[6].NTT_MDC_STAGE/BTF_UNIFIED/MOD_SUB/genblk3[0].genblk1[0].MUL_reg[0]_i_24__5 could not be replicated
+INFO: [Common 17-14] Message 'Physopt 32-117' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-665] Processed cell NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1. 28 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell NTT_MDC_WRAPPER/genblk3[1].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg. 64 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell NTT_MDC_WRAPPER/genblk3[0].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0. 36 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell NTT_MDC_WRAPPER/genblk3[2].NTT_MDC_STAGE/xpm_fifo_sync_inst_0/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg. 64 registers were pushed out.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 192 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6378 ; free virtual = 19180
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6378 ; free virtual = 19180
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           1  |           1  |  00:00:00  |
+|  Critical Cell                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |          192  |              0  |                     4  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |          192  |              0  |                     4  |           1  |           6  |  00:00:01  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1e2b637d9
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6381 ; free virtual = 19183
+Phase 2.2 Global Placement Core | Checksum: 11d59b1d7
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6380 ; free virtual = 19182
+Phase 2 Global Placement | Checksum: 11d59b1d7
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6391 ; free virtual = 19193
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1a7cfc63b
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:39 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6381 ; free virtual = 19181
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: f02e1d86
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:00:44 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6367 ; free virtual = 19167
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 105155d61
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:44 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6367 ; free virtual = 19171
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1b8fa0e21
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:44 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6367 ; free virtual = 19171
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 14263e262
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:00:46 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6383 ; free virtual = 19187
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1317d19c0
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:00:52 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6330 ; free virtual = 19162
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1ca488f29
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:53 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6345 ; free virtual = 19157
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 23bef0e0f
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:54 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6345 ; free virtual = 19157
+Phase 3 Detail Placement | Checksum: 23bef0e0f
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:54 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6345 ; free virtual = 19157
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 14ca26e26
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 14ca26e26
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:00:57 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6385 ; free virtual = 19187
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.270. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 249ef73e8
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:25 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6347 ; free virtual = 19150
+Phase 4.1 Post Commit Optimization | Checksum: 249ef73e8
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:26 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6347 ; free virtual = 19150
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 249ef73e8
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:26 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6355 ; free virtual = 19157
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 249ef73e8
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:26 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6355 ; free virtual = 19158
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6355 ; free virtual = 19158
+Phase 4.4 Final Placement Cleanup | Checksum: 2443d6d20
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:26 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6355 ; free virtual = 19158
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2443d6d20
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:26 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6355 ; free virtual = 19158
+Ending Placer Task | Checksum: 192b91c38
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:26 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6355 ; free virtual = 19158
+INFO: [Common 17-83] Releasing license: Implementation
+173 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:04 ; elapsed = 00:01:29 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6452 ; free virtual = 19255
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6452 ; free virtual = 19255
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6368 ; free virtual = 19250
+INFO: [Common 17-1381] The checkpoint '/home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_1_2/proteus_mdc.runs/impl_1/ntt_memory_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6415 ; free virtual = 19234
+INFO: [runtcl-4] Executing : report_io -file ntt_memory_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.27 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6388 ; free virtual = 19208
+INFO: [runtcl-4] Executing : report_utilization -file ntt_memory_wrapper_utilization_placed.rpt -pb ntt_memory_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file ntt_memory_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.46 . Memory (MB): peak = 3205.508 ; gain = 0.000 ; free physical = 6461 ; free virtual = 19281
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-1540] The version limit for your license is '2021.11' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: fd69a73c ConstDB: 0 ShapeSum: 954f74fc RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 7248d196
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:30 . Memory (MB): peak = 3393.582 ; gain = 187.070 ; free physical = 6115 ; free virtual = 18937
+Post Restoration Checksum: NetGraph: 5611aa22 NumContArr: 1c372774 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 7248d196
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:30 . Memory (MB): peak = 3403.574 ; gain = 197.062 ; free physical = 6094 ; free virtual = 18910
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 7248d196
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:30 . Memory (MB): peak = 3461.246 ; gain = 254.734 ; free physical = 6035 ; free virtual = 18851
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 7248d196
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:30 . Memory (MB): peak = 3461.246 ; gain = 254.734 ; free physical = 6035 ; free virtual = 18851
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1fe341581
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:35 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 6000 ; free virtual = 18817
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.042  | TNS=0.000  | WHS=-0.205 | THS=-195.277|
+
+Phase 2 Router Initialization | Checksum: 189628c3e
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:38 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5965 ; free virtual = 18801
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 41502
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 41502
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 199663aa4
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:42 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5962 ; free virtual = 18792
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 5678
+ Number of Nodes with overlaps = 946
+ Number of Nodes with overlaps = 209
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.124 | TNS=-1.182 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: d6549da8
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:06 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5968 ; free virtual = 18791
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 102
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.085 | TNS=-0.131 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2638851f6
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:11 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5965 ; free virtual = 18781
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 211
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.085 | TNS=-0.325 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1b6ea8ab9
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:16 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5978 ; free virtual = 18794
+Phase 4 Rip-up And Reroute | Checksum: 1b6ea8ab9
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:16 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5978 ; free virtual = 18794
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1b58874c5
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:17 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5978 ; free virtual = 18794
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.051 | TNS=-0.092 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 223bd4eab
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:17 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5978 ; free virtual = 18794
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 223bd4eab
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:01:17 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5978 ; free virtual = 18794
+Phase 5 Delay and Skew Optimization | Checksum: 223bd4eab
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:01:17 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5978 ; free virtual = 18794
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 173e3043f
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:18 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5979 ; free virtual = 18795
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.005 | TNS=-0.005 | WHS=0.012  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2212f393b
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:18 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5979 ; free virtual = 18795
+Phase 6 Post Hold Fix | Checksum: 2212f393b
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:18 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5979 ; free virtual = 18795
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.79423 %
+  Global Horizontal Routing Utilization  = 3.14547 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 84.6847%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 94.5946%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X36Y307 -> INT_L_X36Y307
+   INT_L_X42Y301 -> INT_L_X42Y301
+   INT_L_X26Y282 -> INT_L_X26Y282
+   INT_L_X26Y281 -> INT_L_X26Y281
+   INT_L_X26Y279 -> INT_L_X26Y279
+East Dir 1x1 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X57Y300 -> INT_R_X57Y300
+West Dir 1x1 Area, Max Cong = 92.6471%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X29Y277 -> INT_R_X29Y277
+   INT_L_X20Y274 -> INT_L_X20Y274
+   INT_L_X20Y267 -> INT_L_X20Y267
+   INT_L_X20Y266 -> INT_L_X20Y266
+   INT_L_X20Y265 -> INT_L_X20Y265
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.333333 Sparse Ratio: 0.75
+
+Phase 7 Route finalize | Checksum: 13a235593
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:19 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5976 ; free virtual = 18792
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 13a235593
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:19 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5971 ; free virtual = 18787
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1b3309712
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:01:21 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5969 ; free virtual = 18785
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.005 | TNS=-0.005 | WHS=0.012  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1b3309712
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:21 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 5969 ; free virtual = 18785
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:21 . Memory (MB): peak = 3529.207 ; gain = 322.695 ; free physical = 6066 ; free virtual = 18882
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+193 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:00 ; elapsed = 00:01:23 . Memory (MB): peak = 3529.207 ; gain = 323.699 ; free physical = 6066 ; free virtual = 18882
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3529.207 ; gain = 0.000 ; free physical = 6067 ; free virtual = 18883
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3529.207 ; gain = 0.000 ; free physical = 5983 ; free virtual = 18874
+INFO: [Common 17-1381] The checkpoint '/home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_1_2/proteus_mdc.runs/impl_1/ntt_memory_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3529.207 ; gain = 0.000 ; free physical = 6037 ; free virtual = 18872
+INFO: [runtcl-4] Executing : report_drc -file ntt_memory_wrapper_drc_routed.rpt -pb ntt_memory_wrapper_drc_routed.pb -rpx ntt_memory_wrapper_drc_routed.rpx
+Command: report_drc -file ntt_memory_wrapper_drc_routed.rpt -pb ntt_memory_wrapper_drc_routed.pb -rpx ntt_memory_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_1_2/proteus_mdc.runs/impl_1/ntt_memory_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 3601.242 ; gain = 72.035 ; free physical = 6008 ; free virtual = 18851
+INFO: [runtcl-4] Executing : report_methodology -file ntt_memory_wrapper_methodology_drc_routed.rpt -pb ntt_memory_wrapper_methodology_drc_routed.pb -rpx ntt_memory_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file ntt_memory_wrapper_methodology_drc_routed.rpt -pb ntt_memory_wrapper_methodology_drc_routed.pb -rpx ntt_memory_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/florian/Desktop/proteus/toolchain/build/proteus_mdc_op_1_2/proteus_mdc.runs/impl_1/ntt_memory_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:25 ; elapsed = 00:00:07 . Memory (MB): peak = 3601.242 ; gain = 0.000 ; free physical = 5984 ; free virtual = 18821
+INFO: [runtcl-4] Executing : report_power -file ntt_memory_wrapper_power_routed.rpt -pb ntt_memory_wrapper_power_summary_routed.pb -rpx ntt_memory_wrapper_power_routed.rpx
+Command: report_power -file ntt_memory_wrapper_power_routed.rpt -pb ntt_memory_wrapper_power_summary_routed.pb -rpx ntt_memory_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+205 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 3601.242 ; gain = 0.000 ; free physical = 5903 ; free virtual = 18766
+INFO: [runtcl-4] Executing : report_route_status -file ntt_memory_wrapper_route_status.rpt -pb ntt_memory_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file ntt_memory_wrapper_timing_summary_routed.rpt -pb ntt_memory_wrapper_timing_summary_routed.pb -rpx ntt_memory_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file ntt_memory_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file ntt_memory_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file ntt_memory_wrapper_bus_skew_routed.rpt -pb ntt_memory_wrapper_bus_skew_routed.pb -rpx ntt_memory_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  6 21:12:14 2023...

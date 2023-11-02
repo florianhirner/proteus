@@ -1,0 +1,251 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  4 13:14:12 2022
+# Process ID: 15720
+# Current directory: C:/CryptoProcessor_2021_22/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18668 C:\CryptoProcessor_2021_22\project_1\project_1.xpr
+# Log file: C:/CryptoProcessor_2021_22/project_1/vivado.log
+# Journal file: C:/CryptoProcessor_2021_22/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/CryptoProcessor_2021_22/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/CryptoProcessor_2021_22/project_1/project_1.sdk -hwspec C:/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+file copy -force C:/CryptoProcessor_2021_22/project_1/project_1.runs/impl_3/cryptoprocessor_wrapper.sysdef C:/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+
+launch_sdk -workspace C:/CryptoProcessor_2021_22/project_1/project_1.sdk -hwspec C:/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+file mkdir C:/CryptoProcessor_2021_22/project_1/project_1.sdk
+file copy -force C:/CryptoProcessor_2021_22/project_1/project_1.runs/impl_3/cryptoprocessor_wrapper.sysdef C:/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+
+launch_sdk -workspace C:/CryptoProcessor_2021_22/project_1/project_1.sdk -hwspec C:/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top polymul [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run cryptoprocessor_ComputeCoreWrapper_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+update_compile_order -fileset sources_1
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cryptoprocessor_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top polynomial_multiplication [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_file C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sources_1/new/polynomial_64_multiplication.v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cryptoprocessor_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top polynomial_multiplication [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_file C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sources_1/new/polynomial_64_multiplication.v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sim_1/new/tb_polmul.v w ]
+add_files -fileset sim_1 C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sim_1/new/tb_polmul.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sim_1/new/dummy_memory_module.v w ]
+add_files -fileset sim_1 C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sim_1/new/dummy_memory_module.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_polmul [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg
+source tb_polmul.tcl
+restart
+run 20us
+save_wave_config {C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/bram_wea}} {{/tb_polmul/bram_addra}} {{/tb_polmul/bram_addrb}} {{/tb_polmul/bram_dina}} {{/tb_polmul/bram_doutb}} 
+restart
+run 10us
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/mult_read_poly_op_sel}} {{/tb_polmul/mult_read_address}} {{/tb_polmul/mult_write_address}} {{/tb_polmul/mult_wea}} {{/tb_polmul/mult_done}} 
+restart
+run 10us
+save_wave_config {C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg}
+relaunch_sim
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/read_address}} {{/tb_polmul/pmult/read_poly_op_sel}} {{/tb_polmul/pmult/data64_in}} {{/tb_polmul/pmult/write_address}} {{/tb_polmul/pmult/wea}} {{/tb_polmul/pmult/data64_out}} {{/tb_polmul/pmult/done}} {{/tb_polmul/pmult/state}} {{/tb_polmul/pmult/nextstate}} {{/tb_polmul/pmult/read_address_reg}} 
+restart
+run 5us
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/mult1/clk}} {{/tb_polmul/pmult/mult1/mul_ina}} {{/tb_polmul/pmult/mult1/mul_inb}} {{/tb_polmul/pmult/mult1/mul_start}} {{/tb_polmul/pmult/mult1/mul_out}} {{/tb_polmul/pmult/mult1/mul_done}} {{/tb_polmul/pmult/mult1/int_mul_result}} {{/tb_polmul/pmult/mult1/r1}} {{/tb_polmul/pmult/mult1/r2}} {{/tb_polmul/pmult/mult1/done_r1}} {{/tb_polmul/pmult/mult1/done_r2}} 
+restart
+run 3us
+relaunch_sim
+save_wave_config {C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg}
+close_sim
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+launch_simulation
+open_wave_config C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg
+source tb_polmul.tcl
+run 3us
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sources_1/new/integer_mult.v] -no_script -reset -force -quiet
+remove_files  C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sources_1/new/integer_mult.v
+close_sim
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+launch_simulation
+open_wave_config C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg
+source tb_polmul.tcl
+run 2us
+close_sim
+launch_simulation
+open_wave_config C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg
+source tb_polmul.tcl
+run 2us
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+export_ip_user_files -of_objects  [get_files C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sim_1/new/dummy_memory_module.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sim_1/new/dummy_memory_module.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top polynomial_addsub [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_file C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sources_1/new/polynomial_addsub.v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top polynomial_multiplication [current_fileset]
+set_property top_lib xil_defaultlib [current_fileset]
+set_property top_file C:/CryptoProcessor_2021_22/project_1/project_1.srcs/sources_1/new/polynomial_64_multiplication.v [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+save_wave_config {C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg
+source tb_polmul.tcl
+run 2us
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/read_address}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/read_poly_op_sel}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/data64_in}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/mul_ina}} {{/tb_polmul/pmult/mul_inb}} {{/tb_polmul/pmult/mul_out}} {{/tb_polmul/pmult/mul_start}} {{/tb_polmul/pmult/last_result_write}} {{/tb_polmul/pmult/mul_done}} 
+save_wave_config {C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg}
+restart
+run 2us
+save_wave_config {C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg
+source tb_polmul.tcl
+run 2us
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/read_address}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/read_poly_op_sel}} {{/tb_polmul/pmult/data64_in}} {{/tb_polmul/pmult/write_address}} {{/tb_polmul/pmult/wea}} {{/tb_polmul/pmult/data64_out}} 
+restart
+run 2us
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/state}} 
+restart
+run 2us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 3us
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/Mult/mul_ina}} {{/tb_polmul/pmult/Mult/mul_inb}} {{/tb_polmul/pmult/Mult/mul_start}} {{/tb_polmul/pmult/Mult/mul_out}} {{/tb_polmul/pmult/Mult/mul_done}} 
+restart
+run 3us
+save_wave_config {C:/CryptoProcessor_2021_22/project_1/tb_behav.wcfg}
+run 10us
+run 10us
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/pmult/done}} 
+current_wave_config {tb_behav.wcfg}
+add_wave {{/tb_polmul/BR/wea}} {{/tb_polmul/BR/addra}} {{/tb_polmul/BR/dina}} {{/tb_polmul/BR/clkb}} {{/tb_polmul/BR/addrb}} {{/tb_polmul/BR/doutb}} 
+restart
+run 30us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cryptoprocessor_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+file copy -force C:/CryptoProcessor_2021_22/project_1/project_1.runs/impl_3/cryptoprocessor_wrapper.sysdef C:/CryptoProcessor_2021_22/project_1/project_1.sdk/cryptoprocessor_wrapper.hdf
+
+update_module_reference cryptoprocessor_ComputeCoreWrapper_0_0

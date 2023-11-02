@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb 13 08:46:39 2023
+# Process ID: 104135
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12
+# Command line: vivado
+# Log file: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ntt_tb.tcl
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+run all
+relaunch_sim
+run 100 ms
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf/op12/project_1/ntt_tb_behav.wcfg}
+relaunch_sim
+run all
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1

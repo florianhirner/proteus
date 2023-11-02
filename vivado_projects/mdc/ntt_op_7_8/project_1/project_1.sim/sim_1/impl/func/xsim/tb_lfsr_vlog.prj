@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../project_1.srcs/sources_1/bd/top/ipshared/ec67/hdl" --include "../../../../../project_1.srcs/sources_1/bd/top/ipshared/8c62/hdl" --include "C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"tb_lfsr_func_impl.v" \
+"../../../../../project_1.srcs/sim_1/new/tb_lfsr.v" \
+
+# Do not sort compile order
+nosort

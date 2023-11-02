@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 12 20:23:03 2023
+# Process ID: 38661
+# Current directory: /home/florian/Desktop/proteus/toolchain/build/28bit
+# Command line: vivado
+# Log file: /home/florian/Desktop/proteus/toolchain/build/28bit/vivado.log
+# Journal file: /home/florian/Desktop/proteus/toolchain/build/28bit/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project sdf_nwc_op_1 /home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1 -part xc7vx485tffg1157-1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {/home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/INTT_DOUT.mem /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DIN.mem /home/florian/Desktop/proteus/toolchain/hw/tb/NTT_DOUT.mem}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_tb.v
+update_compile_order -fileset sim_1
+add_files {/home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_memory_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/stage_wapper.v /home/florian/Desktop/proteus/toolchain/hw/common/bitreverse/bitreverse.v /home/florian/Desktop/proteus/toolchain/hw/common/intmul/intmul.sv /home/florian/Desktop/proteus/toolchain/hw/common/shift/shiftreg.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/int_mult_add.sv /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/moddiv_by_2.v /home/florian/Desktop/proteus/toolchain/hw/common/csa/csa_tree.sv /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_tb.sv /home/florian/Desktop/proteus/toolchain/hw/common/csa/csa_2.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/modmul.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_64.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modadd.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_tree.sv /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/add_chunked.sv /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/wlmont_sub.sv /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dit_ct.v /home/florian/Desktop/proteus/toolchain/hw/common/fifo/fifo.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/sub_chunked.sv /home/florian/Desktop/proteus/toolchain/hw/common/mod/modred_28.v /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_unified.v /home/florian/Desktop/proteus/toolchain/hw/common/mod/modsub.v /home/florian/Desktop/proteus/toolchain/hw/common/wlmont/csa_2.sv /home/florian/Desktop/proteus/toolchain/hw/common/btf/btf_dif_gs.v /home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/ntt_wrapper.v /home/florian/Desktop/proteus/toolchain/hw/constant/tw_roms.v /home/florian/Desktop/proteus/toolchain/hw/mdc/ntt_nwc_mdc_op_1/tw_roms_wrapper.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse /home/florian/Desktop/proteus/toolchain/hw/parameters.vh
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse /home/florian/Desktop/proteus/toolchain/hw/const.xdc
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ntt_memory_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source ntt_tb.tcl
+update_compile_order -fileset sources_1
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+relaunch_sim
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+close_design
+save_wave_config {/home/florian/Desktop/proteus/toolchain/build/28bit/sdf_nwc_op_1/ntt_tb_behav.wcfg}
+close_sim
+launch_simulation
+source ntt_tb.tcl
+run 100 ms
+close_sim
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
