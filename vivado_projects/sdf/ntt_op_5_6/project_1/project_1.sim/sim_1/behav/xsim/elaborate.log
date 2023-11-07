@@ -3,7 +3,7 @@ Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
 Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 5622309cf07a428893ca36aaeb3cc5d4 --incr --debug typical --rangecheck --relax --mt 8 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ntt_tb_behav xil_defaultlib.ntt_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/fhirner/Desktop/proteus/vivado_projects/sdf/ntt_op_5_6/Verilog_src/ntt/sdf_stage.v:90]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'a' [/home/fhirner/Desktop/proteus/vivado_projects/sdf/ntt_op_5_6/Verilog_src/ntt/sdf_stage.v:94]
 WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 4 for port 'a' [/home/fhirner/Desktop/proteus/vivado_projects/sdf/ntt_op_5_6/Verilog_src/ntt/ntt_memory_wrapper.v:131]
 Completed static elaboration
 Starting simulation data flow analysis

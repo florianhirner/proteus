@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="9009340302fs"></ZoomEndTime>
+      <ZoomEndTime time="9737687863fs"></ZoomEndTime>
       <Cursor1Time time="2000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="269"></NameColumnWidth>
-      <ValueColumnWidth column_width="165"></ValueColumnWidth>
+      <ValueColumnWidth column_width="157"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="15" />
    <wvobject type="logic" fp_name="/ntt_tb/BTF_GS[0]">

@@ -109,10 +109,12 @@ wire [LOGN-1:0] raddr_bitreverse_pad;
 
 generate 
     if (BTF_GS) begin
-        assign raddr = (intt) ? {{LOGN{1'b0}}, counter} : {{LOGN{1'b0}}, (counter+1 >> (LOGN-STAGE))};
+//        assign raddr = (intt) ? {{LOGN{1'b0}}, counter} : {{LOGN{1'b0}}, (counter+1 >> (LOGN-STAGE))};
+        assign raddr = (intt) ? {{LOGN{1'b0}}, counter} : {{LOGN{1'b0}}, counter};
         bitreverse #(LOGN-STAGE-1) BITREVERSE (raddr, raddr_bitreverse);
         assign raddr_bitreverse_pad = (STAGE+1==LOGN) ? 0 : {{LOGN{1'b0}}, raddr_bitreverse[LOGN-STAGE-2:0]};
-        assign tw_addr = (intt) ? (1 << (LOGN-STAGE-1)) - raddr : raddr_bitreverse_pad;
+//        assign tw_addr = (intt) ? (1 << (LOGN-STAGE-1)) - raddr : raddr_bitreverse_pad;
+        assign tw_addr = (intt) ? (1 << (LOGN-STAGE-1)) - raddr : raddr ;
     end 
     else begin
         assign raddr = (start) ? {{LOGN{1'b0}}, (counter+2 >> (LOGN-STAGE-1))} : 1;
@@ -127,7 +129,17 @@ wire [LOGQ-1:0] BTF_OUT [0:1];
 
 assign BTF_IN[0] = stage_in_0;
 assign BTF_IN[1] = stage_in_1;
-assign BTF_IN[2] = (counter>>(LOGN-STAGE-1)==0) ? (TYPE_RED ? R_w : 1) : tw_data;
+//assign BTF_IN[2] = (counter>>(LOGN-STAGE-1)==0) ? (TYPE_RED ? R_w : 1) : tw_data;
+generate 
+    if (BTF_GS) begin
+//        assign BTF_IN[2] = (counter>>(LOGN-STAGE-1)==0) ? (TYPE_RED ? R_w : 1) : tw_data;
+        assign BTF_IN[2] = tw_data;
+    end 
+    else begin
+        assign BTF_IN[2] = (counter>>(LOGN-STAGE-1)==0) ? (TYPE_RED ? R_w : 1) : tw_data;
+    end
+endgenerate
+
 
 generate 
     if (BTF_GS) begin

@@ -12,7 +12,7 @@ parameter DELAY_MUL  = 2;
 parameter   DSP_W    = 24;
 parameter   DSP_H    = 17;
 parameter DELAY_RED  = (TYPE_RED) ? TOTAL_LATENCY : 3;
-parameter   TYPE_RED = 1; // 0=SPARSE; 1=WORD-LEVEL MONTGOMERY
+parameter   TYPE_RED = 0; // 0=SPARSE; 1=WORD-LEVEL MONTGOMERY
 parameter   W        = 16; // word size
 parameter   L        = 4; // montgomery loop count (calculated as $ceil(LOGQ/W))
 parameter   MULLAT   = 1;  // latency of multiply and add units

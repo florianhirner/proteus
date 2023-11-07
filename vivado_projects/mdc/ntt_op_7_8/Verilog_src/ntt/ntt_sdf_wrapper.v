@@ -96,7 +96,9 @@ generate
             intt,
             q,
             // stage_tw_addr[STAGE],
-            (BTF_GS) ? ( (intt) ? stage_tw_addr[LOGN-STAGE-1] : stage_tw_addr[STAGE] )
+//            (BTF_GS) ? ( (intt) ? stage_tw_addr[LOGN-STAGE-1] : stage_tw_addr[STAGE] )
+//                     : stage_tw_addr[STAGE],
+            (BTF_GS) ? stage_tw_addr[LOGN-STAGE-1]
                      : stage_tw_addr[STAGE],
             stage_tw_data[STAGE]
         );
@@ -143,7 +145,9 @@ generate
             stage_dout_1[STAGE],
             stage_tw_addr[STAGE],
             // stage_tw_data[STAGE]
-            (BTF_GS) ? ( (intt) ? stage_tw_data[LOGN-STAGE-1] : stage_tw_data[STAGE] )
+//            (BTF_GS) ? ( (intt) ? stage_tw_data[LOGN-STAGE-1] : stage_tw_data[STAGE] )
+//                     : stage_tw_data[STAGE]
+            (BTF_GS) ? stage_tw_data[LOGN-STAGE-1]
                      : stage_tw_data[STAGE]
         );
     end

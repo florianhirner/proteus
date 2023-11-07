@@ -80,10 +80,14 @@ wire [LOGN-1:0] raddr_bitreverse_pad;
 
 generate 
     if (BTF_GS) begin
-        assign raddr = (intt) ? {{LOGN{1'b0}}, counter} : {{LOGN{1'b0}}, (counter+1 >> (LOGN-STAGE))};
+//        assign raddr = (intt) ? {{LOGN{1'b0}}, counter} : {{LOGN{1'b0}}, (counter+1 >> (LOGN-STAGE))};
+//        assign raddr = (intt) ? {{LOGN{1'b0}}, counter} : {{LOGN{1'b0}}, (counter >> (STAGE))};
+        assign raddr = (intt) ? {{LOGN{1'b0}}, counter} : {{LOGN{1'b0}}, counter};
+//        assign raddr = {{LOGN{1'b0}}, counter[LOGN-STAGE-1:0]};
         bitreverse #(LOGN-STAGE-1) BITREVERSE (raddr, raddr_bitreverse);
         assign raddr_bitreverse_pad = (STAGE+1==LOGN) ? 0 : {{LOGN{1'b0}}, raddr_bitreverse[LOGN-STAGE-2:0]};
-        assign tw_addr = (intt) ? (1 << (LOGN-STAGE-1)) - raddr : raddr_bitreverse_pad;
+//        assign tw_addr = (intt) ? (1 << (LOGN-STAGE-1)) - raddr : raddr_bitreverse_pad;
+        assign tw_addr = (intt) ? (1 << (LOGN-STAGE-1)) - raddr : raddr;
     end 
     else begin
         assign raddr = {{LOGN{1'b0}}, (counter+1 >> (LOGN-STAGE))};
@@ -118,7 +122,7 @@ generate
             // specific
             .STAGE(STAGE),
             .NO_MUL(STAGE+1==LOGN)
-        ) BTF_DIF_GS(
+        ) BTF_DIF_GS (
             clk,
             rst,
             intt,
@@ -154,7 +158,7 @@ generate
             // specific
             .STAGE(STAGE),
             .NO_MUL(STAGE==0)
-        ) BTF_DIT_CT(
+        ) BTF_DIT_CT (
             clk,
             rst,
             intt,

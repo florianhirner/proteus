@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="3870000001fs"></ZoomEndTime>
-      <Cursor1Time time="2000000000fs"></Cursor1Time>
+      <ZoomEndTime time="2847261874fs"></ZoomEndTime>
+      <Cursor1Time time="626016000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="269"></NameColumnWidth>
-      <ValueColumnWidth column_width="169"></ValueColumnWidth>
+      <ValueColumnWidth column_width="177"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="13" />
    <wvobject type="logic" fp_name="/ntt_tb/BTF_GS[0]">
@@ -495,7 +495,7 @@
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/ntt_out">
             <obj_property name="ElementShortName">ntt_out[63:0]</obj_property>
             <obj_property name="ObjectShortName">ntt_out[63:0]</obj_property>
-            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
          </wvobject>
          <wvobject fp_name="divider1051" type="divider">
             <obj_property name="label">-</obj_property>
@@ -510,6 +510,7 @@
             <obj_property name="ElementShortName">stage_din[0:3][63:0]</obj_property>
             <obj_property name="ObjectShortName">stage_din[0:3][63:0]</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="isExpanded"></obj_property>
          </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_finish">
             <obj_property name="ElementShortName">stage_finish[0:3]</obj_property>
@@ -520,6 +521,7 @@
             <obj_property name="ElementShortName">stage_dout[0:3][63:0]</obj_property>
             <obj_property name="ObjectShortName">stage_dout[0:3][63:0]</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="isExpanded"></obj_property>
          </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_tw_addr">
             <obj_property name="ElementShortName">stage_tw_addr[0:3][3:0]</obj_property>
@@ -527,6 +529,7 @@
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="isExpanded"></obj_property>
          </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/stage_tw_data">
             <obj_property name="ElementShortName">stage_tw_data[0:3][63:0]</obj_property>
@@ -534,6 +537,7 @@
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="CustomSignalColor">#FFD700</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="isExpanded"></obj_property>
          </wvobject>
       </wvobject>
       <wvobject fp_name="divider142" type="divider">
@@ -695,17 +699,109 @@
             <obj_property name="label">-</obj_property>
             <obj_property name="DisplayName">label</obj_property>
          </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /LOGN">
+            <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+            <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /STAGE">
+            <obj_property name="ElementShortName">STAGE[31:0]</obj_property>
+            <obj_property name="ObjectShortName">STAGE[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_GS">
+            <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /raddr">
+            <obj_property name="ElementShortName">raddr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">raddr[3:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /raddr_bitreverse">
+            <obj_property name="ElementShortName">raddr_bitreverse[3:0]</obj_property>
+            <obj_property name="ObjectShortName">raddr_bitreverse[3:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /raddr_bitreverse_pad">
+            <obj_property name="ElementShortName">raddr_bitreverse_pad[3:0]</obj_property>
+            <obj_property name="ObjectShortName">raddr_bitreverse_pad[3:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /tw_addr">
+            <obj_property name="ElementShortName">tw_addr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">tw_addr[3:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="divider142" type="divider">
+            <obj_property name="label">-</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN">
             <obj_property name="ElementShortName">BTF_IN[0:2][63:0]</obj_property>
             <obj_property name="ObjectShortName">BTF_IN[0:2][63:0]</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="isExpanded"></obj_property>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[2]">
+               <obj_property name="ElementShortName">[2][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_IN[2]">
+               <obj_property name="ElementShortName">[2][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][63:0]</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_OUT">
             <obj_property name="ElementShortName">BTF_OUT[0:1][63:0]</obj_property>
             <obj_property name="ObjectShortName">BTF_OUT[0:1][63:0]</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="isExpanded"></obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_OUT[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_OUT[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_OUT[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[0].NTT_SDF_STAGE /BTF_OUT[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject fp_name="divider142" type="divider">
             <obj_property name="label">-</obj_property>
@@ -751,6 +847,7 @@
       <wvobject type="group" fp_name="group77">
          <obj_property name="label">STAGE_1</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject type="group" fp_name="group2988">
             <obj_property name="label">PARAM</obj_property>
             <obj_property name="DisplayName">label</obj_property>
@@ -906,17 +1003,109 @@
             <obj_property name="label">-</obj_property>
             <obj_property name="DisplayName">label</obj_property>
          </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /LOGN">
+            <obj_property name="ElementShortName">LOGN[31:0]</obj_property>
+            <obj_property name="ObjectShortName">LOGN[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /STAGE">
+            <obj_property name="ElementShortName">STAGE[31:0]</obj_property>
+            <obj_property name="ObjectShortName">STAGE[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_GS">
+            <obj_property name="ElementShortName">BTF_GS[31:0]</obj_property>
+            <obj_property name="ObjectShortName">BTF_GS[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr">
+            <obj_property name="ElementShortName">raddr[3:0]</obj_property>
+            <obj_property name="ObjectShortName">raddr[3:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_bitreverse">
+            <obj_property name="ElementShortName">raddr_bitreverse[3:0]</obj_property>
+            <obj_property name="ObjectShortName">raddr_bitreverse[3:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /raddr_bitreverse_pad">
+            <obj_property name="ElementShortName">raddr_bitreverse_pad[3:0]</obj_property>
+            <obj_property name="ObjectShortName">raddr_bitreverse_pad[3:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="divider142" type="divider">
+            <obj_property name="label">-</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_IN">
             <obj_property name="ElementShortName">BTF_IN[0:2][63:0]</obj_property>
             <obj_property name="ObjectShortName">BTF_IN[0:2][63:0]</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="isExpanded"></obj_property>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_IN[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_IN[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_IN[2]">
+               <obj_property name="ElementShortName">[2][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_IN[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_IN[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_IN[2]">
+               <obj_property name="ElementShortName">[2][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][63:0]</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_OUT">
             <obj_property name="ElementShortName">BTF_OUT[0:1][63:0]</obj_property>
             <obj_property name="ObjectShortName">BTF_OUT[0:1][63:0]</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="isExpanded"></obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_OUT[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#FFA500</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_OUT[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#FFA500</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_OUT[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[1].NTT_SDF_STAGE /BTF_OUT[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject fp_name="divider142" type="divider">
             <obj_property name="label">-</obj_property>
@@ -962,6 +1151,7 @@
       <wvobject type="group" fp_name="group77">
          <obj_property name="label">STAGE_2</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject type="group" fp_name="group1954">
             <obj_property name="label">PARAM</obj_property>
             <obj_property name="DisplayName">label</obj_property>
@@ -1122,12 +1312,63 @@
             <obj_property name="ObjectShortName">BTF_IN[0:2][63:0]</obj_property>
             <obj_property name="isExpanded"></obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_IN[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_IN[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_IN[2]">
+               <obj_property name="ElementShortName">[2][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_IN[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_IN[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_IN[2]">
+               <obj_property name="ElementShortName">[2][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][63:0]</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_OUT">
             <obj_property name="ElementShortName">BTF_OUT[0:1][63:0]</obj_property>
             <obj_property name="ObjectShortName">BTF_OUT[0:1][63:0]</obj_property>
             <obj_property name="isExpanded"></obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="CustomSignalColor">#FFA500</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_OUT[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#FFA500</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_OUT[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#FFA500</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_OUT[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[2].NTT_SDF_STAGE /BTF_OUT[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject fp_name="divider142" type="divider">
             <obj_property name="label">-</obj_property>
@@ -1173,6 +1414,7 @@
       <wvobject type="group" fp_name="group77">
          <obj_property name="label">STAGE_3</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject type="group" fp_name="group1936">
             <obj_property name="label">PARAM</obj_property>
             <obj_property name="DisplayName">label</obj_property>
@@ -1320,10 +1562,65 @@
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_IN">
             <obj_property name="ElementShortName">BTF_IN[0:2][63:0]</obj_property>
             <obj_property name="ObjectShortName">BTF_IN[0:2][63:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_IN[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_IN[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_IN[2]">
+               <obj_property name="ElementShortName">[2][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_IN[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_IN[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_IN[2]">
+               <obj_property name="ElementShortName">[2][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][63:0]</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_OUT">
             <obj_property name="ElementShortName">BTF_OUT[0:1][63:0]</obj_property>
             <obj_property name="ObjectShortName">BTF_OUT[0:1][63:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_OUT[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_OUT[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_OUT[0]">
+               <obj_property name="ElementShortName">[0][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][63:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk3[3].NTT_SDF_STAGE /BTF_OUT[1]">
+               <obj_property name="ElementShortName">[1][63:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][63:0]</obj_property>
+            </wvobject>
          </wvobject>
          <wvobject fp_name="divider142" type="divider">
             <obj_property name="label">-</obj_property>
@@ -1371,6 +1668,26 @@
          <obj_property name="DisplayName">label</obj_property>
          <wvobject fp_name="divider142" type="divider">
             <obj_property name="label">-</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="divider142" type="divider">
+            <obj_property name="label">-</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="divider142" type="divider">
+            <obj_property name="label">-</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="divider142" type="divider">
+            <obj_property name="label">-</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="divider142" type="divider">
+            <obj_property name="label">-</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="group4386">
+            <obj_property name="label">PARAM</obj_property>
             <obj_property name="DisplayName">label</obj_property>
          </wvobject>
       </wvobject>
@@ -1511,6 +1828,7 @@
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk2[0].TW_ROM /data_tw">
             <obj_property name="ElementShortName">data_tw[63:0]</obj_property>
             <obj_property name="ObjectShortName">data_tw[63:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
       </wvobject>
       <wvobject type="group" fp_name="group4595">
@@ -1699,6 +2017,7 @@
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk2[2].TW_ROM /data_tw">
             <obj_property name="ElementShortName">data_tw[63:0]</obj_property>
             <obj_property name="ObjectShortName">data_tw[63:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
       </wvobject>
       <wvobject type="group" fp_name="group4595">
@@ -1790,6 +2109,7 @@
          <wvobject type="array" fp_name="/ntt_tb/DUT_FNTT_MEM_WRAPPER/DUT_NTT/\genblk2[3].TW_ROM /data_tw">
             <obj_property name="ElementShortName">data_tw[63:0]</obj_property>
             <obj_property name="ObjectShortName">data_tw[63:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>

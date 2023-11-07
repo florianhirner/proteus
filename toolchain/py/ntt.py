@@ -1,7 +1,7 @@
 from math import log
 from helper import *
 
-DEBUG = 0
+DEBUG = 1
 VERBOSE = 0
 
 # ----------------------------------------------------------------------------
@@ -235,10 +235,10 @@ def FNTT_DIT_NR(A,W_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
                     print(f"-- u  :  {u}")
                     print(f"-- v  :  {v}")
                     print(f"--- TW:  {TW}")
-                    print(f"--- t0:  {t0}")
-                    print(f"--- t :  {t}")
-                    print(f"---- c:  {B[k*m+j]}")
-                    print(f"---- d:  {B[k*m+j+int(m/2)] }")
+                    # print(f"--- t0:  {t0}")
+                    # print(f"--- t :  {t}")
+                    print(f"---- u':  {B[k*m+j]}")
+                    print(f"---- v':  {B[k*m+j+int(m/2)] }")
                     print()
 
                 if DEBUG:
@@ -287,18 +287,17 @@ def FNTT_DIF_NR(A,W_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
                 temp = B[j]
 
                 if DEBUG:
-                    print(f"-- TW: {TW}")
                     print(f"-- U : {B[j]}")
-                    print(f"-- V : {B[j+s]}\n")
-                    print()
+                    print(f"-- V : {B[j+s]}")
+                    print(f"-- TW: {TW}")
 
 
                 B[j  ] = (temp + B[j+s]) % q
                 B[j+s] = (temp - B[j+s])*TW % q
 
                 if DEBUG:
-                    print(f"-- U : {B[j]}")
-                    print(f"-- V : {B[j+s]}\n")
+                    print(f"-- U' : {B[j]}")
+                    print(f"-- V' : {B[j+s]}\n")
                     print()
 
                 if DEBUG:
