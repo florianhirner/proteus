@@ -59,11 +59,11 @@ Proteus takes its parameters before synthesizing the target architecture. Specif
 
 In the case of Radix2 SDF, the architecture will look like the figure presented below:
 
-![Radix2 SDF](radix2_sdf.pdf.png)
+![Radix2 SDF](radix2_sdf.pdf)
 
 In the case of Radix2 MDC, the architecture will look like the figure presented below:
 
-![Radix2 MDC](radix2_mdc.pdf.png)
+![Radix2 MDC](radix2_mdc.pdf)
 
 A more detailed overview of all the submodules can be found within our paper.
 
