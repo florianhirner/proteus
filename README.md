@@ -59,11 +59,11 @@ Proteus takes its parameters before synthesizing the target architecture. Specif
 
 In the case of Radix2 SDF, the architecture will look like the figure presented below:
 
--> TODO add Figure1
+![Radix2 SDF](radix2_sdf.pdf.png)
 
 In the case of Radix2 MDC, the architecture will look like the figure presented below:
 
--> TODO add Figure2
+![Radix2 MDC](radix2_mdc.pdf.png)
 
 A more detailed overview of all the submodules can be found within our paper.
 
@@ -110,6 +110,30 @@ Ahmet Can Mert - `ahmet.mert@iaik.tugraz.at`
 
 Sujoy Sinha Roy - `sujoy.sinharoy@iaik.tugraz.at`
 
+The Authors are affiliated with the [Institute of Applied Information Processing and Communications](https://www.iaik.tugraz.at/), Graz University of Technology, Austria
+
 -----
 
-The Authors are affiliated with the [Institute of Applied Information Processing and Communications](https://www.iaik.tugraz.at/), Graz University of Technology, Austria
+# License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2022 FPGA @ Systems Group, ETH Zurich
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
