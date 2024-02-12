@@ -118,7 +118,7 @@ The Authors are affiliated with the [Institute of Applied Information Processing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2022 FPGA @ Systems Group, ETH Zurich
+Copyright (c) 2023 @ CryptoEngineering Group, TU Graz 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
