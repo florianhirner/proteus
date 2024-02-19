@@ -56,12 +56,74 @@ The first category `architectural-specific` contains all parameters that have a 
 
 The second category `Montgomery-reduction-specific` covers the parameters needed in case a generic modulo reduction is used during NTT computations. This category contains the parameters `W`, `L`, `MULLAT`, `ADDPIP`, `R_w`, and `TOTAL_LATENCY`. The user can only set the parameters `W`, `ADDPIP`, and `R_w`; all the other parameters are set automatically due to their dependency on other parameters. The parameter `W` represents the word size of the multiplication size used within each Montgomery stage, and it is advised to set it to a value such that a DSP unit can be used efficiently. In the case of Xilinx FPGAs, this value is 16 since each DSP can perform a 17x24 multiplication. The parameter `ADDPIP` can either be set to `0` if adders are pipelined into 64-bit chunks or `1` if adders are not pipelined. The parameter `R_w` is used to compensate for the `R^-1` factor that is introduced by the Montgomery reduction. Note that these parameters need to be set only when the Montgomery reduction is used for the modulo-reduction operation. This means that all of them will be ignored in the case of an add-shift-based reduction.
 
-The third category `delay-specific` covers all parameters that dictate the timing of the involved submodules in cycles. The first five parameters (`DELAY_ADD`, `DELAY_SUB`, `DELAY_MUL`, `DELAY_RED`, and `DELAY_DIV2`) dictate the timing of the arithmetical units used in our butterfly units. The parameters `DELAY_ADD` and `DELAY_SUB` give the latency of the modulo addition and modulo subtraction. Note that `DELAY_ADD` and `DELAY_SUB` need to be set to the same value. The parameter `DELAY_MUL` gives the latency of the integer multiplication, and the parameter `DELAY_RED` gives the latency required to reduce the result of the integer multiplication by the given modulus `Q`. The value that represents the latency of the modulo reduction (`DELAY_RED`) depends on the used reduction type. In the case of an add-shift-based reduction, the value will be relatively low, while for Montgomery reduction, it will be higher and also grow with the size of the modulus `Q`. For instance, with an add-shift-based reduction, the value might be minimal, whereas in Montgomery reduction, it could be influenced significantly by the size of the modulus `Q`. The last parameter `DELAY_DIV2` is used to give the time needed for our optimization used during INTT/IMNTT. The other parameters `DELAY_BRAM`, `DELAY_BROM`, and `DELAY_FIFO` focus on the latency of the memory primitives used within the architecture, with values typically ranging between 1 and 2 cycles.
+The third category `delay-specific` covers all parameters that dictate the timing of the involved submodules in cycles. The first five parameters (`DELAY_ADD`, `DELAY_SUB`, `DELAY_MUL`, `DELAY_RED`, and `DELAY_DIV2`) dictate the timing of the arithmetical units used in our butterfly units. The parameters `DELAY_ADD` and `DELAY_SUB` give the latency of the modulo addition and modulo subtraction. Note that `DELAY_ADD` and `DELAY_SUB` need to be set to the same value. The parameter `DELAY_MUL` gives the latency of the integer multiplication, and the parameter `DELAY_RED` gives the latency required to reduce the result of the integer multiplication by the given modulus `Q`. The value that represents the latency of the modulo reduction (`DELAY_RED`) depends on the used reduction type. In the case of an add-shift-based reduction, the value will be relatively low, while for Montgomery reduction, it will be higher and also grow with the size of the modulus `Q`. For instance, with an add-shift-based reduction, the value might be minimal, whereas, in Montgomery reduction, it could be influenced significantly by the size of the modulus `Q`. The last parameter `DELAY_DIV2` is used to give the time needed for our optimization used during INTT/IMNTT. The other parameters `DELAY_BRAM`, `DELAY_BROM`, and `DELAY_FIFO` focus on the latency of the memory primitives used within the architecture, with values typically ranging between 1 and 2 cycles.
 
 The fourth and last category `FPGA-DSP-specific` covers the properties of the DSP module of the FPGA, which can vary depending on the used platform. Note, that the user can fine-tune delay-related settings and DSP-specific configurations, influencing the overall performance of the hardware design.
 
+## Example configuration of parameter set 
 
-## TODO: Add two example parameter set as examples for user 
+Let's consider two different examples one with a generic Montgomery-based reduction and one using an add-shift-based reduction to show how parameters can be configured.
+
+Example 1: Radix2 NTT for 2^10 sized polynomial with a 64-bit modulo size. The architecture should use a CT butterfly with a Montgomery-based reduction unit.
+
+```
+parameter LOGQ              = 64;
+parameter LOGN              = 10;
+parameter TYPE_RED          = 1; 
+parameter IS_Q_FIXED        = 0;
+parameter Q                 = 64'd9223372036855300097;
+parameter BTF_GS            = 0;
+
+parameter   W               = 16;
+parameter   L               = $ceil(LOGQ/W));
+parameter   MULLAT          = 1;
+parameter   ADDPIP          = 0; 
+parameter   R_w             = 64'd9223372036854251519;
+parameter   TOTAL_LATENCY   = L*MULLAT + ((LOGQ-W <= 24) ? (((2*LOGQ-47)/W)*(ADDPIP+1)) : (L*(ADDPIP+1))) + (ADDPIP+1);
+
+parameter DELAY_ADD         = 1;
+parameter DELAY_SUB         = 1;
+parameter DELAY_MUL         = 2;
+parameter DELAY_RED         = TOTAL_LATENCY;
+parameter DELAY_DIV2        = 1;
+parameter DELAY_BRAM        = 1;
+parameter DELAY_BROM        = 1;
+parameter DELAY_FIFO        = 1;
+
+parameter   DSP_W           = 24;
+parameter   DSP_H           = 17;
+```
+
+Example 2: Radix2 NTT for 2^10 sized polynomial that used the 64-bit Goldilocks field as modulo. The architecture should use a GS butterfly with an add-shift reduction unit due to the special properties of the Goldilocks field prime.
+
+
+```
+parameter LOGQ              = 64;
+parameter LOGN              = 10;
+parameter TYPE_RED          = 0;
+parameter IS_Q_FIXED        = 0;
+parameter Q                 = 64'd18446744069414584321;
+parameter BTF_GS            = 1;
+
+parameter   W               =0; // not used/ignored
+parameter   L               = 0; // not used/ignored
+parameter   MULLAT          = 0; // not used/ignored
+parameter   ADDPIP          = 0; // not used/ignored
+parameter   R_w             = 0; // not used/ignored
+parameter   TOTAL_LATENCY   = 0; // not used/ignored
+
+parameter DELAY_ADD         = 1;
+parameter DELAY_SUB         = 1;
+parameter DELAY_MUL         = 2;
+parameter DELAY_RED         = 3; // 64
+parameter DELAY_DIV2        = 1;
+parameter DELAY_BRAM        = 1;
+parameter DELAY_BROM        = 1;
+parameter DELAY_FIFO        = 1;
+
+parameter   DSP_W           = 24;
+parameter   DSP_H           = 17;
+```
 
 # Example of generated architecture via Proteus
 
