@@ -92,10 +92,10 @@ In the case of Radix-2 MDC OP 5 with a polynomial-size of 2^4 and a coefficient 
 
 We already prepared a Vivado project for each option of Proteus to simplify usage. You first have to source all Vivado-related scripts via 
 
-``
+```
 source /opt/Xilinx/Vivado/2019.1/settings64.sh
 source /opt/Xilinx/SDK/2019.1/settings64.sh
-``
+```
 
 After sourcing all related scripts you need to start with the appropriate project file. This can be done by using:  
 
@@ -118,10 +118,10 @@ The functional correctness of Proteus-generated hardware is verified using NTT/I
 
 Go to `/toolchain/py/` and run `ntt_sanity_check.py` using Python. It will generate input and output files for polynomial multiplication operation in `/toolchain/py/ntt_sanity_check/`. Then, run `ntt_sanity_check.sage` using Sage, which will read these files, perform polynomial multiplication and compare results. If both results match, you should observe the following console output.
 
-``
+```
 NTT/INTT sanity check: PASSED...
 MNTT/MINTT sanity check: PASSED...
-``
+```
 
 # Contributors
 
