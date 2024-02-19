@@ -1,7 +1,7 @@
 from math import log
 from helper import *
 
-DEBUG = 1
+DEBUG = 0
 VERBOSE = 0
 
 # ----------------------------------------------------------------------------
@@ -15,7 +15,7 @@ VERBOSE = 0
 # q: modulus
 # B: output polynomial (bit-reversed order)
 def MFNTT_DIT_NR(A,Psi_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
-    print("\nMFNTT_DIT_NR\n")
+    #print("\nMFNTT_DIT_NR\n")
 
     N = len(A)
     B = [_ for _ in A]
@@ -75,7 +75,7 @@ def MFNTT_DIT_NR(A,Psi_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
 # q: modulus
 # B: output polynomial (standard order)
 def MINTT_DIF_RN(A,Psi_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
-    print("\nMINTT_DIF_RN\n")
+    #print("\nMINTT_DIF_RN\n")
 
     N = len(A)
     B = [_ for _ in A]
@@ -609,7 +609,7 @@ def INTT_DIF_RN(A,W_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
 
     return B
 
-def INTT_DIF_RN_W(A,W_table,q,MONTGOMERY,R_w,R_wp):
+def INTT_DIF_RN_W(A,W_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
     N = len(A)
     B = [_ for _ in A]
 
@@ -692,7 +692,7 @@ def INTT_DIF_RN_W(A,W_table,q,MONTGOMERY,R_w,R_wp):
 # W: twiddle factor
 # q: modulus
 # B: output polynomial (bit-reversed order)
-def INTT_DIT_NR(A,W_table,q,MONTGOMERY,R_w,R_wp):
+def INTT_DIT_NR(A,W_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
     N = len(A)
     B = [_ for _ in A]
 
@@ -766,7 +766,7 @@ def INTT_DIT_NR_W(A,W_table,q):
 # W: twiddle factor
 # q: modulus
 # B: output polynomial (bit-reversed order)
-def INTT_DIF_NR(A,W_table,q,MONTGOMERY,R_w,R_wp):
+def INTT_DIF_NR(A,W_table,q,MONTGOMERY=False,R_w=0,R_wp=0):
     N = len(A)
     B = [_ for _ in A]
 
